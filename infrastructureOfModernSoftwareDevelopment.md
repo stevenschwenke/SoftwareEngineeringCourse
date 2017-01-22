@@ -1,0 +1,6 @@
+- modern IDEs
+- version control (SVN overview, Git in detail)
+- code review tools
+- code analysis (sonar cube)
+- CI-Server
+- continuous deployment

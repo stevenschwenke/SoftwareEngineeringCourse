@@ -1,0 +1,4 @@
+- overview of different licences
+- usage and violation of licences (automatic header creation "everything owned by MyCompany Inc.")
+- Volkswagen Diesel Gate
+- data transfer to other services (Whatsapp is owned by Facebook)

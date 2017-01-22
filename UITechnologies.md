@@ -1,0 +1,3 @@
+- overview of current UI technologies
+- thin client, fat client, web client
+- JavaFX in more detail (https://github.com/stevenschwenke/JavaFXWorkshop)

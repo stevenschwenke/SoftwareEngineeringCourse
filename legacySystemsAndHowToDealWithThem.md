@@ -1,0 +1,2 @@
+- legacy = everything that's older than 2 weeks
+- writing tests (https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)

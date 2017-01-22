@@ -1,0 +1,2 @@
+- guest: Jens Schauder
+- dependencies, dependency management, Degraph

@@ -1,0 +1,4 @@
+- JPA
+- Hibernate
+- EclipseLink
+- JDBC

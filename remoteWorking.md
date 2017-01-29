@@ -56,13 +56,21 @@
 - virtual water cooler
 - force employees to stop working: "Just checking mails right after dinner with my family" very dangerous
 - Don't get flabby: when working from home, no more walks to the cantine and less traveling to the water cooler = health issues! 
-- employers: organize meetups at least 2 times a year, multiple days. People have to meet in person!
+- employers: organize meetups at least 2 times a year, multiple days. People have to meet in person! Have activities for working together, meeting the customer together, having fun together. See https://stevenschwenke.de/theFirstGetTogetherOfMeAndMyRemoteTeam
+- employers: train the commonly used language with ongoing language courses
+- have a real-life meeting at the beginning of the project
 - have a look at open source projects: all remote, a lot of them awesome and used worldwide. These are endlessly more complex than most of the "business" applications you will work on.
 - if only part of team remote: treat them like equals because they are equals! Get rid of technical impediments, improve social skills of the whole (!) team, meet in person.
 - everyone involved must be a pro in communication because a big part of inter-human communication is not available remotely (gesture, facial expression, surroundings, smell, hearing everything, ...)
 - => know how to communicate your expectations to your coworkers
 - learn how to write emails ("I'm sorry this mail is so long, I couldn't take the time to shorten it") and leave voice messages ("Influencing virtual teams" p. 44)
 - learn how to organize meetings (necessary? goal, agenda, participants, postprocessing)
+- employers: coach first-time remote-working teams. For example: learn how to screenshare: don't move the mouse unless you want to point to something, navigatore more slowly, speak as if you're giving an interview
+- invite the customer to webmeetings to build trust. "Seeing is believing", that goes for your coworkers as well!
+- way more documentation of the processes used - leads automatically to more professional development!
+- use an agile process with daily meetings and self-organizing teams
+- decide if you want to "just throw over" predefined packages of work or if you want to be a real team where everyone is equal
+- know all holidays of the countries your teammates work in and make them public to everyone in the team
 
 #Tools
 - misconception, that it's just about the tools

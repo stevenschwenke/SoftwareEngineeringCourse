@@ -59,6 +59,8 @@
 - employers: organize meetups at least 2 times a year, multiple days. People have to meet in person! Have activities for working together, meeting the customer together, having fun together. See https://stevenschwenke.de/theFirstGetTogetherOfMeAndMyRemoteTeam
 - employers: train the commonly used language with ongoing language courses
 - have a real-life meeting at the beginning of the project
+- with that first meeting: begin to build trust
+- don't stop there: trust has to be groomed and buid further
 - have a look at open source projects: all remote, a lot of them awesome and used worldwide. These are endlessly more complex than most of the "business" applications you will work on.
 - if only part of team remote: treat them like equals because they are equals! Get rid of technical impediments, improve social skills of the whole (!) team, meet in person.
 - everyone involved must be a pro in communication because a big part of inter-human communication is not available remotely (gesture, facial expression, surroundings, smell, hearing everything, ...)
@@ -71,6 +73,9 @@
 - use an agile process with daily meetings and self-organizing teams
 - decide if you want to "just throw over" predefined packages of work or if you want to be a real team where everyone is equal
 - know all holidays of the countries your teammates work in and make them public to everyone in the team
+- "invest in beginnings": freshly created remote working teams need more time for the "storming" phase in which roles and rules are created. This time has to be accounted for and planned upfront.
+- at least teamleaders, better everyone in the team has to be coached in solving conflicts because these are harder to solve from distance
+- coaching of communication of cultural differences and how to deal with them (for example different understand of what "9 am" means: "Indian time" or "German time"?)
 
 #Tools
 - misconception, that it's just about the tools
@@ -97,6 +102,13 @@
 - remote work != another country / continent. Imagine just working part time and not driving to work for just 3 hours.
 - working from onsite (location of customer) = working from inside the office = working from home
 - => remote = state of mind. Enable it and see what happens!
+
+#Current situation in Germany
+- more and more need for nearshore (for example Romania) or offshore (for example China or India) in Germany
+- reason: cost reduction from german industry
+- consequence in german IT: customer contact, analysis and creation of requirements furthermore in Germany, also decision-making about architectures and technologies. Implementation however more and more offsite.
+- => more need for coordination and communication in management
+- more need for understanding business logic for every consultant in Germany
 
 #What does that mean to you, my dear students?
 - You will be compared to people from all over the world. Find your niche and be awesome!

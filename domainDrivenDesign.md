@@ -1,11 +1,10 @@
 #Domain Driven Development
-
 This chapter is heavily influenced by [Domain Driven Design Quickly, InfoQ](https://www.infoq.com/minibooks/domain-driven-design-quickly).
 
   ![alt text](lupe_domain.png)
 
 - software = solution for business problems, not end in itself
-- goal of DDD: keep gap between business logic and technology as small as possible
+- goals of DDD: keep gap between business logic and technology as small as possible + domain logic has to be isolated from other code (like infrastructure)
 - real-world-problem that software solves = "Domain"
 - to solve problems in a specific domain, software engineer has to understand this domain well! (No "Just give me the formulas and a GUI mockup and I'll code it for you")
 - to attain this knowledge: talk with THE specialists: your customer
@@ -16,6 +15,8 @@ This chapter is heavily influenced by [Domain Driven Design Quickly, InfoQ](http
 - That means: Every class has to implement the concepts in detail.
 - DDD = design + development practice
 - DDD = technology-agnostic
+- another trend is to add annotations directly into domain classes, for example annotations for persisting entities with JPA. These have to have a default-Constructor, which is also wrong in DDD. Solution: Lombok-Builder. However, that complicates the code even more.
+
 
 ##Domain Model
 - = internal representation of target domain. Model is in our heads. It's what we understand of the domain.
@@ -97,7 +98,8 @@ TODO Bild 4-Schicht-Architektur
 - not every object should be an entity for example because of performance issues: for every entity, there has to be one object instance. When dealing with thousands of client-objects simultaniously and client is an entity, there have to be thousands of objects around.
 - entity should have continuity, being part of a lifecycle.
 - JPA-entity is not necessarily a DDD-entity! Example: JPA-entity needs a default constructor, whereas that is forbidden in DDD-entity. 
-- there should not be a repository for every entity => more research on that one! Entities that have repositories = aggregates
+- there must not be a repository for every entity. Example: "big" entity consists of several other entities, makes no sense to have small repositories for small enttities
+
 
 ###Value Objects
 
@@ -128,11 +130,13 @@ TODO Bild 4-Schicht-Architektur
     private LastName lastname;
     private Email email;
     ```
+- value objects can be JPA-Entities, but no DDD-Entities
 
 ###Services
 
   ![alt text](service.png)
 
+- TODO Bild passt nicht. Entities sind schlau und machen Dinge. Service spannt nur Logik über mehrere Entities, weil die Logik in diesen Entities nicht gut aufgehoben wäre.
 - cover actions that do not belong to any object and therefore should not written in an entity. Or action does belong to multiple objects and therefore it's not clear in which one it will end up. If those operations would be added to entites, this would bind those entities and the other ones highly to each other. "loose coupling, high cohesion"!
 - according to object orientation, those functions have to belong to an object anyways: A Service.
 - no internal state
@@ -158,6 +162,7 @@ Object
 ###Aggregates
 - aggregate = domain pattern to define object ownership and boundaries
 - aggregates = collection of other objects (= entities or value objects)
+- don't have a life cycle
 - goal of modelling: keep it as simple as possible. Hence, number of associations should be as low as possible.
 - example: one-to-many relationship is more complicated than one-to-one. Hence, class-to-aggregate is easier to understand than class-to-many-classes
 - often, bidirectional associations can be transformed to unidirectional ones (example: car and engine tied together. However, "car has an engine" and not the other way around often sufficient)
@@ -205,6 +210,8 @@ Object
 - repository reconstructs already existing objects from storage while factory creates objects from scratch
 
 ##Refactoring toward deeper insight
+- Refactoring is done not only to make implementation better, but also to update new insights into the business logic
+
 ###Continuous Refactoring
 - change code to make it better
 - automated test great support for this work
@@ -344,6 +351,9 @@ From "Domain Driven Design Quickly", InfoQ.
 ###Level 3: Event sourcing
 - domain events define state transitions
 - expose important events to interested parties via feeds
+
+- TODO Teil mit Events mehr ausbauen -> Schakko hat Ahnung, fragen ;) In Spring Event-Bus umgesetzt, kann für DDD genutzt werden.
+
 
 ##Sources
 - [Oliver Gierke, Domain Driven APIs for the web](https://speakerdeck.com/olivergierke/ddd-and-rest-domain-driven-apis-for-the-web-4)

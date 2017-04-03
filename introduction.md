@@ -3,6 +3,7 @@
 - Steven Schwenke
 
 ## Who are you?
+- What do you expect from me? What topics, technologies, experiences do you want to hear about?
 - (maybe first assignment) Why are you studying computer science? What's your motivation? What do you think your job will feel like later on?
 - What do you think is the major challenge in modern software development?
 - how well do you know what language (especially Java because many examples will be written in Java)
@@ -13,6 +14,13 @@
 ## The course
 - English or German?
 - slides will be in English because that's the language of software development
+
+##Meta
+Agreements for this course: 
+- no compulsory attendance. If you stay, be quite and listen.
+- questions everytime, not just in the end
+- bring your own device - whatever fits your needs
+- sorry, I will sometimes speak to you on a first-name basis (standard in modern IT companies)
 
 ## Why software engineering?
 - "software is eating the world"

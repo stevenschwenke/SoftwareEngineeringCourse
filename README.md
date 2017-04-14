@@ -37,6 +37,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 1. Remote Working
 1. UI Technologies
 1. Facilitating a coderetreat with students?
+1. JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance))
 
 ## Feedback
 Feel free to give feedback to steven@stevenschwenke.de

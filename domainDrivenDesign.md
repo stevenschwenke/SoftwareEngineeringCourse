@@ -1,4 +1,4 @@
-#Domain Driven Development
+# Domain Driven Development
 This chapter is heavily influenced by [Domain Driven Design Quickly, InfoQ](https://www.infoq.com/minibooks/domain-driven-design-quickly).
 
   ![alt text](lupe_domain.png)
@@ -18,13 +18,13 @@ This chapter is heavily influenced by [Domain Driven Design Quickly, InfoQ](http
 - another trend is to add annotations directly into domain classes, for example annotations for persisting entities with JPA. These have to have a default-Constructor, which is also wrong in DDD. Solution: Lombok-Builder. However, that complicates the code even more.
 
 
-##Domain Model
+## Domain Model
 - = internal representation of target domain. Model is in our heads. It's what we understand of the domain.
 - has to be communicated to others (domain experts to verify understanding, fellow developers, ...)
 - can have many forms (diagrams, text, pictures)
 - because of complex domains, often the model doesn't take every single aspect into account and is not completely correct. That's why it's a model. (= requirements engineering, very challenging!)
 
-##Building Domain Knowledge
+## Building Domain Knowledge
 - example: flight monitoring system: tracks every flight over a certain area, checks if route is right and checks for collisions
 - building knowledge via communication with air controllers
 - first result: aircraft has a departure and destination airfield
@@ -43,7 +43,7 @@ This chapter is heavily influenced by [Domain Driven Design Quickly, InfoQ](http
 
   ![alt text](domainDrivenDesign4.png)
  
-##Ubiquitous Language
+## Ubiquitous Language
 
   ![alt text](one_language.png)
 
@@ -56,7 +56,7 @@ This chapter is heavily influenced by [Domain Driven Design Quickly, InfoQ](http
 - designations will change during development. Replace old words with new ones everywhere, so the language keeps being consistent. Take your time to refactor the codebase.
 - one huge problem of the model that consists of the ubiquitous language: Grows very large soon. When mapped in UML, a lot of boxes with arrows that fills a whole wall. Solution: Just document one aspect of the whole system via a subset of the UML components.
 
-##Model-Driven Design (MDD)
+## Model-Driven Design (MDD)
 
   ![alt text](model_and_code.png)
 
@@ -67,8 +67,8 @@ This chapter is heavily influenced by [Domain Driven Design Quickly, InfoQ](http
 - important: change to the code = change to the model! Hence, no refactoring without tinking about domain. But also: No changes in model without consultant developers!
 - object oriented languages very suited for MDD. Procedual languages not that much.
 
-##Building blocks of model driven design
-###Layered Architecture
+## Building blocks of model driven design
+### Layered Architecture
 
 TODO Bild 4-Schicht-Architektur
 
@@ -81,7 +81,7 @@ TODO Bild 4-Schicht-Architektur
 1. Domain Layer
 1. Infrastructure Layer: communication between layers, persistence, provides libraries
 
-###Entities
+### Entities
 
   ![alt text](entity.png)
 
@@ -101,7 +101,7 @@ TODO Bild 4-Schicht-Architektur
 - there must not be a repository for every entity. Example: "big" entity consists of several other entities, makes no sense to have small repositories for small enttities
 
 
-###Value Objects
+### Value Objects
 
   ![alt text](value_objects.png)
 
@@ -132,7 +132,7 @@ TODO Bild 4-Schicht-Architektur
     ```
 - value objects can be JPA-Entities, but no DDD-Entities
 
-###Services
+### Services
 
   ![alt text](service.png)
 
@@ -151,7 +151,7 @@ Object
 - important: operation name in services have to be part of the ubiquitous language!
 - important: isolate domain layer from other layers such as infrastructure layer (one Service should either provide domain operations or infrastructure, never both!)
 
-###Modules
+### Modules
 - when domain model grows larger, clustering is a good idea
 - modules = part of domain model
 - "high cohesion, loose coupling"
@@ -159,7 +159,7 @@ Object
 - in Java: don't just call an object from another module. Use an interface to operate on those objects.
 - as with the service methods: names have to be part of ubiquitous language!
 
-###Aggregates
+### Aggregates
 - aggregate = domain pattern to define object ownership and boundaries
 - aggregates = collection of other objects (= entities or value objects)
 - don't have a life cycle
@@ -179,7 +179,7 @@ Object
 - inner objects only need local identity, not global identity
 - example: Customer (customerID, name) is root for ContactInfo (honePhoneNumber, workPhoneNumber, faxNumber, emailAddress) and Address (street, city, state)
 
-###Factories
+### Factories
   ![alt text](factory.png)
 
 - already mentioned by Design Patterns by Erich Gamma et all
@@ -194,7 +194,7 @@ Object
 - whenever object changes, make sure to change the factory accordingly
 - perfect for creation of aggregates because internal rules of aggregate can be implemented in factory that creates this aggregate 
 
-###Repositories
+### Repositories
 
   ![alt text](repository.png)
 
@@ -209,10 +209,10 @@ Object
 - information for access to the storage wrapped in repository, so the domain model doesn't need to know about it because it uses the purely domain-driven interface that the repository provides
 - repository reconstructs already existing objects from storage while factory creates objects from scratch
 
-##Refactoring toward deeper insight
+## Refactoring toward deeper insight
 - Refactoring is done not only to make implementation better, but also to update new insights into the business logic
 
-###Continuous Refactoring
+### Continuous Refactoring
 - change code to make it better
 - automated test great support for this work
 - two kinds of refactoring: technical and refactoring toward deeper insight (when there is new insight into the domain)
@@ -220,13 +220,13 @@ Object
 - technical refactoring follows patterns and can be (partly) automated
 - refactoring toward deeper insight cannot be automated
 
-###Bring key concepts into light
+### Bring key concepts into light
 - sometimes in talks with customer, concepts are understood from both sides, but not documented and not implemented explicitly.
 - often, business logic is relatively easy to understand and follow, if a developer has some experiments in the domain. If there's code that is hard to understand, it can be a good place for refactoring because the concepts used in this part of the code may be applied the wrong way or too complicated implemented.
 - also possible: missing concepts in the code. Maybe a concept understood in the domain has not been introduced and modelled into the code. This can often make code more easy to understand
 - read domain literature to gain deeper and broader understanding of problems of the customer and find inconsistencies on your own. Bonus gain: developer who really understands domain is much more valuable. 
 
-##Preserving model integrity
+## Preserving model integrity
 - large projects with multiple teams face other problems than small projects
 - "unification" = internal consistency of a model
 - _one_ consistent model that spans all aspects of a large company = dream that can seldom be realized because of organizational reasons + hard to maintain over multiple teams
@@ -235,7 +235,7 @@ Object
 - each model: clearly defined border
 - dependencies between models well-defined
 
-###Bounded Context
+### Bounded Context
 - when dealing with single model, context doesn't need to be defined, is implicit. Only necessary with multiple models.
 - context = "set of conditions which need to be applied to make sure that the terms used in the model have a specific meaning"
 - context = kind of looking glass for different roles
@@ -249,22 +249,22 @@ Object
 - hence: scalability and modularity because contexts can be developed and run on different systems, wherever and however needed
 - important: identification over system boundaries via ID, not types!
 
-###Continuous Integration
+### Continuous Integration
 - = integration of new domain knowledge in existing code so that model keeps being consistent and clean
 - code should be merged as soon as possible
 - + automated build
 - + automated tests
 - continuous integration deals with _one_ context, not relationships between contexts
 
-###Context Map
+### Context Map
 - communication of relationships between multiple contexts
 - can be any written document or a diagram that shows a cloud for every isolated context with arrows between them, documenting the "Translation Map" between the two
 - good test to see if contexts have defined borders
 - goal: no overlapping contexts
 - each bounded context should have a name that should be part of the ubiquitous language
 
-##Patterns for bounded contexts
-###Shared Kernel
+## Patterns for bounded contexts
+### Shared Kernel
 - context map where at least two contexts are not disjunct
 - reason: clean separation of contexts not possible due to organizational or time constraints or simply because of lack of knowledge
 - subset of domain model used by multiple teams
@@ -272,7 +272,7 @@ Object
 - shared stuff shouldn't be changed without consultant other teams
 - very important here: automated tests
 
-###Customer-Supplier
+### Customer-Supplier
 - situation: two subsystems with different contexts, one depends heavily on the other because processing results are fed into the other
 - no shared kernel
 - example: web shop system and reporting system
@@ -281,24 +281,24 @@ Object
 - organizational implications, such as regular meetings of the two teams to discuss how changes are implemented in the interface
 - social implications, such as customer team should feel like a customer of the supplier team = negotiating deadlines and contents
 
-###Conformist
+### Conformist
 - same situation as in customer-supplier but without management that supports coworking between customer and supplier, tight deadlines or altogether different companies
 - hence, supplier is less interested in helping customer
 - solution: conformity for supplier model
 - comparable to Shared Kernel, but customer team doesn't make any changes to common model
 
-###Anticorruption Layer
+### Anticorruption Layer
 - for example interacting with legacy software or separate application that uses confused domain model that is hard to understand and hard to work with
 - hence, anticorruption layer between both systems
 - = translator between two systems
 - implement as a number of Services that uses Facades, Adapters and Translators
 
-###Separate Ways
+### Separate Ways
 - sometimes cooperation between systems to expensive. Hence: separation of systems
 - from users point of view, one application
 - from modelling and technical standpoint: number of applications with different model and implementation
 
-###Open Host Service
+### Open Host Service
 - when integrating two subsystems: create translation layer between them, acts as a buffer
 - if system has to be integrated with several other systems, for each of those subsystem needed
 - very hard to maintain because changes will have to be applied to all translation layers
@@ -306,14 +306,14 @@ Object
 - challenge: create a service layer that serves all the systems well
 - good practice: protocol that is open for all and updated often
 
-###Distillation
+### Distillation
 - distillation = extracting specific substance from a mixture plus byproducts are generated
 - useful when domain model became large and refactorings won't help
 - define core domain = essence of the domain
 - byproduct = generic subdomains for the other parts of the domain
 - domains can be declared as generic = nothing special to the project = also included in other projects. Use an existing model or solution  
 
-##Appliability
+## Appliability
 [Oliver Gierke, Lectures on DDD](http://static.olivergierke.de/lectures/ddd-and-spring/#ddd.spring):
 - Spring can help a great deal implementing DDD by providing already-defined instances of classes and controlling lifecycles
 - @Embeddable for Value Objects
@@ -325,7 +325,7 @@ However, not all classes in Spring application can be mapped to DDD-concepts, li
 
 DDD plays a vital role in Service Oriented Architecture in encapsulating business logic in services
 
-##Tips from Eric Evans
+## Tips from Eric Evans
 From "Domain Driven Design Quickly", InfoQ.
 
 1. Stay hands-on. Modelers need to code.
@@ -333,29 +333,29 @@ From "Domain Driven Design Quickly", InfoQ.
 1. Don't try to apply DDD to everything. Draw a context map and decide on where you will make a push for DDD and where you will not. And then don't worry about it outside those boundaries.
 1. Experiment a lot and expect to make lots of mistakes. Modeling is a creative process.
 
-##Other Stuff
-##Explicitness Maturity Model
-###Level 0: No events at all
+## Other Stuff
+## Explicitness Maturity Model
+### Level 0: No events at all
 - load entities, change them, save them
 
-###Level 1: Explicit operations
+### Level 1: Explicit operations
 - create specific operations on domain classes that are driven by business model and speech
 - example: orderService.placeOrder(order) instead of repository.save(order)
 - business-driven methods even when they only wrap setter or getter
 - rule of thumb: "If you're calling two setters in a row, you're missing a concept"
 
-###Level 2: some operations as events
+### Level 2: some operations as events
 - throw events when something happens
 - "Domain Events"
 
-###Level 3: Event sourcing
+### Level 3: Event sourcing
 - domain events define state transitions
 - expose important events to interested parties via feeds
 
 - TODO Teil mit Events mehr ausbauen -> Schakko hat Ahnung, fragen ;) In Spring Event-Bus umgesetzt, kann für DDD genutzt werden.
 
 
-##Sources
+## Sources
 - [Oliver Gierke, Domain Driven APIs for the web](https://speakerdeck.com/olivergierke/ddd-and-rest-domain-driven-apis-for-the-web-4)
 - [Domain Driven Design Quickly, InfoQ](https://www.infoq.com/minibooks/domain-driven-design-quickly)
 - [DDD Sample Project in Java](https://github.com/citerus/dddsample-core) (TODO ANSEHEN)

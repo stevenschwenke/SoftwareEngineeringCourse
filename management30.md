@@ -7,6 +7,14 @@
 
 ---
 
+__What does that have to do with software engineering?__
+- knowing how teams work important for every team member
+- possible step for you: management (begins at technical team lead, very early)
+- "soft"skills = most impact on environment, much higher than technical skills
+- plain interesting to use mechanics and methods of engineering to social context :)
+
+---
+
 ## Preface
 
 --- 
@@ -553,3 +561,80 @@ implement agile processes according to specific problem and situation
 ---
 
 ## Chapter 11 - How to develop competence
+
+Competence = Discipline * Skill
+
+---
+
+### Sub-optimization principle
+If each subsystem, regarded separately, is made to operate with maximum efficiency, the system as a whole will not operate with utmost efficiency.
+
+---
+
+=> optimize the whole, not its parts!
+
+- "what gets measured, gets managed"
+
+=> Measure the whole to optimize the whole. Use global metrics.
+
+---
+
+HOWEVER:
+
+Don't __only__ measure / manage the whole!
+
+---
+
+### Metrics for projects
+1. __Functionality__: Story points completed (velocity)
+1. __Quality__: Problems reported by testers
+1. __Tools__: Costs per month
+1. __People__: Impediments reported by team members
+1. __Time__: Days remaining until live release
+1. __Process__: Checklists completed
+1. __Value__: Increase in usage in users per minute
+
+---
+
+#### skill != discipline
+- should be measured separately from each other
+- skilled people should also be disciplined and not be lazy because they are skilled
+- disciplined people should develop skill
+- discipline: task-board up to date, meetings timeboxed
+- skill: quality of delivered product, satisfied customer
+
+---
+
+#### Favor proactivity over knowledge or experience
+- measure what people __make__ of their knowledge and experience
+- don't value knowledge and experience themselves
+
+---
+
+#### Rate relatively, not absolutely
+- bad: "Team A finished 11 story points, team B only 5"
+- good: "You did 10% better than the last time"
+
+---
+
+#### Short feedback cycles
+Yearly employee feedback talk  
+
+vs 
+
+mail from CI server in case of compilation error
+
+---
+
+### self-discipline
+- most important rule for leader: lead by example:
+    - be professional
+    - be on time
+    - be proactive
+    - be positive
+- if you want to become a self-disciplined leader: Just be one. Think about what he would do, and then do it. 
+
+---
+
+## Chapter 12 - Communication on Structure
+as

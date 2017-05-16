@@ -636,5 +636,43 @@ mail from CI server in case of compilation error
 
 ---
 
-## Chapter 12 - Communication on Structure
-as
+## Chapter 13 - How to grow structure
+
+---
+### "Team members in Scrum"
+- Scrum: "team of team members" means "everybody is supposed to be great at any job"?
+- I don't know one single team which works that way.
+- specialization since industrialization a great idea!
+
+---
+
+- real meaning: "everybody is responsible for the result of the whole team"
+- => Role titles and designations useless! Work should be done by whoever is best qualified.
+- pragmatic approach: hire T-shaped people (few specialized topics, lots of known topics)
+- side story: "have experience with every technology buzzword" in Romania
+- __Think about it: What does that mean for _your_ career?__
+
+---
+
+### Informal Leadership
+- = concept described above
+- should be supported because exists anyway (since forever and forever)
+- problems with formal assigned roles: have to be kept busy, not scalable ("Web Designer is at 100% - we need another one -> 6 month later have to fire somebody because of lack of work)
+- informal leadership contributes to adaptability and scalability
+
+---
+
+### Structure of teams
+- every team member in exactly ONE team, not more
+- temporary assisting another team OK
+- teams should be kept together as long as possible
+- team size "7 plus minus 2"
+
+---
+
+### Scaling teams
+- different views about how to scale with multiple teams
+- generally good: "each team little value unit"
+- option 1: cross-functional teams: every team should be able to produce working product because every specialization / knowledge exists in team
+- option 2: function teams: teams of specialists
+- solution depends on a lot of things

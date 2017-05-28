@@ -4,6 +4,7 @@
 # Management 3.0
 - Source: "Management 3.0" by Jurgen Appelo. Although many thoughts from the book are mentioned here, these notes are no replacement for the book. Go ahead and read it!
 - one of the most-cited books about management (cited as a good book! ;) )
+- chapters in slides same as in the book, however shorter
 
 ---
 
@@ -61,34 +62,6 @@ __What does that have to do with software engineering?__
 
 ---
 
-### Reductionism
-- = deconstruct systems to understand its parts
-- then deconstruct these parts
-- Problem: doesn't work entirely, for example predicting weather or economy
-- root-cause-analysis (like "5 Whys") don't work necessarily because they discover only one root
- 
----
- 
-### Holism
-- = behavior of system is more than just behavior of parts
-- problems can be found by deconstructing a system, but they cannot be prevented by only looking at isolated parts
-
----
-
-### Hierarchical Management
-- management happens in levels
-- each level has its own rules and qualifications
-- mastering one level != being successful in another level
-- no need to be an expert about all lower levels, but knowing the fundamentals helps a lot!
-
----
-
-### Agile Management
-- = hierarchical management that embraces complexity and nonlinear thinking
-- making errors and learn from it
-
----
-
 ## Chapter 2 - Agile Software Development
 ### The way to agile
 - "agile" = new word for old virtues
@@ -127,123 +100,24 @@ __What does that have to do with software engineering?__
 
 ---
 
-## Chapter 3 - Complex Systems Theory
-- cross-functional science = different sciences have to work together to understand complexity
-- also no new idea as the following shows
-
----
-
-### General Systems Theory
-- late 1940s - 1970s
-- focus on organization of and between elements instead just the elements itself
-- most phenomena = "webs of relationships among elements"
----
-#### Lessons Learned for Software Development
-- software development team can construct itself and interact with its environment + interactions between team members matter
- 
----
- 
-### Cybernatics
-- 1940s
-- regulatory systems have goals and interact with environment through feedback mechanisms
-- iterations of acting - sensing - evaluating
----
-#### Lessons Learned for Software Development
-- software development team = goal-oriented system that regulate itself via feedback cycles
-- most important factors: information, communication, purpose instead of energy and force
-- important role of feedback
-
----
-
-### Dynamical Systems Theory
-- 1960s
-- dynamic systems have many states, some stable, others not
-- reappearing states = attractors
----
-#### Lessons Learned for Software Development
-- understanding why some projects are stable and others not
-- some organizations cannot be changed because of strong attracting states
-
----
-
-### Game Theory
-- 1930s - 1970s (introduced into biology and evolutionary theory)
-- multiple systems compete for same resource
-- development of competing strategies
-- systems influence each other via their actions 
-- important tool in many fields (economics, philosophy, political science)
----
-#### Lessons Learned for Software Development
-- explaining behavior of people in teams and teams in organizations
-
----
-
-### Evolutionary Theory
-- 1859 Charles Darwin
-- gradual genetic changes + survival of the fittest + natural selection
----
-#### Lessons Learned for Software Development
-- teams, projects and products evolve while adapting to changing environments
-- growth, survival, adaption of systems over time
-
----
-
-### Chaos Theory
-- breakthrough in 1970s and 1980s
-- small changes in systems can have tremendous consequences later on
-- behavior of many systems unpredictable
----
-#### Lessons Learned for Software Development
-- unpredictability of complex dynamic systems consequences for estimation, planning, control
-
----
-
-### Simplicity
-- complicated = construction
-- complex = behavior
-
-- Complicated systems are hard to understand because of their structure, unless you are an expert.
-- Complex systems are (partly) unpredictable.
-- complicated but not complex: two cars in a garage
-- complex but not complicated: two people in a bedroom
----
-- simplification = making structure better understandable
-- linearization = making behavior more predictable
-- these two can also be found in different refactorings for source code
-
----
-
-### Nonadaptive vs adaptive
-- nonadaptive systems = no change over time
-- adaptive systems = change dependent on environment
-- teams of software developers = adaptive systems => foundation of possibility of improvement!
-
----
-
-### What follows from all that
-- "a new era: complexity thinking"
-- teams are not built by drawing boxes and arrows, they have to be grown
-
----
-
 ## Chapter 4 - The Information-Innovation System
 - Innovation is bottom-up and can not be organized top to bottom by management
 - top-down approach = linear thinking, trying to control the future => doomed to fail
 
 ---
 
-### 5 cogs of innovation
+### 5 ingredients of innovation
 - innovation = emergent result, cannot be planned
 
 ---
 
-#### Cog 1: Knowledge
+#### Ingredient 1: Knowledge
 - performance != level of expertise
 - performance == connectivity between people
 
 ---
 
-#### Cog 2: Creativity
+#### Ingredient 2: Creativity
 - Graham Wallas and Richard Smith, 1926 "The Art of Thought"
 1. Preparation: Really getting to know problem
 1. Incubation: consciously and  unconsciously working the problem (going for a walk, postponing work to the next day)
@@ -253,19 +127,19 @@ __What does that have to do with software engineering?__
 
 ---
 
-#### Cog 3: Motivation
+#### Ingredient 3: Motivation
 - goal of management: motivate and energize people
 - "The one-Minute Manager" by Kenneth H. Blanchard: "People who feel good about themselves produce good results."
 - my projects = "We make the cool stuff that rocks!"
 
 ---
 
-#### Cog 4: Diversity
+#### Ingredient 4: Diversity
 - diverse teams outperform homogeneous teams
 
 ---
 
-#### Cog 5: Personality
+#### Ingredient 5: Personality
 - no simple answer here
 - a lot of values in lists like the Agile Manifesto
 - values have to be shared by all team members
@@ -287,11 +161,11 @@ __What does that have to do with software engineering?__
 ---
 
 ### Principles of Creativity
-1. Safety: failure OK, not afraid to ask questions and express ideas
-1. Play: turn activities into games, play in lunch break
-1. Variation: meetings in park, name product releases
-1. Visibility: making results of creativity visible (Googles offices)
-1. Edge: getting out of comfort zone. Workout has to "hurt a little" to be effective
+1. __Safety__: failure OK, not afraid to ask questions and express ideas
+1. __Play__: turn activities into games, play in lunch break
+1. __Variation__: meetings in park, name product releases
+1. __Visibility__: making results of creativity visible (Googles offices)
+1. __Edge__: getting out of comfort zone. Workout has to "hurt a little" to be effective
 
 ---
 

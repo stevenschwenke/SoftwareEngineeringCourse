@@ -550,3 +550,170 @@ mail from CI server in case of compilation error
 - option 1: cross-functional teams: every team should be able to produce working product because every specialization / knowledge exists in team
 - option 2: function teams: teams of specialists
 - solution depends on a lot of things
+
+---
+
+## Chaper 14 - The Landscape of Change
+
+---
+
+__Change is the only constant__
+
+-- <cite>Heraclitus</cite>
+
+__"Embrace change"__
+ 
+-- <cite>subtitle of "Extreme Programming" from Kent Beck</cite>
+
+---
+
+systems have to be changed continuously to keep being effective
+
+__+__
+
+change increase complexity unless someone prevents that actively
+
+---
+
+However: Software systems will fail eventually.
+
+Success = postponing  failure as long as possible
+
+---
+
+Having success for at least a while through
+ 1. adaption
+ 1. exploration
+ 1. anticipation
+
+---
+
+### Careful with anticipation! 
+
+Idea: anticipate what will kill your system and prevent it.
+
+"Anticipation is like alcohol. It is healthy when used in a small dose. But it is addictive, and most people use far too much of it."
+
+=> Story of architect in one of my projects: "Do we really know we are going to need this?"
+
+---
+
+- agile development doesn't reject anticipation, but tries to reduce it
+- good tool in small doses
+
+---
+### Homeostasis
+= stability
+= system keeps doing what it has been doing in the past, regardless of changing forces
+
+reason: attractor holds system in current state
+
+---
+
+- change is possible:
+    - attractor depends on environment
+    - change in environment forces attractor to react
+
+---
+
+- don't try pushing teams and organizations out of current behavior
+- change surroundings instead
+
+---
+
+- Example:
+    - former project old technology, Ant-scripted build
+    => Nobody wanted CI and "modern" build & deploy
+    - new project: existing, already running CI infrastructure
+    => using it was the new default
+    
+---
+
+## Chapter 15 - How to improve everything
+- following strategies work not only for software development teams
+
+---
+### Definitions of Improvement
+
+- kaikaku = radical improvement
+- kaizen = continuous improvement (adaption + anticipation + exploration)
+
+---
+
+### Building blocks of Improving things
+
+---
+
+#### Know your position
+- first step of every improvement: know current situation
+- problems, impediments, wishes, individual goals of teammates
+- in military and self-defense = "situational awareness"
+
+---
+
+#### Moving in a better position
+- by small steps like introducing daily communication, improving discipline, creating coding guidelines
+- will show team that change is possible
+- can be used to prepare for bigger leaps
+
+---
+
+#### Radical Jump ("Kaikadu")
+- huge change in organization or process
+- example: begin working "Scrum by the book"
+- no need to hit perfect position after jump, just "close enough"
+- can bring decreased performance, only temporary
+
+---
+
+#### Step-by-step improvement (Kaizen)
+- often after radical jump
+- number of incremental, small changes towards a common goal
+
+---
+
+#### Be vigilant
+- similar to "know your position" / situational awareness
+- new, optimized position will not be the optimum forever
+- keep an eye for changing environments and begin improvement process
+
+---
+
+### Change is the norm
+"We just changed that process three months ago"
+
+vs
+
+change is the norm, omnipresent, necessary, beneficial, standing still = exception
+
+---
+
+Goal: Create environment in which people understand change as chance, not threat.
+
+---
+
+Change can be supported by
+- flexible office layout with movable desks so teams can form spontaneously
+- infrastructure that enables working from anywhere (remote working)
+- scalable technical environment (licences, ordering process of new hardware, employees trained beyond borders of current project to be transferable in new projects)
+- and many more ...
+
+--- 
+
+### How to communicate change
+- communication = key factor (like always ...)
+
+---
+
+Don't
+- use the word "reorganization" because that is the opposite of the known "organization" 
+- name initiatives like something special like "The big Scrum initiative"
+- make people think change has a beginning and an end
+- use "Tiger teams"
+
+---
+
+Do
+- use different opinions in organization to find optimum
+- mix working processes and methods from great-performing teams in other teams
+- use ideas already out there - copying existing stuff is way cheaper then inventing new stuff

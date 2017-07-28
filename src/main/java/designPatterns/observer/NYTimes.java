@@ -1,4 +1,4 @@
-package observer;
+package designPatterns.observer;
 
 public class NYTimes implements Observer {
     @Override

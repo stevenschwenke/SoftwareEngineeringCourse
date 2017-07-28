@@ -1,4 +1,4 @@
-package template;
+package designPatterns.template;
 
 import java.util.function.Consumer;
 
@@ -11,7 +11,7 @@ public abstract class OnlineBanking {
     /**
      * Processes a customer represented by its id.
      * <p>
-     * This is the usual way of implementing the template pattern.
+     * This is the usual way of implementing the designPatterns.template pattern.
      *
      * @param id of the customer
      */
@@ -24,7 +24,7 @@ public abstract class OnlineBanking {
      * Can be implemented by different banks to make their customers happy in their own ways (provide discount,
      * send present, whatever).
      * <p>
-     * This is the usual way of implementing the template pattern.
+     * This is the usual way of implementing the designPatterns.template pattern.
      *
      * @param customer to make happy
      */
@@ -33,10 +33,10 @@ public abstract class OnlineBanking {
     /**
      * Processes a customer represented by its id and provides a way for bank-specific customer-happiness.
      * <p>
-     * This is a new, more dynamic way of implementing the template pattern.
+     * This is a new, more dynamic way of implementing the designPatterns.template pattern.
      *
      * @param id of the customer
-     * @param makeCustomerHappy bank-specific strategy to make customer happy
+     * @param makeCustomerHappy bank-specific designPatterns.strategy to make customer happy
      */
     public void processCustomer(int id, Consumer<Customer> makeCustomerHappy) {
         Customer customer = Database.getCustomerWithId(id);

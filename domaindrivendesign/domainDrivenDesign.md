@@ -204,7 +204,7 @@ Object
 - = decoupling of model and infrastructure
 - = storage place for globally accessible objects
 - "entry point" for external storage (database for exmple)
-- may use strategy for storing, for example different storage locations for different types of objects
+- may use designPatterns.strategy for storing, for example different storage locations for different types of objects
 - todo comparison to Spring Data Repository - is this a real DDD-repository?
 - information for access to the storage wrapped in repository, so the domain model doesn't need to know about it because it uses the purely domain-driven interface that the repository provides
 - repository reconstructs already existing objects from storage while factory creates objects from scratch

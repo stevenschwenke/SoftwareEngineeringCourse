@@ -1,4 +1,4 @@
-package template;
+package designPatterns.template;
 
 public class Database {
     public static Customer getCustomerWithId(int id) {

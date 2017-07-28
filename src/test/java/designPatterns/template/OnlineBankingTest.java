@@ -1,4 +1,4 @@
-package template;
+package designPatterns.template;
 
 import org.junit.jupiter.api.Test;
 

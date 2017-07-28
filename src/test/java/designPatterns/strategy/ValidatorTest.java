@@ -1,4 +1,4 @@
-package strategy;
+package designPatterns.strategy;
 
 import org.junit.jupiter.api.Test;
 

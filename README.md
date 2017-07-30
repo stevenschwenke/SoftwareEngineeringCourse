@@ -15,7 +15,8 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 
 | Topic | length | Content-complete|exercises|test questions|slides|
 |---|:---:|:---:|:---:|:---:|:---:|
-| Introduction & overview | 0.75 h |  ||||
+| Introduction & overview | 0.75 h | X|-|-||
+|Software Engineering from 10.000 ft| 0.75 h | X|-|||
 | Models of software development |  |  ||||
 | Agile Methods | 1.5 h |  ||||
 | Domain Driven Design | 3 h |  ||||

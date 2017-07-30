@@ -3,18 +3,6 @@
 ## Meta: About the workshop
 This is a Software Engineering course for students of computer science, level beginners to intermediate (3rd semester). 
 
-### Requirements
-- understanding written and spoken english language 
-- being able to read Java code (you don't need to be an expert, just know the basics)
-
-### Goals
-- getting an overview about what modern software development is
-- getting to know current methods, tools and processes that are used in today's industry
-- getting a feeling what it means to be a software craftsman (maybe even deciding if you want to become one or not)
-
-### What this course is NOT about
-- becoming an expert in a specific programming language, although there will be sessions that have a lot of code  
-- deep-dive into theoretical scientific computer science, it's more about the everyday work as an engineer 
 
 ### Current status
 I plan to use the material provided in this repository for the software engineering course summer term 2018 at advanced technical college Ostfalia in Wolfenbüttel, Germany. I expect this repository to gain more and more content right until the start of the course in march 2018.
@@ -24,20 +12,26 @@ Will be upgraded continuously, see chapters.
 
 States: planed -> content-gathering -> develop exercises and test questions -> rework to talk -> ready 
 
-1. Domain Driven Design (content-gathering)
-1. Communication (planned)
-1. Dependencies (planned)
-1. Ethics of software development (planned)
-1. Infrastructure as code (planned)
-1. Legacy Systems and how to deal with them (rework to talk)
-1. Models of software development (planned)
-1. Modern Java Architecture Frameworks (planned)
-1. Patterns and paradigms of programming (content-gathering)
-1. Persistence (planned)
-1. Remote Working (content-gathering)
-1. UI Technologies (planned)
-1. Facilitating a coderetreat with students?
-1. JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned)
+
+| Topic | length | Content-complete|exercises|test questions|slides|
+|---|:---:|:---:|:---:|:---:|:---:|
+| Introduction & overview | 0.75 h |  ||||
+| Models of software development |  |  ||||
+| Agile Methods | 1.5 h |  ||||
+| Domain Driven Design | 3 h |  ||||
+| Dependency Management |  |  ||||
+| Infrastructure as code |  |  ||||
+| Legacy Systems and how to deal with them | 6h | X ||||
+| Modern Java Architecture Frameworks |  |  ||||
+| Patterns and paradigms of programming |  |  ||||
+| Persistence |  |  ||||
+| Communication |  |  ||||
+| Remote Working |  |  ||||
+| UI Technologies |  |  ||||
+| Ethics of software development |  |  ||||
+| Facilitating a coderetreat with students? |  |  ||||
+
+- optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned)
 
 ## Feedback
 Feel free to give feedback to steven@stevenschwenke.de

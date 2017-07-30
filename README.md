@@ -24,20 +24,20 @@ Will be upgraded continuously, see chapters.
 
 States: planed -> content-gathering -> develop exercises and test questions -> rework to talk -> ready 
 
-1. Domain Driven Design: content-gathering
-1. Communication
-1. Dependencies
-1. Ethics of software development
-1. Infrastructure as code
-1. Legacy Systems and how to deal with them
-1. Models of software development
-1. Modern Java Architecture Frameworks
-1. Patterns and paradigms of programming
-1. Persistence
-1. Remote Working
-1. UI Technologies
+1. Domain Driven Design (content-gathering)
+1. Communication (planned)
+1. Dependencies (planned)
+1. Ethics of software development (planned)
+1. Infrastructure as code (planned)
+1. Legacy Systems and how to deal with them (rework to talk)
+1. Models of software development (planned)
+1. Modern Java Architecture Frameworks (planned)
+1. Patterns and paradigms of programming (content-gathering)
+1. Persistence (planned)
+1. Remote Working (content-gathering)
+1. UI Technologies (planned)
 1. Facilitating a coderetreat with students?
-1. JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance))
+1. JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned)
 
 ## Feedback
 Feel free to give feedback to steven@stevenschwenke.de

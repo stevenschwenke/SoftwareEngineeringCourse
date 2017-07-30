@@ -5,6 +5,7 @@
 - Source: "Management 3.0" by Jurgen Appelo. Although many thoughts from the book are mentioned here, these notes are no replacement for the book. Go ahead and read it!
 - one of the most-cited books about management (cited as a good book! ;) )
 - chapters in slides same as in the book, however shorter
+- book no hard academic background, philosophical and anthropological statements in slides not meant to be "exact" in the sense a philosopher / anthropologist would consider "exact"
 
 ---
 

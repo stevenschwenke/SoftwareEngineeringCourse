@@ -36,7 +36,7 @@
 - [move method](https://github.com/tobyweston/Refactoring-Chapter-1/commit/15c340ea73ac30b6fb41f607e6328ec48b87e849)
 
 ### Refactoring: Replace Temporary Variables with Query
-- [Replace Temp with Query](https://github.com/tobyweston/Refactoring-Chapter-1/commit/15c340ea73ac30b6fb41f607e6328ec48b87e849)
+- [Replace Temp with Query](https://github.com/tobyweston/Refactoring-Chapter-1/commit/98a38bcdb9b6eba987a31c939e5d04a9d13ad3de)
 
 ### Refactoring: extract method 
 - [Extract method to isolate frequent renter points](https://github.com/tobyweston/Refactoring-Chapter-1/commit/74b34ba9ae870c6d5e4a5d0b8538dda043b77846)
@@ -68,6 +68,21 @@
 - [use new inheritance in calculation](https://github.com/tobyweston/Refactoring-Chapter-1/commit/c6e70880eae6c0867044b60e016ee0277fafcf8d)
 - replace condition with inheritance: [1](https://github.com/tobyweston/Refactoring-Chapter-1/commit/4511529ce748aae80ee1cf2896bc581b991271a8), [2](https://github.com/tobyweston/Refactoring-Chapter-1/commit/445fd49c955d977f5225b8a0f6bfc48cbfd1c8c4)
 - change can be viewed as a [state pattern](https://en.wikipedia.org/wiki/State_pattern) or a [strategy pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
+
+## Chapter 2: Principles in Refactoring
+### General thoughts 
+- refactoring != adding functions. You should be aware of which of these you are doing right now.
+- refactoring ensures changeability
+- the less code, the better
+- most important aspect of code: should be readable because it gets read much more than it gets written
+- also, refactoring can help understand unfamiliar code. Kind of "active reading".
+- refactoring helps writing good code more quickly - on the long run! In the short run, it takes more time.
+- Don't plan a "refactoring sprint", but refactor after every couple of commits, all the time!
+- Refactoring code from others doesn't mean they are not able to write great code, just that you see things differently and can improve the code because of this outsiders position.
+- hard decision: tell or don't tell the customer about refactoring issues? Depends.
+- limitations to refactoring: change published interfaces which causes problems in code you can't reach with the refactoring. Can happen with simple refactorings like change method name. Solution: Keep old interface around for a while, mark it with @Deprecated (with a short explanation!). Don't copy method body, but let old implementation call the new one.
+- refactoring and design: instead of big upfront-design, design thoughts should be made to a specific degree (upfront), but the rest should be done via refactoring. Do not find __the__ design solution, but __a__ reasonable one.
+- very interesting story on page 58/59: about speculation in optimization of systems: "The lesson is: Even if you know exactly what is going on in your system, measure performance, don't speculate. You'll learn something, and nine times out of ten, it won't be that you were right!"     
 
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck

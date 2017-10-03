@@ -80,9 +80,102 @@
 - Don't plan a "refactoring sprint", but refactor after every couple of commits, all the time!
 - Refactoring code from others doesn't mean they are not able to write great code, just that you see things differently and can improve the code because of this outsiders position.
 - hard decision: tell or don't tell the customer about refactoring issues? Depends.
-- limitations to refactoring: change published interfaces which causes problems in code you can't reach with the refactoring. Can happen with simple refactorings like change method name. Solution: Keep old interface around for a while, mark it with @Deprecated (with a short explanation!). Don't copy method body, but let old implementation call the new one.
+- limitations to refactoring: refactoring already published interfaces will cause problems in code you can't reach. Especially important in framework- and toolkit-code. Can happen with simple refactorings like change method name. Solution: Keep old interface around for a while, mark it with @Deprecated (with a short explanation!). Don't copy method body, but let old implementation call the new one.
 - refactoring and design: instead of big upfront-design, design thoughts should be made to a specific degree (upfront), but the rest should be done via refactoring. Do not find __the__ design solution, but __a__ reasonable one.
 - very interesting story on page 58/59: about speculation in optimization of systems: "The lesson is: Even if you know exactly what is going on in your system, measure performance, don't speculate. You'll learn something, and nine times out of ten, it won't be that you were right!"     
+
+## Chapter 3: Bad smells in code
+- "bad smell" = code that somehow got bad over time in one aspect or another
+- no precise criteria, informed human intuition is still the best
+
+### Duplicated Code
+- most often simply solved by extract method
+- in inheritance hierarchies: extract method + move method to parent => dangerous, may break inheritance!
+- duplication in two completely unrelated classes: extract class => may be time to write a static final util-class with pure functions!
+
+### Long method
+- short methods often confusing - "Where are things done? I only see delegations to delegations ...". However, on the long run, short methods better.
+- "If you have a good name for a method you don't need to look at the body"
+- metric: "whenever we feel the need to comment something, we write a method instead"
+- OK if resulting code longer than before
+- signs for extractions:
+    - blocks of code that have comments
+    - for-loops
+    
+### Large Class
+- many instance variables, long methods, many methods
+- solutions:
+    - extract class / subclass (be careful to build a "real" inheritance structure!). Decide new structure by having a look how the class is used by its customers.
+    - (if existing) reduce duplications
+
+### Long parameter list
+- inconsistent and difficult to use
+- parameter objects can encapsulate a number of arguments, so that there are fewer arguments which are queried to get the relevant data
+
+### Divergent Change
+- occurs when one class or method changes often for different reasons
+- solution: separate concerns by creating new classes (refactoring "extract to class")
+
+### Shotgun Surgery
+- to implement a change request, necessary to change a lot of files with only very small changes
+- similar to divergent change, but opposite: divergent change = one class, many changes. Shotgun surgery = multiple classes, small changes
+- solution: move method, move field
+
+### Feature Envy
+-  = class more interested in another class than it should be = a lot of getter-calls (or similar)
+- move method to the place the method really wants to be
+
+### Data Clumps
+- = data items that hang together all the time while being implemented in separate classes
+- solution: extract class to hold rogue data items + introduce parameter object
+- quick win: parameter lists shrink
+
+### Primitive Obsession
+- don't use primitives where value objects can be used
+- especially small objects like ZIP codes or telephone numbers
+
+### Switch Statements
+- problem with switches: duplication (because new case forces changes in every switch all over the code)
+- solution: polymorphism  
+
+### Parallel Inheritance Hierarchies
+- creating subclasses of one class forces creation of subclasses of another type
+- solution: use move method and move field to get rid of dependency between the two hierarchies
+
+### Lazy Class
+- too small classes should be deleted
+
+### Speculative Generality
+- adding hooks and special cases to handle possible future requirements that may never be implemented
+- make code hard to understand and change
+
+### Temporary Field
+- = using fields to store data globally that should have been stored locally via parameter or normal variables
+- solution: extract class for the code that actually uses the variables
+
+### Message Chains
+- = long line of getter-calls
+- solution: extract and move method
+
+### Middle Man
+- = classes that have very similar interfaces to the classes they refer calls to
+- solution: remove middle man
+
+### Inappropriate Intimacy
+- = several classes doing too much with each other
+- solution: move method and field, change bidirectional association to unidirectional, extract class
+
+### Alternative Classes with Different Interfaces
+- = classes doing the same thing but with different interfaces
+- solution: move method, extract superclass
+
+### Refused Bequest
+- = subclasses that don't use all methods from parent class
+- solution: Replace Inheritance with Delegation
+
+### Comments
+- for itself not a bad smell, but indicators for such
+- solutions: remove real bad smell, then remove comments because they aren't needed anymore  
 
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck

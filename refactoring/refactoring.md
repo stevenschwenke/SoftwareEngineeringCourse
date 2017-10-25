@@ -177,6 +177,21 @@
 - for itself not a bad smell, but indicators for such
 - solutions: remove real bad smell, then remove comments because they aren't needed anymore  
 
+## Chapter 4: Building Tests
+- "solid tests" = precondition for refactoring
+- tests can be fun to write!
+- foundations of TDD
+- obsolete example code for JUnit - ignore that
+- very useful thought: When fixing a bug, first write at least one test that exposes the bug 
+- writing test should be risk-driven: Write test for code that most likely spawns bugs in the future
+- test method for boundaries in their arguments and special conditions = "playing the enemy"
+- also test exceptions
+
+## Chapter 5: Toward a catalog of refactorings
+- explanation of structure of refactorings
+- "finding references" = completely obsolete
+- weiter: S. 87
+
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck
 

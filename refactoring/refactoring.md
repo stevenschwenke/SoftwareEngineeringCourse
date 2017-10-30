@@ -190,7 +190,91 @@
 ## Chapter 5: Toward a catalog of refactorings
 - explanation of structure of refactorings
 - "finding references" = completely obsolete
-- weiter: S. 87
+
+## Chapter 6: Composing methods
+- main problem: too long methods
+- solution: extract method
+- assigning to parameters always bad idea
+
+### Extract method
+- code fragment that can be grouped together => Turn into a method with proper name
+- increased chance that other methods can use the new, shorter method
+- higher-level methods will look like series of comments
+- dealing with variables main source of work. Solutions: adding return values, using parameters
+
+### Inline method
+- methods body easy enough to understand => remove method + put body in callers
+- before inlining, check if method isn't polymorphic, i.e. that not class overrides it
+
+### Inline temp 
+- = remove temporal variable with actual call to method
+- first, declare temp final to check for other assignments
+
+### Replace temp with query
+- replace temporal variable with call to method, created with the expression of the temp
+- important step towards extract method
+- first, declare temp final to check for other assignments
+
+### Introduce explaining variable
+- extract parts of complicated expression in variable
+- variable is only visible in current scope. To broaden scope, use extract method.
+
+### Split temporary variable
+- one variable that is not a loop variable gets assigned multiple times => create separate temp variable for each assignment
+-  multiple assignment = sign for more than one responsibility
+
+### Remove assignments to parameters
+- assignments to parameters should be replaced by assignments to temporary variables
+- if parameters are objects, these objects change outside of the scope of the method => leads to error-prone and hard to understand code
+#### Pass by value in Java
+(following example taken from the book _Refactoring_)
+
+    class Param {
+        public static void main(String[] args) {
+            int x = 5;
+            triple(x);
+            System.out.println ("x after triple: " + x);
+        }
+        
+        private static void triple(int arg) {
+            arg = arg * 3;
+            System.out.println ("arg in triple: " + arg);
+        }
+    } 
+- result:
+    - arg in triple: 15
+    - x after triple: 5
+    
+    
+    class Param {
+        public static void main(String[] args) {
+            Date d1 = new Date ("1 Apr 98");
+            nextDateUpdate(d1);
+            System.out.println ("d1 after nextDay: " + d1);
+            Date d2 = new Date ("1 Apr 98");
+            nextDateReplace(d2);
+            System.out.println ("d2 after nextDay: " + d2);
+        }
+        private static void nextDateUpdate (Date arg) {
+            arg.setDate(arg.getDate() + 1);
+            System.out.println ("arg in nextDay: " + arg);
+        }
+        private static void nextDateReplace (Date arg) {
+            arg = new Date (arg.getYear(), arg.getMonth(), arg.getDate() + 1);
+            System.out.println ("arg in nextDay: " + arg);
+        }
+    }
+- result:
+    - arg in nextDay: Thu Apr 02 00:00:00 EST 1998
+    - d1 after nextDay: Thu Apr 02 00:00:00 EST 1998
+    - arg in nextDay: Thu Apr 02 00:00:00 EST 1998
+    - d2 after nextDay: Wed Apr 01 00:00:00 EST 1998
+
+__Java always uses call-by-value. Objects however are call by reference.__
+
+### Replace method with method object
+- long method using local variables so that extract method is not possible => extract object for method where local variables become fields
+- first step of further refactorings within the new class
 
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck

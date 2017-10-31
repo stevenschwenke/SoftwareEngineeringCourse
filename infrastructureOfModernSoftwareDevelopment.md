@@ -1,6 +1,6 @@
 - modern IDEs
 - version control (SVN overview, Git in detail)
-- code review tools
+- code review tools + [What to look for in a code review](https://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/)
 - code analysis (sonar cube)
 - CI-Server
 - continuous deployment

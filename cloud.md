@@ -68,6 +68,14 @@
 ## current situation
 - individual developers and small businesses gained access to same computing power and infrastructure than large businesses => HUGE gamechanger: big companies' costly datacenters = separation between "big company" and "the rest" => that's now gone!
 
+## Applicability
+- new technology generally exciting
+- however, not feasible for all scenarios
+- [You are not Google](https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb)
+- note difference between 
+    - System of records = "enterprise software", mostly CRUD
+    - System of engagement = heavily scaling systems, a lot of users, Twitter etc. 
+
 ### market
 - market share (2015):
     - Amazon 27.2%

@@ -1,0 +1,1 @@
+- [CQRS](https://www.heise.de/developer/artikel/CQRS-neues-Architekturprinzip-zur-Trennung-von-Befehlen-und-Abfragen-1797489.html)

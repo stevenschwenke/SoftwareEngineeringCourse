@@ -276,6 +276,68 @@ __Java always uses call-by-value. Objects however are call by reference.__
 - long method using local variables so that extract method is not possible => extract object for method where local variables become fields
 - first step of further refactorings within the new class
 
+## Chapter 7: Moving features between objects
+- "Where to put responsibilities?" important question
+
+### Move method
+- when classes are too big or to high coupling between classes
+- important: keep an eye to polymorphism
+
+### Move field
+- when fields are used more by other classes than the ones which they are defined in
+
+### Extract class
+- when class has too much tasks, move fields and methods to new class
+- often necessary after some time, when classes grew too big
+- goal: every class __one__ responsibility
+
+### Inline class
+- when a class is "too small", move its features to another class and delete it
+- Attention: In a world with Domain Driven Design, this refactoring should have good reasons. Often, many small objects that represent an entity are better than few objects that represent many "things". Also, having classes for "small things" increases refactorability because of type-safety.
+
+### Hide delegate
+- class _Client_ is calling class _Server_ and _Delegate_. Refactor so that _Client_ only calls _Server_ which then calls _Delegate_. That way, _Client_ doesn't need to know about _Delegate_.
+- important key to object orientation: encapsulation = classes need to know less of a system
+- in code:
+
+
+    manager = john.getDepartment().getManager();
+
+
+to
+
+    public Person getManager() {
+        return _department.getManager();
+    }
+    
+    ...
+    
+    john.getManager();
+
+### Remove middle man
+- when class with too much simple delegations, remove delegations and call directly
+
+### Introduce foreign method
+- when unmodifiable class needs additional method, create this method in a client class that can access the server class
+- code:
+
+
+    Date newStart = new Date (previousEnd.getYear(), previousEnd.getMonth(), previousEnd.getDate() + 1);
+
+
+to
+
+    Date newStart = nextDay(previousEnd);
+    
+    private static Date nextDay(Date arg) {
+        return new Date (arg.getYear(),arg.getMonth(), arg.getDate() + 1);
+    }
+
+### Introduce local extension
+- when unmodifiable class needs several additional methods, add foreign methods to new class
+- = "foreign methods times x", but in a new class
+- either subclassing or wrapping unmodifiable class
+
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck
 

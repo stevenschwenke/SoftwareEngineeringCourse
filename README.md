@@ -12,27 +12,38 @@ Will be upgraded continuously, see chapters.
 
 States: planed -> content-gathering -> develop exercises and test questions -> rework to talk -> ready 
 
+### Most likely to be in the lectures
 
+- total time of lecture: 2 x 1.5 h x 13 weeks = __39.0 h__
+
+| Topic | length | Content-complete|exercises|test questions|slides|notes|
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Introduction & overview | 0.75 h | X|-|-|||
+| Software Engineering from 10.000 ft| 0.75 h | X|-||||
+| Models of software development | 1.5 h|  |||||
+| Refactoring | 3.0 h | |||||
+| Legacy Systems and how to deal with them | 6 h | X |-|-|-|see Awesome Java Code workshop|
+| Patterns and paradigms of programming | 3 h |  |||||
+| Case Study: UI Technology JavaFX | 1.5 h ||||||
+| Modern Java Architecture Frameworks | 1.5 h|  |||||
+| Persistence | 1.5 h|  |||||
+| optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned) | 1.5 h|  |||||
+| Domain Driven Design | 3 h |  |||||
+| Agile Methods | 1.5 h |  |||||
+| Management 3.0 | 3.0 h |X|||||
+| Cloud | 1.0 h |X|||||
+| Digitization | 0.5 h |X|||||
+| Remote Working |1.5 h|X|||X||
+| Ethics of software development | 0.5 h |  |||||
+Sum: __32.0 h__
+
+### Less likely to be in the lectures
 | Topic | length | Content-complete|exercises|test questions|slides|
 |---|:---:|:---:|:---:|:---:|:---:|
-| Introduction & overview | 0.75 h | X|-|-||
-|Software Engineering from 10.000 ft| 0.75 h | X|-|||
-| Models of software development |  |  ||||
-| Agile Methods | 1.5 h |  ||||
-| Domain Driven Design | 3 h |  ||||
 | Dependency Management |  |  ||||
 | Infrastructure as code |  |  ||||
-| Legacy Systems and how to deal with them | 6h | X ||||
-| Modern Java Architecture Frameworks |  |  ||||
-| Patterns and paradigms of programming |  |  ||||
-| Persistence |  |  ||||
 | Communication |  |  ||||
-| Remote Working |  |  ||||
-| UI Technologies |  |  ||||
-| Ethics of software development |  |  ||||
 | Facilitating a coderetreat with students? |  |  ||||
-
-- optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned)
 
 ## Feedback
 Feel free to give feedback to steven@stevenschwenke.de

@@ -18,7 +18,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 
 | Topic | length | Content-complete|exercises|test questions|slides|notes|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Introduction & overview | 0.75 h | X|-|-|||
+| Introduction & overview | 0.75 h | X|-|-|X|-|
 | Software Engineering from 10.000 ft| 0.75 h | X|-||||
 | Models of software development | 1.5 h|  |||||
 | Refactoring | 3.0 h | |||||

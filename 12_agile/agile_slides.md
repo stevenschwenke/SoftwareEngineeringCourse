@@ -14,7 +14,7 @@
 
 ---
 
-![alt text 55%](../management30/agile_manifesto_by_jurgen_appelo.jpg)
+![alt text 55%](../13_management30/agile_manifesto_by_jurgen_appelo.jpg)
 (Jurgen Appelo, https://www.flickr.com/photos/jurgenappelo/5201267505)
 
 ---

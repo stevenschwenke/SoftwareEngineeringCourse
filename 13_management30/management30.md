@@ -97,8 +97,16 @@ __What does that have to do with software engineering?__
 
 ---
 
-- TODO elaborate on "line management vs project management", see page 30.
-
+- project management
+    - identify project: stakeholder, what to get done, when to get it done
+    - gantt-Charts
+    - fine-grained task planning
+- line management
+    - orthogonal to project management
+    - often personal development (together with project management, but also on a broader scope)
+- leadership
+    - often done by upper management or shareholder
+- (from [distilled.net](https://www.distilled.net/blog/distilled/the-difference-between-planning-project-management-line-management-and-leadership/))
 ---
 
 ## Chapter 4 - The Information-Innovation System

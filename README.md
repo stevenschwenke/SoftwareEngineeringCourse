@@ -30,10 +30,10 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 | optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned) | 1.5 h|  |||||
 | Domain Driven Design | 3 h |  |||||
 | Agile Methods | 3.0 h |X |-|-|X||
-| Management 3.0 | 3.0 h |X|||||
+| Management 3.0 | 3.0 h |X|-|-|X|Pretty bad text-driven slides. Need focus, images and must be shorter.|
 | Cloud | 1.0 h |X|||||
 | Digitization | 0.5 h |X|||||
-| Remote Working |1.5 h|X|||X||
+| Remote Working |1.5 h|X|-|-|X||
 | Ethics of software development | 0.5 h |  |||||
 Sum: __33.5 h__
 

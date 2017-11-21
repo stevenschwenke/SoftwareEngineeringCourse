@@ -4,10 +4,12 @@
 - however: experiences and knowledge not sufficient for future => situation nothing new, nothing special - IT has to learn like everything else
 - no global definition
 - Uwe Friedrichsen: "Digitization means that IT is an integral part of business products and services."
+![alt text](itIsBusiness.png)
 - = "IT is business and business is IT"
 
 ## new expectations enforce new solutions
 ### Expectations
+![alt text](expectations.png)
 - User Experience
     - in-house applications have to be sexy, too!
     - applications visible to the "outside world" of course too!
@@ -29,6 +31,7 @@
     - possible that long-planned, long-developed, expensive solutions neglected by customers => one solution: Agility.  
 
 ### Solutions
+![alt text](solutions.png)
 - Short Iterations
     - Agility
     - fast feedback
@@ -43,12 +46,14 @@
     - [Canary Releases](https://martinfowler.com/bliki/CanaryRelease.html) (rolling out new features to some users, only after testing to all users) to chosen, "friendly" key users
 
 ### Conclusion
+![alt text](noSilverBullet.png)
 - no silver bullet
 - simply doing what has been done before will not solve these problems
 - completely new concepts, architectures and approaches needed
 - good news: most of the technology already exists, but has to be used in conjunction with each other
 
 ## Most important factor: speed
+![alt text](speed.png)
 - no more customer loyalty, user experience most important
 - case study: Kodak
     - founded 1892
@@ -70,6 +75,7 @@
 - soft skills absolutely needed by every developer!
 
 ## IT = core of every company
+![alt text](itCoreCompany.png)
 - requirement: IT as consultant for core business (generating ideas, developing infrastructure and corporate architectures)
 - structure of companies have to change to move IT into every aspect of the business
 - examples for companies without real product, just IT:
@@ -80,6 +86,8 @@
 - software updates = new functionality, even without hardware change (Tesla)
 
 ## Rapid Prototyping & MVP
+![alt text](MVP_v2.jpg)
+(image by [Fred Voorhorst](http://www.expressiveproductdesign.com/minimal-viable-product-mvp/))
 - new strategy: probe -> sense -> respond
 - one example for this new strategy: Prototyping = develop test version of a product to gain insight, not to deliver finished product
 - reduce complexity of product to absolute minimum
@@ -87,6 +95,7 @@
 - MVP
     = minimal viable product 
     = drastically reduced versions of final product, but usable (Tesla Roadster, first IPhone)
+    - Scrum and other agile methods build a Minimum Viable Product:
     - "that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort"
 - important to have fast and direct feedback from actual customers (feedback-loop)
 - learning fast = only way to win

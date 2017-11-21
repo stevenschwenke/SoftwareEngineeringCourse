@@ -34,7 +34,7 @@
 # Minimum viable product
 
 ---
-![alt text](MVP_v2.jpg)
+![alt text](../15_digitization/MVP_v2.jpg)
 (image by [Fred Voorhorst](http://www.expressiveproductdesign.com/minimal-viable-product-mvp/))
 
 ---

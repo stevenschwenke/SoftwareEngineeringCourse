@@ -69,13 +69,6 @@
         - comparison between teams not possible (story of competitor who had two times the story points we had, hence loss of project)
         - often used metric for fixed price contracts, but very problematic      
 
-
-# Minimum viable product
-- Scrum and other agile methods build a Minimum Viable Product:
-![alt text](MVP_v2.jpg)
-(image by [Fred Voorhorst](http://www.expressiveproductdesign.com/minimal-viable-product-mvp/))
-
-
 # Scrum vs Kanban
 ![waterfall vs agile teaser](scrum-kanban_teaser.png)
 - get full cheat sheet at [Development that pays](http://www.developmentthatpays.com/cheatsheets)

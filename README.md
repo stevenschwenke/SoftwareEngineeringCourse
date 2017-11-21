@@ -22,7 +22,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 | Software Engineering from 10.000 ft| 0.75 h | X|-|-|X||
 | Models of software development | 1.5 h|  |||||
 | Refactoring | 3.0 h | |||||
-| Legacy Systems and how to deal with them | 6 h | X |-|-|-|see Awesome Java Code workshop|
+| Legacy Systems and how to deal with them | 6 h | X |-|-|X|see Awesome Java Code workshop|
 | Patterns and paradigms of programming | 3 h |  |||||
 | Case Study: UI Technology JavaFX | 1.5 h ||||||
 | Modern Java Architecture Frameworks | 1.5 h|  |||||
@@ -32,7 +32,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 | Agile Methods | 3.0 h |X |-|-|X||
 | Management 3.0 | 3.0 h |X|-|-|X|Pretty bad text-driven slides. Need focus, images and must be shorter.|
 | Cloud | 1.0 h |X|||||
-| Digitization | 0.5 h |X|||||
+| Digitization | 0.5 h |X|-|-|X||
 | Remote Working |1.5 h|X|-|-|X||
 | Ethics of software development | 0.5 h |  |||||
 Sum: __33.5 h__

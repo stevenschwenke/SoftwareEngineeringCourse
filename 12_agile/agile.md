@@ -44,13 +44,8 @@
     - openness
     - commitment (don't promise something you know you cannot deliver)
     - respect
-- the following image will be developed live:
+- Scrum in one image: 
 ![alt text](Scrum_in_a_nutshell_thumbnail.png) (source: [agile42](http://www.agile42.com/en/agile-info-center/scrum-cheat-sheet/agile.md))
-- standard questions for retrospective:
-    - What went well?
-    - What do we want to improve?
-    - What did we learn?
-    - What is it that we don't understand yet? (Joseph Pelrine)
 - implementation of "inspect" in Scrum:
     - Daily = inspect work of last 24 hours
     - Review = inspect work of last sprint
@@ -61,6 +56,11 @@
     - Review: 2 hours
     - Retro: 2 hours
     - = 10.5h / sprint = <14% of time of sprint (without grooming meeting!)
+- standard questions for retrospective:
+    - What went well?
+    - What do we want to improve?
+    - What did we learn?
+    - What is it that we don't understand yet? (Joseph Pelrine)
 - velocity
     - = amount of story points of finished user stories per sprint
     - in theory: good metric for planning

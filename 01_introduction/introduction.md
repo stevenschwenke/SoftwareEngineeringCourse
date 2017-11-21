@@ -1,6 +1,11 @@
 <!-- page_number: true -->
 <!-- footer: Introduction -->
 
+# Software Engineering SoSe 2018
+# Introduction
+
+---
+
 # Steven Schwenke
 - software craftsman with heart and soul
 - computer science in Magdeburg

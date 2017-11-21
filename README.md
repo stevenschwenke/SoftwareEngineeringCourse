@@ -29,7 +29,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 | Persistence | 1.5 h|  |||||
 | optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned) | 1.5 h|  |||||
 | Domain Driven Design | 3 h |  |||||
-| Agile Methods | 3.0 h |X |||||
+| Agile Methods | 3.0 h |X |-|-|X||
 | Management 3.0 | 3.0 h |X|||||
 | Cloud | 1.0 h |X|||||
 | Digitization | 0.5 h |X|||||

@@ -1,3 +1,6 @@
+<!-- page_number: true -->
+<!-- footer: Software engineering from 10.000ft -->
+
 # Software engineering from 10.000ft
 
 ---

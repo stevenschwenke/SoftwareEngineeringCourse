@@ -338,6 +338,67 @@ to
 - = "foreign methods times x", but in a new class
 - either subclassing or wrapping unmodifiable class
 
+## Chapter 8: Organizing Data
+### Self encapsulate field
+- when direct access to a field is to be avoided, only use getter and setter to access field
+- general discussion between "classes may access their fields directly" vw "every access must happen through accessor-methods"
+
+### Replace data value with object
+- when existing data item needs additional data or behavior, turn it into an object
+- early in development: simple facts represented as simple data items, often as String. Later extension of these into objects with more attributes
+
+### Change value object to reference object
+- often, objects can be devided in value objects (money, time) and reference objects (customer, contract)
+- example: order has cusomter, coded as String. Hence, there are multiple customer-objects that are the same person. If that is to be changed, a new object _Customer_ has to be created. 
+
+### Change reference object to value object
+- same as above, just the other way around
+- value objects are easier to work with
+- value objects should be immutable
+
+### Replace array with object
+- not read in detail, because Arrays are outdated for such tasks
+
+### Duplicate observed data
+- when data only available in GUI component, create model class that represents data and is synchronised with GUI component. If GUI framework doesn't support model objects, duplicate data and synchronise them..
+
+### Change unidirectional association to bidirectional
+- given two classes with an unidirectional association that doesn't support new need to navigate from both classes to the other one, add reference
+- attention: this is a cyclic dependency!
+- generally use bidirectional associations only when needed
+
+### Change bidirectional association with unidirectional
+- same as above, just other way around
+
+### Replace magic number with symbolic constant
+- replace literal number with new constant with meaningful name
+- for example replace _9.81_ with _GRAVITATIONAL_CONSTANT_
+
+### Encapsulate field
+- make public field private and provide accessors
+- first step towards objects that encapsulate knowledge with methods that use the attributes of this object
+
+### Encapsulate collection
+- make method that returns a collection return a read-only view + provide add/remove-methods
+- enforces hiding of implementation details and gives class power over how collection is used
+
+### Replace record with data class
+- "record" = database record or data structure from legacy system
+- convert record into (dumb) data class
+
+### Replace type code with class
+- example: _Person_ having a _bloodGroup_ (int) that encodes the real blood groups (0, A, B, AB). Should be refactored to enum _BloodGroup_ + _Person_ should use this new enum
+
+### Replace type code with subclasses
+- same as above, just with inheritance
+- example: _Employee_ having a _type_ of int, showing if this _Employee_ is either an _Engineer_ or a _Salesman_. Solution: Create inheritance, so the type of the _Employee_ is shown in its object type.
+
+### Replace type code with state / strategy
+- same example as above, other solution: replace code with state object: _Employee_ has reference to (new) _EmployeeType_, with is (via polymorphism) either an _Engineer_ or a _Salesman_
+
+### Replace subclass with fields
+- existing subclasses vary only in methods that return constant data => remove subclasses, replace them with fields 
+
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck
 

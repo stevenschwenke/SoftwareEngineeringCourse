@@ -68,6 +68,7 @@
         - as always, no guarantee to finish promised stories
         - comparison between teams not possible (story of competitor who had two times the story points we had, hence loss of project)
         - often used metric for fixed price contracts, but very problematic      
+- Srumfall, Waterscrum, Waterscrumfall
 
 # Scrum vs Kanban
 ![waterfall vs agile teaser](scrum-kanban_teaser.png)

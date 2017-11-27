@@ -360,7 +360,9 @@ to
 - not read in detail, because Arrays are outdated for such tasks
 
 ### Duplicate observed data
-- when data only available in GUI component, create model class that represents data and is synchronised with GUI component. If GUI framework doesn't support model objects, duplicate data and synchronise them..
+- when data only available in GUI component, create model class that represents data and is synchronised with GUI component. If GUI framework doesn't support model objects, duplicate data and synchronise them.
+- today known as model
+- in JavaFX: binding instead of Observer
 
 ### Change unidirectional association to bidirectional
 - given two classes with an unidirectional association that doesn't support new need to navigate from both classes to the other one, add reference
@@ -398,6 +400,56 @@ to
 
 ### Replace subclass with fields
 - existing subclasses vary only in methods that return constant data => remove subclasses, replace them with fields 
+
+## Chapter 9: Simplifying conditional expressions
+- make complicated if-then-else easier to read
+
+### Decompose Conditional
+- in complicated conditional, extract methods from if-, then- and else-part
+- thereby highlighting the conditional and separating "why" from "how"
+- supports "same level of abstraction in one method"
+
+### Consolidate Conditional Expression
+- combine sequence of conditional tests with same result into one test
+
+
+    double disabilityAmount() {
+        if (_seniority < 2) return 0;
+        if (_monthsDisabled > 12) return 0;
+        if (_isPartTime) return 0;
+        // compute the disability amount
+        
+     to
+        
+     double disabilityAmount() {
+        if (isNotEligableForDisability()) return 0;
+        // compute the disability amount
+
+### Consolidate duplicate conditional fragments
+- move code that is in all branches of conditional expression outside of conditional
+- also valid for exceptions
+
+### Remove control flag
+- Use break or return instead of boolean control flag
+- example: _while_ using a variable which is set to _false_ in the loop. This can be replaced by return.
+- "one entry point, one exit point" from old rules of structured programming, don't necessarily apply anymore
+
+### Replace nested conditional with guard clauses
+- when complex conditional behavior obscures normal path of execution, insert _if - return_ for exceptional behavior and a "normal" return for normal behavior.
+
+### Replace conditional with polymorphism
+- remove conditional with different behavior, depending on type of object, in favor of polymorphism
+- one fundamental promise of polymorphism: avoid writing explicit conditional when object behavior varies depending on types
+- each object overwrites method (or doesn't if default implementation is sufficient)
+
+### Introduce null object
+- replace null checks with null object
+- create object that represents a neutral null state
+- use object like other, "real" objects
+- null objects never change, hence implement via Singleton
+
+### Introduce assertion
+- basically, use _Assert.isTrue()_ for parts of the code that assume things
 
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck

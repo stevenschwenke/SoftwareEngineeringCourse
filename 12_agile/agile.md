@@ -1,6 +1,6 @@
 # Waterfall
 ![waterfall vs agile teaser](waterfall-agile_teaser.png)
-- see __left side and center__ of [Waterfall vs Agile CheatSheet (by Development that pays)](http://www.developmentthatpays.com/cheatsheets)
+- see __left side and center__ of [Waterfall vs Agile CheatSheet (by Development that pays)](DevelopmentThatPays-WaterfallVsAgile-CheatSheet-1-5.pdf)
 
 
 - early days of creating software: no best practices, many different approaches
@@ -32,7 +32,7 @@
 (Jurgen Appelo, https://www.flickr.com/photos/jurgenappelo/5201267505)
 - empirical process control: transparency + inspect + adapt. Basically: "get knowledge from your experiences and adapt your actions"
 ![waterfall vs agile teaser](waterfall-agile_teaser.png)
-- see __center and right side__ of [Waterfall vs Agile CheatSheet (by Development that pays)](http://www.developmentthatpays.com/cheatsheets)
+- see __center and right side__ of [Waterfall vs Agile CheatSheet (by Development that pays)](DevelopmentThatPays-WaterfallVsAgile-CheatSheet-1-5.pdf)
 - most-encountered real-world problem: waterfall-management cannot accept iterative process that simply cannot enforce a deadline.
 
 # Scrum
@@ -72,12 +72,15 @@
 
 # Scrum vs Kanban
 ![waterfall vs agile teaser](scrum-kanban_teaser.png)
+- [full pdf](DevelopmentThatPays-ScrumVsKanban-CheatSheet-1_5.pdf)
 - get full cheat sheet at [Development that pays](http://www.developmentthatpays.com/cheatsheets)
 - have a look at those youtube videos:
     - [Scrum vs. Kanban: "You talk. We work."](https://youtu.be/9Jgu1BlTlSc)
     - [Scrum vs. Kanban II: Kanban Kaos](https://youtu.be/n2ZrUQNwrUk)
     - [Scrum vs. Kanban III: Kanban for the win!](https://youtu.be/sOlFPi5xJqQ)
 
+# Acknowledgements
+A huge thank you to [Gary Straughan](http://www.developmentthatpays.com/about), who allowed me to put his awesome cheat sheets in this repository.  
 
 # Sources
 - [CheatSheets by Development that pays](http://www.developmentthatpays.com/cheatsheets)

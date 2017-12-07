@@ -539,6 +539,39 @@ to
 - again, adding inheritance may break Liskov Substitution Principle 
 
 
+## Chapter 12: Big refactorings
+- refactorings take time! "Months or years"
+- big refactorings often in parallel to day-to-day work like adding features, because total stop of development to finish all refactorings not possible
+- "making the world a little safer for your program every day"
+- also, big refactorings need agreement and commitment by whole development team -> communication is key!
+- finish bigger refactorings, don't let them stay half-finsihed
+
+### tease apart inheritance
+- inheritance hierarchy doing two jobs at once is better divided into two separate hierarchies, using delegation to call each other
+- example:
+    - _Deal_ as superclass has _ActiveDeal_ and _PassiveDeal_ as subclasses
+    - _ActiveDeal_ has _TabularActiveDeal_ ans subclass, _PassiveDeal_ has _TabularPassiveDeal_ as subclass
+    - two concerns merged into one hierarchy: 
+        - business logic: There are two forms of deals
+        - presentation style: There are two styles (tabular and single)
+    - solution: two hierarchies, one for business logic, one for presentation
+ 
+### Convert procedural design to objects
+- code written in a procedural style should be refactored to be using objects
+- example:
+    - _OrderCalculator_ with methods _determinePrice(Order)_ and _determineTaxes(Order)_ uses Objects _Order_ and _OrderLine_, but in a procedural way
+    - better solution: move methods to _Order_ and _OrderLine_ because that's where they belong to
+- often result of outdated coding style
+
+### Separate domain from presentation
+- GUI classes with domain logic should be refactored so the logic stays in a separate layer
+- example not cited because that's pretty easy to understand
+
+### Extract hierarchy
+- overloaded class with many conditional statements should be refactored into hierarchy where subclasses represent special cases
+- example: single class _BillingScheme_ should be superclass of hierarchy with _BusinessBillingScheme_, _RedientialBilingScheme_ and _DisabilityBillingScheme_ as subclasses
+    
+
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck
 

@@ -451,6 +451,66 @@ to
 ### Introduce assertion
 - basically, use _Assert.isTrue()_ for parts of the code that assume things
 
+## Chapter 10: Making method calls simpler
+- interfaces (as in APIs) = key skill
+
+### Rename Method
+- rename method so its name reveals its purpose
+
+### Add / Remove Parameter => nothing special about it
+
+### Separate Query from modifier
+- method that changes state of an object __and__ return an object should be separated into two methods
+- step towards pure functions because query-part of method gets moved to own method
+
+### Parameterize method
+- several methods doing nearly the same thing could be merged into one, parameterized method
+- example: _fivePercentRaise()_ + _tenPercentRaise()_ = _raise(percentage)_
+
+### Replace parameter with explicit methods
+- opposite of above
+
+### Preserve whole object
+- method calls that take multiple attributes from the same object could take the whole object instead
+- upside: method could use other attributes of passed object without changing its signature
+- downside: new dependency on object instead of just its fields   
+- alternative approach: move method to object that provides the attributes used by the method (if that makes sense)
+
+### Replace parameter with method
+- instead of passing the result from a method call to a method, let that method call the other method itself
+- upside: shorter parameter list with same functionality
+
+### Introduce parameter object
+- encapsulate multiple parameters into a parameter object, if they belong together
+- great example: _startDate_ + _endDate_ = _DateRange_
+- single classes = "data clump" that should explicitly be defined, for example with a new object
+- further benefit: behavior regarding the common attributes can be moved into the new object, creating _one_ place for the defined behavior and the necessary data
+
+### Remove setting method
+- remove setter if attribute shouldn't be altered after creation time
+- good idea: additionally, declare field _final_
+
+### Hide method
+- generally: apply encapsulation and use most restrictive access modifier
+
+### Replace constructor with factory method
+- if more than simple construction is done in a constructor, it should be replaced with a factory method
+
+### Encapsulate downcast
+- basically: "Use the right types!"
+- chapter became obsolete with introduction of generics
+
+### Replace error code with exception
+- use exceptions instead of error codes
+- chapter also obsolete; haven't seen error codes in years (and only then from a ... saisoned developer)
+
+### Replace exception with test
+- let calling method check for a condition instead of having the called method throw an exception
+
+  
+
+
+
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck
 

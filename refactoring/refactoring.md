@@ -508,7 +508,35 @@ to
 - let calling method check for a condition instead of having the called method throw an exception
 
   
+## Chapter 11: Dealing with generalization
+- bunch of refactorings concerning inheritance
 
+### pull up field / method
+- if all subclasses have same fields / methods, move them to superclass
+- attention: this may break Liskov Substitution Principle!
+
+### Push down field / method
+- opposite from above
+
+### Extract subclass / superclass
+- move features used only in some instances to a new sub- / superclass
+- own opinion: bad refactoring because inheritance is not meant to be used for moving features and behaviors around, see Liskov Substitution Principle
+  
+### extract interface
+- explicitly declare subset of a class' responsibility to interface to be used by other classes
+
+### Collapse hierarchy
+- merge super- and subclasses, that don't have much differences, together into one class
+
+### Form template method
+- given an inheritance hierarchy, if several methods perform the same steps with slightly different implementation, extract a template method for the algorithm and let subclasses provide methods for their special behavior
+
+### Replace inheritance with delegation
+- if subclass uses only part of superclasses interface or doesn't inherit data, remove inheritance and add delegation to former superclass
+
+### Replace delegation with inheritance
+- opposite from above
+- again, adding inheritance may break Liskov Substitution Principle 
 
 
 ## Sources

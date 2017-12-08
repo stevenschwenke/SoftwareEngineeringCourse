@@ -570,7 +570,31 @@ to
 ### Extract hierarchy
 - overloaded class with many conditional statements should be refactored into hierarchy where subclasses represent special cases
 - example: single class _BillingScheme_ should be superclass of hierarchy with _BusinessBillingScheme_, _RedientialBilingScheme_ and _DisabilityBillingScheme_ as subclasses
-    
+
+## Chapter 15: Putting it all together
+- refactoring = learnable skill
+
+### get used to picking a goal
+- find what makes your code easier to read and understand and march towards that exact goal
+
+### stop when you are unsure
+- if changes may break existing functionality or goal already reached, stop!
+ 
+### backtrack
+- when refactoring, force yourself to run tests after each step
+- if tests haven't been run and error occurs: backtrack to find exact change that caused the error
+
+### Duets / Pair Programming
+- self-explanatory
+
+### Nibble on problem instead of huge refactoring
+- huge refactorings cause more problems
+- small changes, brought fast to production, will make errors visible faster
+
+### Don't mix bugfixing and refactoring
+- even when wrong behavior of code obvious when refactoring, don't fix it
+- create defect for later
+- leave functionality of code the same for now
 
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck

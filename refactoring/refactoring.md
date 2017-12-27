@@ -1,4 +1,5 @@
 # Refactoring
+![alt text](refactoring.png)
 ## Book "Refactoring" by Martin Fowler
 - one of __the__ sources for the topic
 - "Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure. It is a disciplined way to clean up code that minimizes the chances of introducing bugs. In essence when you refactor you are improving the design of the code after it has been written."
@@ -8,6 +9,11 @@
 - also: refactoring steps in book described in detail what today's IDEs can do automated. Some errors author made are impossible to do now, except when ignoring capabilities of IDEs and doing everything by hand.
  
 ## Simple Refactorings in Chapter 1
+![alt text](simpleRefactorings.png)
+- _hint for speaker_: 
+    - _show refactoring step by step by first having a look at the result and then executing the refactoring._ 
+    - _Use this opportunity to show shortcuts and IDE functionality._
+    - _Later refactorings can become complicated. Maybe just showing diff-view is enough => explain diff-view!_
 - Following examples from the book plus [tobyweston/Refactoring-Chapter-1](https://github.com/tobyweston/Refactoring-Chapter-1) (attention: some minor naming and syntax changes in comparison to the book)
 - each commit is a refactoring from the book
 - first step of refactoring: add a solid test base, for example via behavior tests (record given behavior of a method / class without thinking about what it really should do too much) - not done in the book however
@@ -19,7 +25,7 @@
 - [extract method](https://github.com/tobyweston/Refactoring-Chapter-1/commit/8e249c8954d92aebabf304d875ac6f597977b307)
 
 ### Refactoring: Renaming
-- (not covered in Github-repo)
+- not covered in Github-repo. However, extracted method above is propsed as "getAmount" by IDE. Rename it to "amountFor(Rental)".
 - renaming = one of the 
     - most basic refactorings; very easy to do while just reading the code
     - hardest things to do in software development; always take your time to find a great name
@@ -32,7 +38,7 @@
 
 ### Refactoring: Move Method
 - new method amountFor in Customer uses information from Rental, but not from Customer = encapsulation error
-- IntelliJ IDEA proposes class Rental intelligently when "move method" refactoring is called 
+- IntelliJ IDEA proposes class Rental intelligently when "move method" refactoring is called. Also, parameter is removed because method was moved into the parameter. 
 - [move method](https://github.com/tobyweston/Refactoring-Chapter-1/commit/15c340ea73ac30b6fb41f607e6328ec48b87e849)
 
 ### Refactoring: Replace Temporary Variables with Query
@@ -70,21 +76,32 @@
 - change can be viewed as a [state pattern](https://en.wikipedia.org/wiki/State_pattern) or a [strategy pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
 
 ## Chapter 2: Principles in Refactoring
-### General thoughts 
+![alt text](principlesInRefactoring.png) 
+
+### refactor, don't fix!
 - refactoring != adding functions. You should be aware of which of these you are doing right now.
-- refactoring ensures changeability
-- the less code, the better
+- resist temptation to do both refactoring and changing functionality in one step
+- when encountering an error, create defect for future fixing
+
+### Refactor to readability
 - most important aspect of code: should be readable because it gets read much more than it gets written
 - also, refactoring can help understand unfamiliar code. Kind of "active reading".
+
+### Refactoring = investment
 - refactoring helps writing good code more quickly - on the long run! In the short run, it takes more time.
 - Don't plan a "refactoring sprint", but refactor after every couple of commits, all the time!
 - Refactoring code from others doesn't mean they are not able to write great code, just that you see things differently and can improve the code because of this outsiders position.
 - hard decision: tell or don't tell the customer about refactoring issues? Depends.
+
+### Keep environment in mind
 - limitations to refactoring: refactoring already published interfaces will cause problems in code you can't reach. Especially important in framework- and toolkit-code. Can happen with simple refactorings like change method name. Solution: Keep old interface around for a while, mark it with @Deprecated (with a short explanation!). Don't copy method body, but let old implementation call the new one.
 - refactoring and design: instead of big upfront-design, design thoughts should be made to a specific degree (upfront), but the rest should be done via refactoring. Do not find __the__ design solution, but __a__ reasonable one.
+
+### No premature optimization
 - very interesting story on page 58/59: about speculation in optimization of systems: "The lesson is: Even if you know exactly what is going on in your system, measure performance, don't speculate. You'll learn something, and nine times out of ten, it won't be that you were right!"     
 
 ## Chapter 3: Bad smells in code
+![alt text](codeSmells.png)
 - "bad smell" = code that somehow got bad over time in one aspect or another
 - no precise criteria, informed human intuition is still the best
 
@@ -134,28 +151,13 @@
 - don't use primitives where value objects can be used
 - especially small objects like ZIP codes or telephone numbers
 
-### Switch Statements
-- problem with switches: duplication (because new case forces changes in every switch all over the code)
-- solution: polymorphism  
-
 ### Parallel Inheritance Hierarchies
 - creating subclasses of one class forces creation of subclasses of another type
 - solution: use move method and move field to get rid of dependency between the two hierarchies
 
-### Lazy Class
-- too small classes should be deleted
-
 ### Speculative Generality
 - adding hooks and special cases to handle possible future requirements that may never be implemented
 - make code hard to understand and change
-
-### Temporary Field
-- = using fields to store data globally that should have been stored locally via parameter or normal variables
-- solution: extract class for the code that actually uses the variables
-
-### Message Chains
-- = long line of getter-calls
-- solution: extract and move method
 
 ### Middle Man
 - = classes that have very similar interfaces to the classes they refer calls to
@@ -172,26 +174,15 @@
 ### Refused Bequest
 - = subclasses that don't use all methods from parent class
 - solution: Replace Inheritance with Delegation
+- in general: favor composition over inheritance!
 
 ### Comments
 - for itself not a bad smell, but indicators for such
 - solutions: remove real bad smell, then remove comments because they aren't needed anymore  
 
-## Chapter 4: Building Tests
-- "solid tests" = precondition for refactoring
-- tests can be fun to write!
-- foundations of TDD
-- obsolete example code for JUnit - ignore that
-- very useful thought: When fixing a bug, first write at least one test that exposes the bug 
-- writing test should be risk-driven: Write test for code that most likely spawns bugs in the future
-- test method for boundaries in their arguments and special conditions = "playing the enemy"
-- also test exceptions
-
-## Chapter 5: Toward a catalog of refactorings
-- explanation of structure of refactorings
-- "finding references" = completely obsolete
-
 ## Chapter 6: Composing methods
+![alt text](theRefactorings.png)
+- _hint for speaker: Show examples from the book. Some of them easy to do in modern IDEs, if that's the case, show that._
 - main problem: too long methods
 - solution: extract method
 - assigning to parameters always bad idea
@@ -204,7 +195,7 @@
 
 ### Inline method
 - methods body easy enough to understand => remove method + put body in callers
-- before inlining, check if method isn't polymorphic, i.e. that not class overrides it
+- before inlining, check if method isn't polymorphic, i.e. that no class overrides it
 
 ### Inline temp 
 - = remove temporal variable with actual call to method
@@ -226,6 +217,7 @@
 ### Remove assignments to parameters
 - assignments to parameters should be replaced by assignments to temporary variables
 - if parameters are objects, these objects change outside of the scope of the method => leads to error-prone and hard to understand code
+- important step towards pure functions 
 #### Pass by value in Java
 (following example taken from the book _Refactoring_)
 
@@ -348,16 +340,13 @@ to
 - early in development: simple facts represented as simple data items, often as String. Later extension of these into objects with more attributes
 
 ### Change value object to reference object
-- often, objects can be devided in value objects (money, time) and reference objects (customer, contract)
-- example: order has cusomter, coded as String. Hence, there are multiple customer-objects that are the same person. If that is to be changed, a new object _Customer_ has to be created. 
+- often, objects can be divided in value objects (money, time) and reference objects (customer, contract)
+- example: order has customer, coded as String. Hence, there are multiple customer-objects that are the same person. If that is to be changed, a new object _Customer_ has to be created. 
 
 ### Change reference object to value object
 - same as above, just the other way around
 - value objects are easier to work with
 - value objects should be immutable
-
-### Replace array with object
-- not read in detail, because Arrays are outdated for such tasks
 
 ### Duplicate observed data
 - when data only available in GUI component, create model class that represents data and is synchronised with GUI component. If GUI framework doesn't support model objects, duplicate data and synchronise them.
@@ -540,11 +529,13 @@ to
 
 
 ## Chapter 12: Big refactorings
+![alt_text](hugeRefactorings.png)
+- simple refactorings shown before are just single steps of way larger refactorings 
 - refactorings take time! "Months or years"
 - big refactorings often in parallel to day-to-day work like adding features, because total stop of development to finish all refactorings not possible
 - "making the world a little safer for your program every day"
 - also, big refactorings need agreement and commitment by whole development team -> communication is key!
-- finish bigger refactorings, don't let them stay half-finsihed
+- finish bigger refactorings, don't let them stay half-finished
 
 ### tease apart inheritance
 - inheritance hierarchy doing two jobs at once is better divided into two separate hierarchies, using delegation to call each other
@@ -572,6 +563,7 @@ to
 - example: single class _BillingScheme_ should be superclass of hierarchy with _BusinessBillingScheme_, _RedientialBilingScheme_ and _DisabilityBillingScheme_ as subclasses
 
 ## Chapter 15: Putting it all together
+![putting_it_all_together](puttingItAllTogether.png)
 - refactoring = learnable skill
 
 ### get used to picking a goal
@@ -598,7 +590,3 @@ to
 
 ## Sources
 - Refactoring - Improving the design of existing code. Martin Fowler, Kent Beck
-
-## TODO
-- read and add "Refactoring"
-- add content from "Refactoring to Patterns"

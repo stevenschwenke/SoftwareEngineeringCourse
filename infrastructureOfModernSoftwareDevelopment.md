@@ -1,5 +1,5 @@
 - modern IDEs
-- version control (SVN overview, Git in detail)
+- version control (SVN overview, Git in detail, [Git Bisect](https://github.com/pfeuffer/git_bisect_demo))
 - code review tools + [What to look for in a code review](https://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/)
 - code analysis (sonar cube)
 - CI-Server

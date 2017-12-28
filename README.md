@@ -21,7 +21,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 | Introduction & overview | 0.75 h | X|-|-|X|-|
 | Software Engineering from 10.000 ft| 0.75 h | X|-|-|X||
 | Models of software development | 1.5 h|  |||||
-| Refactoring | 3.0 h | |||||
+| Refactoring | 3.0 h | X | X | - | X | - |
 | Legacy Systems and how to deal with them | 6 h | X |-|-|X|see Awesome Java Code workshop|
 | Patterns and paradigms of programming | 3 h |  |||||
 | Case Study: UI Technology JavaFX | 1.5 h ||||||

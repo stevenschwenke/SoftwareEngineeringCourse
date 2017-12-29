@@ -24,7 +24,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 | Refactoring | 3.0 h | X | X | - | X | - |
 | Legacy Systems and how to deal with them | 6 h | X |-|-|X|see Awesome Java Code workshop|
 | Patterns and paradigms of programming | 3 h |  |||||
-| Case Study: UI Technology JavaFX | 1.5 h ||||||
+| Case Study: UI platform JavaFX | 1.5 h | X | X | X | X | - |
 | Modern Java Architecture Frameworks | 1.5 h|  |||||
 | Persistence | 1.5 h|  |||||
 | optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned) | 1.5 h|  |||||

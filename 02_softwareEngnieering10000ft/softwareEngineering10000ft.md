@@ -34,6 +34,7 @@
 - best practices
     - TDD
     - Clean Code
+    - [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) = single responsibility principle + open/closed principle + Liskov Substitution Principle + Interface Segregation Principle + Dependency Inversion
 - tools
     - IDEs
     - version control

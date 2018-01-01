@@ -29,6 +29,30 @@
 
 ---
 
+![alt text](RefactoringComposingMethods.png)
+
+---
+
+![alt text](RefactoringMovingFeatures.png)
+
+---
+
+![alt text](RefactoringOrganizingData.png)
+
+---
+
+![alt text](RefactoringSimplifyingConditionalExpressions.png)
+
+---
+
+![alt text](RefactoringMakingMethodCallsSimpler.png)
+
+---
+
+![alt text](RefactoringGeneralization.png)
+
+---
+
 ![alt_text](hugeRefactorings.png)
 
 ---

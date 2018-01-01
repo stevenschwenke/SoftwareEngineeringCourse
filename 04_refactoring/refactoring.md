@@ -1,5 +1,15 @@
 # Refactoring
 ![alt text](refactoring.png)
+
+## Motivation
+- Imagine driving someone else's car. What is the first thing you do before driving off? => adjusting mirrors, seat and steering wheel. Why? Get the most __information__ while driving (mirrors) + create best situation for you to __work__ the vehicle __safely__.
+- Imagine cat-sitting for a friend during her vacation. All the items needed (canned food, toys, treats etc.) will (hopefully) be placed somewhere you can find them. Why? Help you perform your task __as easy as possible__.
+- Refactoring in code comparable, but much more sophisticated. Additionally to goals above:
+    - changing code so it reflects preferred structures
+    - gain insights when seeing code for the first time
+    - making later changes easier by preparing code
+- situations for refactoring: nearly all of the time!
+
 ## Book "Refactoring" by Martin Fowler
 - one of __the__ sources for the topic
 - "Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure. It is a disciplined way to clean up code that minimizes the chances of introducing bugs. In essence when you refactor you are improving the design of the code after it has been written."
@@ -8,11 +18,13 @@
 - Refactoring = part of developer's everyday life: first refactor, then add new functionality
 - also: refactoring steps in book described in detail what today's IDEs can do automated. Some errors author made are impossible to do now, except when ignoring capabilities of IDEs and doing everything by hand.
  
-## Simple Refactorings in Chapter 1
+## Simple Refactorings 
 ![alt text](simpleRefactorings.png)
+- (Chapter 1 in the book)
 - _hint for speaker_: 
     - _show refactoring step by step by first having a look at the result and then executing the refactoring._ 
     - _Use this opportunity to show shortcuts and IDE functionality._
+    - enable Plugin "Presentation Assistant" to show shortcuts used
     - _Later refactorings can become complicated. Maybe just showing diff-view is enough => explain diff-view!_
 - Following examples from the book plus [tobyweston/Refactoring-Chapter-1](https://github.com/tobyweston/Refactoring-Chapter-1) (attention: some minor naming and syntax changes in comparison to the book)
 - each commit is a refactoring from the book
@@ -75,8 +87,10 @@
 - replace condition with inheritance: [1](https://github.com/tobyweston/Refactoring-Chapter-1/commit/4511529ce748aae80ee1cf2896bc581b991271a8), [2](https://github.com/tobyweston/Refactoring-Chapter-1/commit/445fd49c955d977f5225b8a0f6bfc48cbfd1c8c4)
 - change can be viewed as a [state pattern](https://en.wikipedia.org/wiki/State_pattern) or a [strategy pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
 
-## Chapter 2: Principles in Refactoring
+## Principles in Refactoring
 ![alt text](principlesInRefactoring.png) 
+
+- (Chapter 2 in the book)
 
 ### refactor, don't fix!
 - refactoring != adding functions. You should be aware of which of these you are doing right now.
@@ -100,8 +114,10 @@
 ### No premature optimization
 - very interesting story on page 58/59: about speculation in optimization of systems: "The lesson is: Even if you know exactly what is going on in your system, measure performance, don't speculate. You'll learn something, and nine times out of ten, it won't be that you were right!"     
 
-## Chapter 3: Bad smells in code
+## Bad smells in code
 ![alt text](codeSmells.png)
+
+- (Chapter 3 in the book)
 - "bad smell" = code that somehow got bad over time in one aspect or another
 - no precise criteria, informed human intuition is still the best
 
@@ -180,8 +196,12 @@
 - for itself not a bad smell, but indicators for such
 - solutions: remove real bad smell, then remove comments because they aren't needed anymore  
 
-## Chapter 6: Composing methods
+## Composing methods
 ![alt text](theRefactorings.png)
+
+![alt text](RefactoringComposingMethods.png)
+
+- (Chapter 6 in the book)
 - _hint for speaker: Show examples from the book. Some of them easy to do in modern IDEs, if that's the case, show that._
 - main problem: too long methods
 - solution: extract method
@@ -268,7 +288,9 @@ __Java always uses call-by-value. Objects however are call by reference.__
 - long method using local variables so that extract method is not possible => extract object for method where local variables become fields
 - first step of further refactorings within the new class
 
-## Chapter 7: Moving features between objects
+## Moving features between objects
+![alt text](RefactoringMovingFeatures.png)
+- (Chapter 7 in the book)
 - "Where to put responsibilities?" important question
 
 ### Move method
@@ -330,7 +352,10 @@ to
 - = "foreign methods times x", but in a new class
 - either subclassing or wrapping unmodifiable class
 
-## Chapter 8: Organizing Data
+## Organizing Data
+![alt text](RefactoringOrganizingData.png)
+- (Chapter 8 in the book)
+
 ### Self encapsulate field
 - when direct access to a field is to be avoided, only use getter and setter to access field
 - general discussion between "classes may access their fields directly" vw "every access must happen through accessor-methods"
@@ -390,7 +415,9 @@ to
 ### Replace subclass with fields
 - existing subclasses vary only in methods that return constant data => remove subclasses, replace them with fields 
 
-## Chapter 9: Simplifying conditional expressions
+## Simplifying conditional expressions
+![alt text](RefactoringSimplifyingConditionalExpressions.png)
+- (Chapter 9 in the book)
 - make complicated if-then-else easier to read
 
 ### Decompose Conditional
@@ -441,6 +468,7 @@ to
 - basically, use _Assert.isTrue()_ for parts of the code that assume things
 
 ## Chapter 10: Making method calls simpler
+![alt text](RefactoringMakingMethodCallsSimpler.png)
 - interfaces (as in APIs) = key skill
 
 ### Rename Method
@@ -497,7 +525,9 @@ to
 - let calling method check for a condition instead of having the called method throw an exception
 
   
-## Chapter 11: Dealing with generalization
+## Dealing with generalization
+![alt text](RefactoringGeneralization.png)
+- (Chapter 11 in the book)
 - bunch of refactorings concerning inheritance
 
 ### pull up field / method
@@ -528,8 +558,10 @@ to
 - again, adding inheritance may break Liskov Substitution Principle 
 
 
-## Chapter 12: Big refactorings
+## Big refactorings
 ![alt_text](hugeRefactorings.png)
+
+- (Chapter 12 in the book)
 - simple refactorings shown before are just single steps of way larger refactorings 
 - refactorings take time! "Months or years"
 - big refactorings often in parallel to day-to-day work like adding features, because total stop of development to finish all refactorings not possible
@@ -562,8 +594,9 @@ to
 - overloaded class with many conditional statements should be refactored into hierarchy where subclasses represent special cases
 - example: single class _BillingScheme_ should be superclass of hierarchy with _BusinessBillingScheme_, _RedientialBilingScheme_ and _DisabilityBillingScheme_ as subclasses
 
-## Chapter 15: Putting it all together
+## Putting it all together
 ![putting_it_all_together](puttingItAllTogether.png)
+- (Chapter 15 in the book)
 - refactoring = learnable skill
 
 ### get used to picking a goal

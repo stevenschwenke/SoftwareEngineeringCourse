@@ -1,7 +1,7 @@
 # Refactoring
-![alt text](refactoring.png)
+![alt text](images/refactoring.png)
 
-## Motivation
+## 1. Motivation
 - Imagine driving someone else's car. What is the first thing you do before driving off? => adjusting mirrors, seat and steering wheel. Why? Get the most __information__ while driving (mirrors) + create best situation for you to __work__ the vehicle __safely__.
 - Imagine cat-sitting for a friend during her vacation. All the items needed (canned food, toys, treats etc.) will (hopefully) be placed somewhere you can find them. Why? Help you perform your task __as easy as possible__.
 - Refactoring in code comparable, but much more sophisticated. Additionally to goals above:
@@ -10,7 +10,7 @@
     - making later changes easier by preparing code
 - situations for refactoring: nearly all of the time!
 
-## Book "Refactoring" by Martin Fowler
+## 2. Book "Refactoring" by Martin Fowler
 - one of __the__ sources for the topic
 - "Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure. It is a disciplined way to clean up code that minimizes the chances of introducing bugs. In essence when you refactor you are improving the design of the code after it has been written."
 - book written in 1999, when agile methods have not become that popular. Hence: improving existing code step by step new thing
@@ -18,8 +18,8 @@
 - Refactoring = part of developer's everyday life: first refactor, then add new functionality
 - also: refactoring steps in book described in detail what today's IDEs can do automated. Some errors author made are impossible to do now, except when ignoring capabilities of IDEs and doing everything by hand.
  
-## Simple Refactorings 
-![alt text](simpleRefactorings.png)
+## 3. Simple Refactorings 
+![alt text](images/simpleRefactorings.png)
 - (Chapter 1 in the book)
 - _hint for speaker_: 
     - _show refactoring step by step by first having a look at the result and then executing the refactoring._ 
@@ -79,16 +79,16 @@
 - BAD IDEA: movies will switch from NewReleaseMovie to some other category
 - alternative: (new) classes RegularPrice, ChildrensPrice, NewReleasePrice all extend Price, which is used by Movie. That way, category of movie can be changed by simply switching to a new price.
 
-![alt text](usingInheritanceOnMovie.png)
-![alt text](usingTheStatePatternOnMovie.png)
+![alt text](images/usingInheritanceOnMovie.png)
+![alt text](images/usingTheStatePatternOnMovie.png)
   
 - [create new price classes](https://github.com/tobyweston/Refactoring-Chapter-1/commit/a0d35118b90c8a2ec2a4dd601d2dd73f9ae727ad)
 - [use new inheritance in calculation](https://github.com/tobyweston/Refactoring-Chapter-1/commit/c6e70880eae6c0867044b60e016ee0277fafcf8d)
 - replace condition with inheritance: [1](https://github.com/tobyweston/Refactoring-Chapter-1/commit/4511529ce748aae80ee1cf2896bc581b991271a8), [2](https://github.com/tobyweston/Refactoring-Chapter-1/commit/445fd49c955d977f5225b8a0f6bfc48cbfd1c8c4)
 - change can be viewed as a [state pattern](https://en.wikipedia.org/wiki/State_pattern) or a [strategy pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
 
-## Principles in Refactoring
-![alt text](principlesInRefactoring.png) 
+## 3. Principles in Refactoring
+![alt text](images/principlesInRefactoring.png) 
 
 - (Chapter 2 in the book)
 
@@ -114,8 +114,8 @@
 ### No premature optimization
 - very interesting story on page 58/59: about speculation in optimization of systems: "The lesson is: Even if you know exactly what is going on in your system, measure performance, don't speculate. You'll learn something, and nine times out of ten, it won't be that you were right!"     
 
-## Bad smells in code
-![alt text](codeSmells.png)
+## 4. Bad smells in code
+![alt text](images/codeSmells.png)
 
 - (Chapter 3 in the book)
 - "bad smell" = code that somehow got bad over time in one aspect or another
@@ -196,10 +196,10 @@
 - for itself not a bad smell, but indicators for such
 - solutions: remove real bad smell, then remove comments because they aren't needed anymore  
 
-## Composing methods
-![alt text](theRefactorings.png)
+## 5. Composing methods
+![alt text](images/theRefactorings.png)
 
-![alt text](RefactoringComposingMethods.png)
+![alt text](images/RefactoringComposingMethods.png)
 
 - (Chapter 6 in the book)
 - _hint for speaker: Show examples from the book. Some of them easy to do in modern IDEs, if that's the case, show that._
@@ -288,8 +288,8 @@ __Java always uses call-by-value. Objects however are call by reference.__
 - long method using local variables so that extract method is not possible => extract object for method where local variables become fields
 - first step of further refactorings within the new class
 
-## Moving features between objects
-![alt text](RefactoringMovingFeatures.png)
+## 6. Moving features between objects
+![alt text](images/RefactoringMovingFeatures.png)
 - (Chapter 7 in the book)
 - "Where to put responsibilities?" important question
 
@@ -352,8 +352,8 @@ to
 - = "foreign methods times x", but in a new class
 - either subclassing or wrapping unmodifiable class
 
-## Organizing Data
-![alt text](RefactoringOrganizingData.png)
+## 7. Organizing Data
+![alt text](images/RefactoringOrganizingData.png)
 - (Chapter 8 in the book)
 
 ### Self encapsulate field
@@ -415,8 +415,8 @@ to
 ### Replace subclass with fields
 - existing subclasses vary only in methods that return constant data => remove subclasses, replace them with fields 
 
-## Simplifying conditional expressions
-![alt text](RefactoringSimplifyingConditionalExpressions.png)
+## 8. Simplifying conditional expressions
+![alt text](images/RefactoringSimplifyingConditionalExpressions.png)
 - (Chapter 9 in the book)
 - make complicated if-then-else easier to read
 
@@ -467,8 +467,8 @@ to
 ### Introduce assertion
 - basically, use _Assert.isTrue()_ for parts of the code that assume things
 
-## Chapter 10: Making method calls simpler
-![alt text](RefactoringMakingMethodCallsSimpler.png)
+## 9. Making method calls simpler
+![alt text](images/RefactoringMakingMethodCallsSimpler.png)
 - interfaces (as in APIs) = key skill
 
 ### Rename Method
@@ -525,8 +525,8 @@ to
 - let calling method check for a condition instead of having the called method throw an exception
 
   
-## Dealing with generalization
-![alt text](RefactoringGeneralization.png)
+## 10. Dealing with generalization
+![alt text](images/RefactoringGeneralization.png)
 - (Chapter 11 in the book)
 - bunch of refactorings concerning inheritance
 
@@ -558,8 +558,8 @@ to
 - again, adding inheritance may break Liskov Substitution Principle 
 
 
-## Big refactorings
-![alt_text](hugeRefactorings.png)
+## 11. Big refactorings
+![alt_text](images/hugeRefactorings.png)
 
 - (Chapter 12 in the book)
 - simple refactorings shown before are just single steps of way larger refactorings 
@@ -594,8 +594,8 @@ to
 - overloaded class with many conditional statements should be refactored into hierarchy where subclasses represent special cases
 - example: single class _BillingScheme_ should be superclass of hierarchy with _BusinessBillingScheme_, _RedientialBilingScheme_ and _DisabilityBillingScheme_ as subclasses
 
-## Putting it all together
-![putting_it_all_together](puttingItAllTogether.png)
+## 12. Putting it all together
+![putting_it_all_together](images/puttingItAllTogether.png)
 - (Chapter 15 in the book)
 - refactoring = learnable skill
 

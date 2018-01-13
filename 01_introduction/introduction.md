@@ -78,6 +78,7 @@
 ---
 
 # Rules
+- Be on time. That's 80% of success later on.
 - Immediately ask questions.
 - Immediately make remarks about possible errors.
 - PRs are welcome!

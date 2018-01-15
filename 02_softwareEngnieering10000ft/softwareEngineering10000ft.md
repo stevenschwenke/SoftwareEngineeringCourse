@@ -44,7 +44,23 @@
     - waterfall
     - agile (Scrum, Kanban)
     - project management
-- soft skills - Do yourself a favor and develop them! 
+- soft skills - Do yourself a favor and develop them!
+    - technology = foundation of success in software engineering, but not enough
+    - [The surprising thing Google learned about its employees](https://www.washingtonpost.com/amphtml/news/answer-sheet/wp/2017/12/20/the-surprising-thing-google-learned-about-its-employees-and-what-it-means-for-todays-students/?utm_term=.fa24e279994a)
+    - 7 top characteristics of success:
+        - being a good coach
+        - communicating and listening well
+        - possessing insights into others (including others different values and points of view)
+        - having empathy toward and being supportive of one’s colleagues
+        - being a good critical thinker and problem solver
+        - and being able to make connections across complex ideas
+    - best teams range of soft skills: 
+        - equality
+        - generosity
+        - curiosity toward the ideas of your teammates
+        - empathy
+        - emotional intelligence
+        - emotional safety
 
 ## Software engineering can be handled
 ![alt text](noSilverBullet.png)

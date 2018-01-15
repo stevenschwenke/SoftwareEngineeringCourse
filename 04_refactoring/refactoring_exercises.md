@@ -7,7 +7,7 @@
 
 ## Code smells as a source for refactoring
 1. State and describe 8 of the 16 code smells.
-2. Make a list of as many different code smells in the ugly trivia game.
+2. Make a list of as many different code smells in the ugly trivia game as you can find.
 3. Propose a refactoring for each code smell and describe its implementation.
 
 ## Small Refactorings

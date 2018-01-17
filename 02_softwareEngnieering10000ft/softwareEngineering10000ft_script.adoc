@@ -43,15 +43,23 @@ image::buildingBlocks.png[]
 ** Clean Code
 ** https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)[SOLID] = single responsibility principle + open/closed principle + Liskov Substitution Principle + Interface Segregation Principle + Dependency Inversion
 * tools
-** IDEs
-** version control
-** building tools
-** analysis
+** technical
+*** IDEs
+*** version control
+*** building tools
+*** analysis
+** platforms
+** just "google-driven-development" bad idea
+** however: of course use stackoverflow, GitHub and Google!
+** _show stackoverflow!_
+** important to understand what you googled before applying it
 * processes
 ** waterfall
 ** agile (Scrum, Kanban)
 ** project management
 * soft skills - Do yourself a favor and develop them!
+** important to know how to learn (you should know this by now)
+** tolerance for difficult situations like debugging for 2 days
 ** technology = foundation of success in software engineering, but not enough
 ** https://www.washingtonpost.com/amphtml/news/answer-sheet/wp/2017/12/20/the-surprising-thing-google-learned-about-its-employees-and-what-it-means-for-todays-students/?utm_term=.fa24e279994a[The surprising thing Google learned about its employees]
 *** 7 top characteristics of success:

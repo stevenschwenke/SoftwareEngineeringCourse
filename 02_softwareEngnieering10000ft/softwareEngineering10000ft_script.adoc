@@ -20,8 +20,8 @@ image::architectureComparison.png[]
 - instead of producing / building something: You never know what will be the result and when it will be there
 - => "building" is so fast nowadays, a lot of programmers don't even notice it ("build"-step)
 
-== Building blocks of software engineering
-image::buildingBlocks.png[]
+== Elements of software engineering
+image::elementsOfSoftwareEngineering.png[]
 
 * programming languages
 ** web-ish:

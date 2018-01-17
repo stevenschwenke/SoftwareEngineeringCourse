@@ -19,11 +19,11 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 | Chapter | Date | Topic | length | Content-complete|exercises|test questions|slides|notes|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |1|2018-03-06| Introduction & overview | 0.75 h | X|-|-|X|-|
-|2|2018-03-06| Software Engineering from 10.000 ft| 0.75 h | X|-|-|X||
+|2|2018-03-06| Software Engineering from 10.000 ft| 0.75 h | X|X|-|X|-|
 |3|2018-03-06| Models of software development | 1.5 h|  |||||
-|-|2018-03-13| No lecture because of [Javaland](javaland.eu/)|||||||
+|-|2018-03-13| No lecture because of [Javaland](javaland.eu/)|-|-|-|-|-|-|
 |4|2018-03-20| Refactoring | 3.0 h | X | X | - | X | - |
-|5|2018-03-27 and 2018-04-03| Legacy Systems and how to deal with them | 6 h | X |-|-|X|see Awesome Java Code workshop|
+|5|2018-03-27 and 2018-04-03| Legacy Systems and how to deal with them | 6 h | X |-|-|X|see [Awesome Java Code workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
 |6|2018-04-10| Patterns and paradigms of programming | 3 h |  |||||
 |7|2018-04-17| Case Study: UI platform JavaFX | 1.5 h | X | X | X | X | - |
 |8|2018-04-17| Modern Java Architecture Frameworks | 1.5 h|  |||||

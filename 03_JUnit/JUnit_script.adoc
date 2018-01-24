@@ -1,0 +1,45 @@
+= JUnit
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+image::junit5-logo.png[]
+
+== General
+* current major version: 5
+
+image::repository.png[]
+
+* great source for learning: https://github.com/msg-DAVID-GmbH/JUnit-5-Quick-Start-Guide-with-AssertJ-Spring-TestFX-Mockito[msg DAVID JUnit 5 Start Guide]
+* a lot of different kinds of tests. Most important:
+** unit tests
+** integration tests
+** smoke tests
+* Motivation for writing tests
+** "old understanding": tests as proof for correctness of code
+** more modern view: Test-Driven Development (TDD)
+** exploration tests
+** tests as tool for debugging
+** tests as documentation
+
+== TDD Test Cycle
+
+image::redgreenrefactor.png[]
+
+== Demo
+* demonstration:
+** implementing rules for https://en.wikipedia.org/wiki/Conway's_Game_of_Life[Game of Life] TDD-style in a new project
+** test coverage in general and analysis in IntelliJ IDEA
+
+image::golRules.png[]
+
+== Integration into modern Software Development Infrastructure
+
+image::TravisCI-Full-Color.png[]
+
+* See https://github.com/stevenschwenke/TravisDemo[TravisDemo]
+* intentionally breaking test makes Travis run red
+
+== Conclusion
+*TESTS ARE IMPORTANT!* Write them.

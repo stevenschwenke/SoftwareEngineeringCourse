@@ -1,0 +1,6 @@
+= JUnit Exercises
+
+. Which three kinds of tests have we talked about in the lecture? What is the difference between them?
+. Why should every developer write unit tests?
+. Explain the TDD Cycle.
+. Implement all four rules of the Game of Life with 100% test coverage.

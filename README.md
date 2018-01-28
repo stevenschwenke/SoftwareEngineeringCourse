@@ -40,7 +40,6 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 |17|2018-06-05| Remote Working |1.5 h|X|-|-|X||
 |18|2018-06-05| Ethics of software development | 0.5 h |  |||||
 |-|Around middle/end of July| test | - |  |||||
-Sum: __33.5 h__
 
 ### Less likely to be in the lectures
 | Topic | length | Content-complete|exercises|test questions|slides|

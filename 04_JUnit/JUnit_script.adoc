@@ -30,6 +30,7 @@ image::redgreenrefactor.png[]
 == Demo
 * demonstration:
 ** implementing rules for https://en.wikipedia.org/wiki/Conway's_Game_of_Life[Game of Life] TDD-style in a new project
+** good best practice: first develop functionality in tests, then move to other classes
 ** test coverage in general and analysis in IntelliJ IDEA
 
 image::golRules.png[]

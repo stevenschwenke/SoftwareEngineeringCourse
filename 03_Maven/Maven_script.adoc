@@ -1,0 +1,148 @@
+= Maven
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+image::apache-maven-project.png[]
+
+== Build Tools in General
+* first level when learning Java: building with _javac_: (Example from https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javac.html[Oracle]):
+
+....
+package greetings;
+
+public class Hello {
+    public static void main(String[] args) {
+        for (int i=0; i < args.length; i++) {
+            System.out.println("Hello " + args[i]);
+        }
+    }
+}
+....
+
+....
+C:\>javac greetings\Hello.java
+C:\>dir greetings /B
+Hello.class
+Hello.java
+C:\>java greetings.Hello World Universe Everyone
+Hello World
+Hello Universe
+Hello Everyone
+....
+
+* nobody does that anymore by hand!
+* _javac_ sufficient for simple programs, but not bigger ones because of
+** complexity: project consisting of multiple modules?
+** hard to change project: adding dependencies = long list of parameters
+** no easy management of versions of dependencies
+** manual work: real developers build 1.000 times a day - has to be automated!
+
+image::buildToolsLogos.png[]
+
+* Solutions: Build Tools
+** Apache Ant
+** Maven
+** Gradle
+* with these: automation and standardization of build processes
+
+== Apache Maven
+image::apache-maven-project.png[]
+* Disclaimer: this chapter only introduction of Maven, not in-depth!
+* https://maven.apache.org
+* best combination of distribution in industry and functionality
+* build tool + project management tool (for example reports)
+* main concept: convention over configuration
+** structure of project
+** process: build -> publish -> deploy
+* plugin-based ... everything is a plugin, for example the compiler
+* plugins have "goals" to execute
+* sources distributed via public repositories:
+
+image::mvnrepositorycom.png[]
+
+== Setup with IntelliJ IDEA
+* new -> project -> Maven
+* GroupId = unique identifier of project *across all projects*. Best practice: domain name + project structure
+* ArtifactId = name of jar without version
+* Version = regular version or SNAPSHOT (= nightly builds)
+
+== Semantic versioning
+* from https://semver.org
+* Given a version number MAJOR.MINOR.PATCH, increment the:
+** MAJOR version when you make incompatible API changes,
+** MINOR version when you add functionality in a backwards-compatible manner, and
+** PATCH version when you make backwards-compatible bug fixes.
+* Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+== Standard Project Structure
+* https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+
+image::mavenDirectoryStructure.png[]
+
+== pom.xml
+* "project object model"
+....
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.stevenschwenke.java</groupId>
+    <artifactId>maventest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>MavenTestApp</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
+....
+
+== Default Lifecycle
+* https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
+image::lifecycle.png[]
+
+* *validate* - validate the project is correct and all necessary information is available
+* *compile* - compile the source code of the project
+* *test* - test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+* *package* - take the compiled code and package it in its distributable format, such as a JAR.
+* *verify* - run any checks on results of integration tests to ensure quality criteria are met
+* *install* - install the package into the local repository, for use as a dependency in other projects locally
+* *deploy* - done in the build environment, copies the final package to the remote repository for sharing with other developers and projects.
+
+== Versions Plugin
+* for example: http://www.mojohaus.org/versions-maven-plugin/examples/display-dependency-updates.html[Checking for new Dependency Updates]
+....
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.5</version>
+            </plugin>
+        </plugins>
+</build>
+....

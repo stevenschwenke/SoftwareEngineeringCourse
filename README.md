@@ -20,24 +20,25 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |1|2018-03-06| Introduction & overview | 0.75 h | X|-|-|X|-|
 |2|2018-03-06| Software Engineering from 10.000 ft| 0.75 h | X|X|-|X|-|
-|3|2018-03-06| JUnit 5 | 1.5  h | X | X | - | X | - |
+|3|2018-03-06| Maven | 0.75  h | X | X | - | X | - |
+|4|2018-03-06| JUnit 5 | 0.75  h | X | X | - | X | - |
 |-|2018-03-13| No lecture because of [Javaland](javaland.eu/)|-|-|-|-|-|-|
-|4|2018-03-20| Refactoring | 3.0 h | X | X | - | X | - |
-|5|2018-03-27 and 2018-04-03| Legacy Systems and how to deal with them | 6 h | X |-|-|X|see [Awesome Java Code workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
-|6|2018-04-10| Patterns and paradigms of programming | 3 h |  |||||
-|7|2018-04-17| Case Study: UI platform JavaFX | 1.5 h | X | X | X | X | - |
-|8|2018-04-17| Modern Java Architecture Frameworks | 1.5 h|  |||||
-|9|2018-04-24| Persistence | 1.5 h|  |||||
-|10|2018-04-24| optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned) | 1.5 h|  |||||
+|5|2018-03-20| Refactoring | 3.0 h | X | X | - | X | - |
+|6|2018-03-27 and 2018-04-03| Legacy Systems and how to deal with them | 6 h | X |-|-|X|see [Awesome Java Code workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
+|7|2018-04-10| Patterns and paradigms of programming | 3 h |  |||||
+|8|2018-04-17| Case Study: UI platform JavaFX | 1.5 h | X | X | X | X | - |
+|9|2018-04-17| Modern Java Architecture Frameworks | 1.5 h|  |||||
+|10|2018-04-24| Persistence | 1.5 h|  |||||
+|11|2018-04-24| optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned) | 1.5 h|  |||||
 |-|2018-05-01| No lecture because of Maifeiertag | |  |||||
-|11|2018-05-08| Domain Driven Design | 3 h |-|-|-|-| Speaker: [Oliver Milke](http://oliver-milke.de) |
-|12|2018-05-15| Agile Methods | 3.0 h |X |-|-|X||
+|12|2018-05-08| Domain Driven Design | 3 h |-|-|-|-| Speaker: [Oliver Milke](http://oliver-milke.de) |
+|13|2018-05-15| Agile Methods | 3.0 h |X |-|-|X||
 |-|2018-05-22| No lecture because of Pfingstpause |-|-|-|-|-||
-|13|2018-05-29| Management 3.0 | 3.0 h |X|-|-|X|Pretty bad text-driven slides. Need focus, images and must be shorter.|
-|14|2018-06-05| Cloud | 1.0 h |X|-|-|-|Speaker: [Oliver Milke](http://oliver-milke.de)|
-|15|2018-06-05| Digitization | 0.5 h |X|-|-|X||
-|16|2018-06-05| Remote Working |1.5 h|X|-|-|X||
-|17|2018-06-05| Ethics of software development | 0.5 h |  |||||
+|14|2018-05-29| Management 3.0 | 3.0 h |X|-|-|X|Pretty bad text-driven slides. Need focus, images and must be shorter.|
+|15|2018-06-05| Cloud | 1.0 h |X|-|-|-|Speaker: [Oliver Milke](http://oliver-milke.de)|
+|16|2018-06-05| Digitization | 0.5 h |X|-|-|X||
+|17|2018-06-05| Remote Working |1.5 h|X|-|-|X||
+|18|2018-06-05| Ethics of software development | 0.5 h |  |||||
 |-|Around middle/end of July| test | - |  |||||
 Sum: __33.5 h__
 

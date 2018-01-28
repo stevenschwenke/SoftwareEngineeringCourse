@@ -14,7 +14,7 @@
 
 ---
 
-![alt text 55%](../13_management30/agile_manifesto_by_jurgen_appelo.jpg)
+![alt text 55%](../14_management30/agile_manifesto_by_jurgen_appelo.jpg)
 (Jurgen Appelo, https://www.flickr.com/photos/jurgenappelo/5201267505)
 
 ---
@@ -34,7 +34,7 @@
 # Minimum viable product
 
 ---
-![alt text](../15_digitization/MVP_v2.jpg)
+![alt text](../16_digitization/MVP_v2.jpg)
 (image by [Fred Voorhorst](http://www.expressiveproductdesign.com/minimal-viable-product-mvp/))
 
 ---

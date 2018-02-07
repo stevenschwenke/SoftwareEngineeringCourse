@@ -42,7 +42,7 @@ image::simpleRefactorings.png[]
 * https://github.com/tobyweston/Refactoring-Chapter-1/commit/8e249c8954d92aebabf304d875ac6f597977b307[extract method]
 
 ==== Refactoring: Renaming
-* not covered in Github-repo. However, extracted method above is propsed as "getAmount" by IDE. Rename it to "amountFor(Rental)".
+* not covered in Github-repo. However, extracted method above is proposed as "getAmount" by IDE. Rename it to "amountFor(Rental)".
 * renaming = one of the 
 ** most basic refactorings; very easy to do while just reading the code
 ** hardest things to do in software development; always take your time to find a great name
@@ -80,9 +80,9 @@ image::simpleRefactorings.png[]
 
 ==== Refactoring: Introduce inheritance
 * each type of movie (regular, children's, new release) has different price that is computed in Movie.getCharge()
-* can be solved with subclasses: (new) classes RegularMovie, ChildrensMovie, NewReleaseMovie all extend class Movie
+* can be solved with subclasses: (new) classes RegularMovie, ChildrenMovie, NewReleaseMovie all extend class Movie
 * BAD IDEA: movies will switch from NewReleaseMovie to some other category
-* alternative: (new) classes RegularPrice, ChildrensPrice, NewReleasePrice all extend Price, which is used by Movie. That way, category of movie can be changed by simply switching to a new price.
+* alternative: (new) classes RegularPrice, ChildrenPrice, NewReleasePrice all extend Price, which is used by Movie. That way, category of movie can be changed by simply switching to a new price.
 
 image::usingInheritanceOnMovie.png[]
 
@@ -223,31 +223,149 @@ image::theRefactorings.png[]
 * higher-level methods will look like series of comments
 * dealing with variables main source of work. Solutions: adding return values, using parameters
 
+```java
+void printTemperature(String unit, double degrees) {
+    printBanner();
+
+    //print details
+    System.out.println ("unit:" + unit);
+    System.out.println ("amount" + degrees);
+}
+```
+to
+```java
+void printTemperature(String unit, double degrees) {
+    printBanner();
+    printDetails(degrees);
+}
+
+void printDetails (double amount) {
+    System.out.println ("unit:" + unit);
+    System.out.println ("amount" + degrees);
+}
+```
+
 === Inline method
 * methods body easy enough to understand => remove method + put body in callers
 * before inlining, check if method isn't polymorphic, i.e. that no class overrides it
 
+```java
+int getRating() {
+    return (moreThanFiveLateDeliveries()) ? 2 : 1;
+}
+
+boolean moreThanFiveLateDeliveries() {
+    return numberOfLateDeliveries > 5;
+}
+```
+to
+```java
+int getRating() {
+    return (numberOfLateDeliveries > 5) ? 2 : 1;
+}
+```
+
 === Inline temp
 * = remove temporal variable with actual call to method
 * first, declare temp final to check for other assignments
+
+```java
+double basePrice = order.basePrice();
+return (basePrice > 1000)
+```
+to
+```java
+return (order.basePrice() > 1000)
+```
 
 === Replace temp with query
 * replace temporal variable with call to method, created with the expression of the temp
 * important step towards extract method
 * first, declare temp final to check for other assignments
 
+```java
+double basePrice = quantity * itemPrice;
+
+if (basePrice > 1000)
+    return basePrice * 0.95;
+else
+    return basePrice * 0.98;
+```
+to
+```java
+if (basePrice() > 1000)
+    return basePrice() * 0.95;
+else
+    return basePrice() * 0.98;
+...
+
+double basePrice() {
+    return quantity * itemPrice;
+}
+```
+
 === Introduce explaining variable
 * extract parts of complicated expression in variable
 * variable is only visible in current scope. To broaden scope, use extract method.
+
+```java
+if ( (platform.toUpperCase().indexOf("MAC") > -1) &&
+    (browser.toUpperCase().indexOf("IE") > -1) &&
+    wasInitialized() && resize > 0 )
+{
+    // do something
+}
+```
+
+to
+```java
+final boolean isMacOs = platform.toUpperCase().indexOf("MAC") > -1;
+final boolean isIEBrowser = browser.toUpperCase().indexOf("IE") > -1;
+final boolean wasResized = resize > 0;
+
+if (isMacOs && isIEBrowser && wasInitialized() && wasResized) {
+    // do something
+}
+```
 
 === Split temporary variable
 * one variable that is not a loop variable gets assigned multiple times => create separate temp variable for each assignment
 *  multiple assignment = sign for more than one responsibility
 
+```java
+double temp = 2 * (height + width);
+System.out.println (temp);
+
+temp = height * width;
+System.out.println (temp);
+```
+
+to
+```java
+final double perimeter = 2 * (height + width);
+System.out.println (perimeter);
+
+final double area = height * width;
+System.out.println (area);
+```
+
 === Remove assignments to parameters
 * assignments to parameters should be replaced by assignments to temporary variables
 * if parameters are objects, these objects change outside of the scope of the method => leads to error-prone and hard to understand code
-* important step towards pure functions 
+* important step towards pure functions
+
+```java
+int discount (int inputVal, int quantity, int yearToDate) {
+    if (inputVal > 50) inputVal -= 2;
+```
+
+to
+```java
+int discount (int inputVal, int quantity, int yearToDate) {
+    int result = inputVal;
+    if (inputVal > 50) result -= 2;
+```
+
 ==== Pass by value in Java
 (following example taken from the book _Refactoring_)
 
@@ -323,19 +441,21 @@ image::theRefactorings.png[]
 * important key to object orientation: encapsulation = classes need to know less of a system
 * in code:
 
-
-    manager = john.getDepartment().getManager();
-
+```java
+manager = john.getDepartment().getManager();
+```
 
 to
 
-    public Person getManager() {
-        return _department.getManager();
-    }
-    
-    ...
-    
-    john.getManager();
+```java
+public Person getManager() {
+    return _department.getManager();
+}
+
+...
+
+john.getManager();
+```
 
 === Remove middle man
 * when class with too much simple delegations, remove delegations and call directly
@@ -344,29 +464,30 @@ to
 * when unmodifiable class needs additional method, create this method in a client class that can access the server class
 * code:
 
-
-    Date newStart = new Date (previousEnd.getYear(), previousEnd.getMonth(), previousEnd.getDate() + 1);
-
-
+```java
+Date newStart = new Date (previousEnd.getYear(), previousEnd.getMonth(), previousEnd.getDate() + 1);
+```
 to
+```java
+Date newStart = nextDay(previousEnd);
 
-    Date newStart = nextDay(previousEnd);
-    
-    private static Date nextDay(Date arg) {
-        return new Date (arg.getYear(),arg.getMonth(), arg.getDate() + 1);
-    }
+private static Date nextDay(Date arg) {
+    return new Date (arg.getYear(),arg.getMonth(), arg.getDate() + 1);
+}
+```
 
 === Introduce local extension
 * when unmodifiable class needs several additional methods, add foreign methods to new class
 * = "foreign methods times x", but in a new class
 * either subclassing or wrapping unmodifiable class
 
+
 == Organizing Data
 * (Chapter 8 in the book)
 
 === Self encapsulate field
 * when direct access to a field is to be avoided, only use getter and setter to access field
-* general discussion between "classes may access their fields directly" vw "every access must happen through accessor-methods"
+* general discussion between "classes may access their fields directly" vs "every access must happen through accessor-methods"
 
 === Replace data value with object
 * when existing data item needs additional data or behavior, turn it into an object
@@ -405,6 +526,7 @@ to
 === Encapsulate collection
 * make method that returns a collection return a read-only view + provide add/remove-methods
 * enforces hiding of implementation details and gives class power over how collection is used
+* example: class _Person_ having getCourse() and setCourses(). Better API: getCourses() returning  unmodifiable set, addCourse() adds just one course, removeCourse() removes a course.
 
 === Replace record with data class
 * "record" = database record or data structure from legacy system
@@ -432,25 +554,57 @@ to
 * thereby highlighting the conditional and separating "why" from "how"
 * supports "same level of abstraction in one method"
 
+```java
+if (date.before (SUMMER_START) || date.after(SUMMER_END))
+    charge = quantity * winterRate + winterServiceCharge;
+    else charge = quantity * summerRate;
+```
+to
+```java
+if (notSummer(date))
+    charge = winterCharge(quantity);
+else charge = summerCharge(quantity);
+```
+
 === Consolidate Conditional Expression
 * combine sequence of conditional tests with same result into one test
 
-
-    double disabilityAmount() {
-        if (_seniority < 2) return 0;
-        if (_monthsDisabled > 12) return 0;
-        if (_isPartTime) return 0;
-        // compute the disability amount
-        
-     to
-        
-     double disabilityAmount() {
-        if (isNotEligableForDisability()) return 0;
-        // compute the disability amount
+```java
+double disabilityAmount() {
+    if (_seniority < 2) return 0;
+    if (_monthsDisabled > 12) return 0;
+    if (_isPartTime) return 0;
+    // compute the disability amount
+```
+to
+```java
+double disabilityAmount() {
+    if (isNotEligibleForDisability()) return 0;
+    // compute the disability amount
+```
 
 === Consolidate duplicate conditional fragments
 * move code that is in all branches of conditional expression outside of conditional
 * also valid for exceptions
+
+```java
+if (isSpecialDeal()) {
+    total = price * 0.95;
+    send();
+}
+else {
+    total = price * 0.98;
+    send();
+}
+```
+to
+```java
+if (isSpecialDeal())
+    total = price * 0.95;
+else
+    total = price * 0.98;
+send();
+```
 
 === Remove control flag
 * Use break or return instead of boolean control flag
@@ -460,27 +614,37 @@ to
 === Replace nested conditional with guard clauses
 * when complex conditional behavior obscures normal path of execution, insert _if - return_ for exceptional behavior and a "normal" return for normal behavior.
 
-=== Replace conditional with polymorphism
-* remove conditional with different behavior, depending on type of object, in favor of polymorphism
-* one fundamental promise of polymorphism: avoid writing explicit conditional when object behavior varies depending on types
-* each object overwrites method (or doesn't if default implementation is sufficient)
+```java
+double getPayAmount() {
+    double result;
+    if (isDead) result = deadAmount();
+    else {
+        if (isSeparated) result = separatedAmount();
+        else {
+            if (isRetired) result = retiredAmount();
+            else result = normalPayAmount();
+            };
+        }
+    return result;
+};
+```
+to
+```java
+double getPayAmount() {
 
-=== Introduce null object
-* replace null checks with null object
-* create object that represents a neutral null state
-* use object like other, "real" objects
-* null objects never change, hence implement via Singleton
+    if (isDead) return deadAmount();
+    if (isSeparated) return separatedAmount();
+    if (isRetired) return retiredAmount();
 
-=== Introduce assertion
-* basically, use _Assert.isTrue()_ for parts of the code that assume things
+    return normalPayAmount();
+};
+```
 
 == Making method calls simpler
 * interfaces (as in APIs) = key skill
 
 === Rename Method
 * rename method so its name reveals its purpose
-
-=== Add / Remove Parameter => nothing special about it
 
 === Separate Query from modifier
 * method that changes state of an object *and* return an object should be separated into two methods
@@ -499,9 +663,17 @@ to
 * downside: new dependency on object instead of just its fields   
 * alternative approach: move method to object that provides the attributes used by the method (if that makes sense)
 
-=== Replace parameter with method
-* instead of passing the result from a method call to a method, let that method call the other method itself
-* upside: shorter parameter list with same functionality
+```java
+int low = daysTempRange().getLow();
+int high = daysTempRange().getHigh();
+
+withinPlan = plan.withinRange(low, high);
+```
+to
+```java
+withinPlan = plan.withinRange(daysTempRange());
+```
+
 
 === Introduce parameter object
 * encapsulate multiple parameters into a parameter object, if they belong together
@@ -516,52 +688,9 @@ to
 === Hide method
 * generally: apply encapsulation and use most restrictive access modifier
 
-=== Replace constructor with factory method
-* if more than simple construction is done in a constructor, it should be replaced with a factory method
-
-=== Encapsulate downcast
-* basically: "Use the right types!"
-* chapter became obsolete with introduction of generics
-
 === Replace error code with exception
 * use exceptions instead of error codes
 * chapter also obsolete; haven't seen error codes in years (and only then from a ... saisoned developer)
-
-=== Replace exception with test
-* let calling method check for a condition instead of having the called method throw an exception
-
-  
-== Dealing with generalization
-* (Chapter 11 in the book)
-* bunch of refactorings concerning inheritance
-
-=== pull up field / method
-* if all subclasses have same fields / methods, move them to superclass
-* attention: this may break Liskov Substitution Principle!
-
-=== Push down field / method
-* opposite from aboveli
-
-=== Extract subclass / superclass
-* move features used only in some instances to a new sub- / superclass
-* own opinion: bad refactoring because inheritance is not meant to be used for moving features and behaviors around, see Liskov Substitution Principle
-  
-=== extract interface
-* explicitly declare subset of a class' responsibility to interface to be used by other classes
-
-=== Collapse hierarchy
-* merge super- and subclasses, that don't have much differences, together into one class
-
-=== Form template method
-* given an inheritance hierarchy, if several methods perform the same steps with slightly different implementation, extract a template method for the algorithm and let subclasses provide methods for their special behavior
-
-=== Replace inheritance with delegation
-* if subclass uses only part of superclasses interface or doesn't inherit data, remove inheritance and add delegation to former superclass
-
-=== Replace delegation with inheritance
-* opposite from above
-* again, adding inheritance may break Liskov Substitution Principle 
-
 
 == Big refactorings
 image::hugeRefactorings.png[]
@@ -597,7 +726,7 @@ image::hugeRefactorings.png[]
 
 === Extract hierarchy
 * overloaded class with many conditional statements should be refactored into hierarchy where subclasses represent special cases
-* example: single class _BillingScheme_ should be superclass of hierarchy with _BusinessBillingScheme_, _RedientialBilingScheme_ and _DisabilityBillingScheme_ as subclasses
+* example: single class _BillingScheme_ should be superclass of hierarchy with _BusinessBillingScheme_, _ResidentialBillingScheme_ and _DisabilityBillingScheme_ as subclasses
 
 == Putting it all together
 image::puttingItAllTogether.png[]

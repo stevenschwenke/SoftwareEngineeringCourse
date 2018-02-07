@@ -22,4 +22,4 @@
 . Under which circumstances should "extract class" be applied?
 . What does "Replace data value with object" do? Why is it a good idea to do so?
 . There are refactorings "Change unidirectional association to bidirectional" and "Change bidirectional association with unidirectional". What is a unidirectional, what a bidirectional association?
-. What does "Separate Query from modifier" do? Why is it a good idea to do so?
+. What is a magic number? State one! (With an example - not just a number ;) )

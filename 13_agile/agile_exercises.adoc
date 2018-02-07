@@ -1,0 +1,18 @@
+= Agile
+
+. Describe the waterfall model.
+. What is the problem with waterfall and the "maintenance phase"?
+. Name two assumptions waterfall makes about the customer and the domain problem that result in problems in the software development process.
+. Is waterfall dead?
+. Name two of the four statements from the Agile Manifesto. Additional statements will result in additional points. :)
+. What is, in your own language, the basic concept of "agile" methods?
+. What is the perfect team size for Scrum?
+. Name three of the five values in Scrum. Additional statements will result in additional points.
+. Name all four Scrum events.
+. Name 2 Scrum artifacts.
+. Name 3 Scrum roles.
+. What are the three questions to answer in every daily?
+. What are the three standard question for a retrospective? Additional point for "Josephs question".
+. What is velocity in Scrum?
+. What is the thing a story point is best compared with: hour of work, day of work, money in Euro, Gummy Bear, happiness of development team?
+. Name 5 differences between Scrum and Kanban.

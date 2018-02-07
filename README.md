@@ -28,7 +28,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 |7|2018-03-27 and 2018-04-03| Legacy Systems and how to deal with them | 6 h | X |-|-|X|see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
 |8|2018-04-10| Patterns and paradigms of programming | 3 h |  |||||
 |9|2018-04-17| Case Study: UI platform JavaFX | 1.5 h | X | X | X | X | - |
-|10|2018-04-17| Modern Java Architecture Frameworks | 1.5 h| X | - | - | X |see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
+|10|2018-04-17| Case Study: Spring Framework | 1.5 h| X | - | - | X |see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
 |11|2018-04-24| Persistence | 1.5 h|  |||||
 |12|2018-04-24| optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned) | 1.5 h|  |||||
 |-|2018-05-01| No lecture because of Maifeiertag | |  |||||
@@ -49,6 +49,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 | Infrastructure as code |  |  ||||
 | Communication |  |  ||||
 | Facilitating a coderetreat with students? |  |  ||||
+| Design Patterns |  |  ||||
 
 ## Feedback
 Feel free to give feedback to steven@stevenschwenke.de

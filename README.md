@@ -14,7 +14,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 
 ### Most likely to be in the lectures
 
-- total time of lecture: 2 x 1.5 h x 13 weeks = __39.0 h__
+Lectures will be Tuesdays, 08:15 - 09:45 and 10:00 - 11:30.
 
 | Chapter | Date | Topic | length | Content-complete|exercises|test questions|slides|notes|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -39,7 +39,8 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 |16|2018-05-29| Digitization | 0.5 h |X|-|-|X||
 |17|2018-05-29| Remote Working |1.5 h|X|-|-|X|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
 |18|2018-05-29| Ethics of software development | 0.5 h | X | none | - | X | - |
-|-|Around middle/end of July| test | - |  |||||
+|19|2018-06-05| Not assigned yet, possibly questions and discussion | 3 h | - | - | - | - | - |
+|-|Around middle/end of June| test | - |  |||||
 
 ### Less likely to be in the lectures
 | Topic | length | Content-complete|exercises|test questions|slides|

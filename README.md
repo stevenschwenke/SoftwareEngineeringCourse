@@ -38,7 +38,7 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 |15|2018-05-29| Cloud | 1.0 h |X|-|-|-|Speaker: [Oliver Milke](http://oliver-milke.de)|
 |16|2018-05-29| Digitization | 0.5 h |X|-|-|X||
 |17|2018-05-29| Remote Working |1.5 h|X|-|-|X|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
-|18|2018-05-29| Ethics of software development | 0.5 h |  |||||
+|18|2018-05-29| Ethics of software development | 0.5 h | X | none | - | X | - |
 |-|Around middle/end of July| test | - |  |||||
 
 ### Less likely to be in the lectures

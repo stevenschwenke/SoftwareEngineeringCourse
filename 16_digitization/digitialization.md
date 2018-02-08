@@ -84,6 +84,7 @@
 - new: accessibility to IT: what once was only available to huge companies can now be used cheaply (Amazon Web Services for example)
 - offerings have to be individually customisable, available in real-time, networked and integrated (compare Otto / Quelle vs Amazon)  
 - software updates = new functionality, even without hardware change (Tesla)
+- new value streams via IT = IT directly responsible for cashflow. Example: Caterpillar network construction machines to optimize waypoints and routes + machine learning to be notified if a combination of sensor readings occurs that damaged other machines in the past: "This machine will break in 2 days and will need repair in subsystem x with exchange parts y and z." 
 
 ## Rapid Prototyping & MVP
 ![alt text](MVP_v2.jpg)
@@ -111,3 +112,4 @@
     - Iva-Alexander Jung, "Geschwindigkeit ist der entscheidende Wettbewerbsfaktor"
     - Nils Woloka, "Probe, Sense, Respond"
 - [VW boss criticises Tesla: "destroys money and fires employees"](https://www.heise.de/newsticker/meldung/VW-Chef-kritisiert-Tesla-Vernichtet-Geld-und-schmeisst-Mitarbeiter-raus-3866221.html)
+- [Baublatt, digitale Trends](http://www.baublatt.de/startseite/2016/07/22/digitale-trends/)

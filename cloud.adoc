@@ -1,7 +1,7 @@
 = One of the current Hypes: Cloud + Microservices
 
 == Overview
-* Amazon: huge datacenter to run their main business
+* Amazon: huge data-center to run their main business
 * perfected IT infrastructure
 * rent it to other companies to run their applications on it
 * other vendors followed: Google, Microsoft
@@ -17,13 +17,13 @@
 
 === Hyper-Scale
 * *THE* main concept
-* vendors built huge, efficient datacenters to support own IT services
+* vendors built huge, efficient data-centers to support own IT services
 * way more efficient than server-room in small companies
 * hard- and software setup to scale + software to allow for instantaneous (and automatic) scaling
 * TODO show live demo or screenshot to setup scaling at web interface
 
 === Efficiency
-* the more clients a datacenter has, the more efficient it runs
+* the more clients a data-center has, the more efficient it runs
 * containerisation + virtualization: applications can be deployed to the best-fitting server
 * if application needs more memory / CPU / database, just deploy it somewhere else / add another service
 * => lower prices for everyone => more customers => better service => lower prices => Amazon calls this the "virtuous cycle"
@@ -32,12 +32,12 @@
 === SaaS = Software as a Service
 * = software specifically designed to run in cloud)
 * not directly part of cloud, but nevertheless mentioned because most people don't know that these services also run "in the cloud"
-* exmaples: Salesforce, Yahoo!Mail, Hotmail, GMX, Microsoft Office 365
+* examples: Salesforce, Yahoo!Mail, Hotmail, GMX, Microsoft Office 365
 
 === PaaS = Platform as a Service
 * = additional abstraction layer: set of tools and services to make creating applications in the cloud easier
 * Examples: Pivotal CloudFoundry, Windows Azure, Amazon Elastic Beanstalk, Google App Engine
-* technology: services like loadbalancer, databases, queues, search engines (ElasticSearch)
+* technology: services like load-balancer, databases, queues, search engines (ElasticSearch)
 
 === IaaS = Infrastructure as a Service
 * = clients set up virtual servers and storage
@@ -114,7 +114,7 @@
     cf marketplace
 
 * Plans with "*" cost money.
-* installing autoscaler app in the standard plan and nameing it "appAutoscaler":
+* installing auto-scaler app in the standard plan and naming it "appAutoscaler":
 
     cf create-service app-autoscaler standard appAutoscaler
 
@@ -146,7 +146,7 @@
 ** cloud-projects since 2000s, but not published - AWS in 2010
 ** with a lot of effort: Azure now strong player
 ** Azure first only PaaS, later IaaS, too
-** Microsofts selling points:
+** Microsoft's selling points:
 *** Windows heavily used world-wide
 *** easy integration into Microsoft-cloud
 *** enterprise know-how
@@ -158,7 +158,7 @@
 * http://www.businessinsider.de/why-amazon-is-so-hard-to-topple-in-the-cloud-and-where-everybody-else-falls-2015-10?r=US&IR=T[other companies see here]
 
 == current Situation
-* individual developers and small businesses gained access to same computing power and infrastructure than large businesses => HUGE gamechanger: big companies' costly datacenters = separation between "big company" and "the rest" => that's now gone!
+* individual developers and small businesses gained access to same computing power and infrastructure than large businesses => HUGE game-changer: big companies' costly data-centers = separation between "big company" and "the rest" => that's now gone!
 
 == Applicability
 * new technology generally exciting

@@ -40,7 +40,7 @@ Lectures will be Tuesdays, 08:15 - 09:45 and 10:00 - 11:30.
 |17|2018-05-29| Remote Working |1.5 h|X|-|-|X|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
 |18|2018-05-29| Ethics of software development | 0.5 h | X | none | - | X | - |
 |19|2018-06-05| Not assigned yet, possibly questions and discussion | 3 h | - | - | - | - | - |
-|-|Around middle/end of June| test | - |  |||||
+|-|2018-06-18, 08:00-09.30| Exam | - |  |||||
 
 ### Less likely to be in the lectures
 | Topic | length | Content-complete|exercises|test questions|slides|

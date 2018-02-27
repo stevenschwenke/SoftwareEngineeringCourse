@@ -1,0 +1,193 @@
+= One of the current Hypes: Cloud + Microservices
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+image::cloudAndMicroservices.png[]
+
+== Overview
+* Amazon: huge data-center to run their main business
+* perfected IT infrastructure
+* rent it to other companies to run their applications on it
+* other vendors followed: Google, Microsoft
+* best practices, books, software designs, software, ... for developing "in the cloud"
+* game changer
+
+== Concepts
+=== Accessibility
+image::accessPCF.png[]
+* (web-)interfaces make it extremely easy to
+** buy infinite computing power
+** deploy from all-over the world
+
+=== Hyper-Scale
+image::scalabilityPCF.png[]
+* *THE* main concept
+* vendors built huge, efficient data-centers to support own IT services
+* way more efficient than server-room in small companies
+* hard- and software setup to scale + software to allow for instantaneous (and automatic) scaling
+
+=== Efficiency
+image::efficiencyPCF.png[]
+* the more clients a data-center has, the more efficient it runs
+* containerisation + virtualization: applications can be deployed to the best-fitting server
+* if application needs more memory / CPU / database, just deploy it somewhere else / add another service
+* => lower prices for everyone => more customers => better service => lower prices => Amazon calls this the "virtuous cycle"
+
+== Pyramid of Layers
+image::pyramidOfLayers.png[]
+
+image::pyramidOfLayersProducts.png[]
+
+=== SaaS = Software as a Service
+* = software specifically designed to run in cloud)
+* not directly part of cloud, but nevertheless mentioned because most people don't know that these services also run "in the cloud"
+* examples: Salesforce, Yahoo!Mail, Hotmail, GMX, Microsoft Office 365
+
+=== PaaS = Platform as a Service
+* = additional abstraction layer: set of tools and services to make creating applications in the cloud easier
+* Examples: Pivotal CloudFoundry, Windows Azure, Amazon Elastic Beanstalk, Google App Engine
+* technology: services like load-balancer, databases, queues, search engines (ElasticSearch)
+
+=== IaaS = Infrastructure as a Service
+* = clients set up virtual servers and storage
+* Examples: Amazon EC2, Google Cloud Storage, OpenStack
+* technology: containers, images
+
+== Hands-On: Pivotal Cloud Foundry
+* PCF = Pivotal Cloud Foundry
+** can be installed on top of AWS, Azure or whatever private data centre
+* PWS = https://run.pivotal.io[Pivotal Web Services]
+** = fully managed version of PCF
+** quickest way of starting development
+** similar to Amazon Web Services (AWS)
+* PCF Dev = self-contained PCF installation for local development
+** could be used; but not that easy to setup and needs a lot of resources.
+* Service = full-managed services like databases and circuit breaker, available in Marketplace
+* User-provided-Service = new service that does not exist on the marketplace and runs on CloudFoundry
+** example: special database flavor or a service that provides credentials to an app
+
+===	PCF Architecture
+* CF Gorouter = load balancer that decides which requests goes to which app
+* Cloud Controller instantiates instances of app
+* Diego Brain = Resource Allocation - "I have x VMs and can give them to the Cloud Controller to instantiate apps"
+* other PCF components: Health Monitor, Marketplace Service, ...
+
+=== Workplace Structure in PCF
+* *_show that in browser_*
+* = nested structure
+* underlying infrastructure = AWS, Azure, Google Cloud, private Cloud = basically virtual machines
+* on top of that: PCF Installation
+* in that: Organizations
+** = "Orgs"
+** = development account with computing resources, apps and services
+** = unit of organization
+** first Org is setup during registration.
+* in that: "Spaces"
+** for example "development", "QA" and "Prod"
+** Apps and Services can only talk to each other, when they are in the same space.
+
+=== CF CLI
+* Install CF CLI: In PWS, left menu: "tools", then download and install.
+* following commands are entered into windows prompt
+* Login
+
+    cf login
+
+** will prompt for everything
+** alternatively:
+
+    cf login -a api.run.pivotal.io -u steven@stevenschwenke.de
+
+** (there will be a prompt for the password)
+** after login successful, following commands can simply be entered in the console without further authentification, for example "cf services" to check which services are available or "cf target OTHER_ORG SPACE" to switch orgs and spaces.
+* pushing a local version of the app to the cloud:
+
+    cf push
+
+* installing user-provided-services:
+
+    cf create-user-provided-service
+
+* List all apps including URL:
+
+    cf apps
+
+* delete app "angular-workshop":
+
+    cf delete angular-workshop
+
+=== Provisioning a Service from the Marketplace
+(every command in in CF CLI)
+
+* returning list of available Marketplace Services in current space:
+
+    cf marketplace
+
+* Plans with "*" cost money.
+* installing auto-scaler app in the standard plan and naming it "appAutoscaler":
+
+    cf create-service app-autoscaler standard appAutoscaler
+
+* checking status of service:
+
+    cf service appAutoscaler
+
+* can now be seen in Web Console
+* binding a Service to an app = setting up environmental variables for the applications to work together. Visible in "Settings" -> "Reveal Env Vars"
+* Spring Boot will use these to determine in which Space it is running and autowire beans appropriately, dependent on the profiles set.
+* pushing local application into cloud:
+
+    cf push
+
+** ... first, navigate to root folder of application
+** uses manifest.yml to push application
+** "buildpacks" are automatically downloaded and installed, for example java_buildpack or nodejs_buildpack when these technologies are used in the project
+** offline buildpacks = taken from somewhere outside of the Cloud Foundry, for example Java Buildpack comes from Github
+** online buildpacks = stored within the Cloud Foundry
+** application will be started automatically
+
+== History Lesson
+* Amazon
+** first because offering cloud services since 2006 (first vendor)
+** first services in 2006: Elastic Compute Cloud (EC2) for virtual servers + Amazon Simple Storage Service (S3) for file storage
+** at first single developers, later companies like Netflix, Airbnb, Slack and the CIA (not a company though)
+** because of long history of developing features for their cloud, Amazon = de facto standard of cloud
+* Microsoft
+** cloud-projects since 2000s, but not published - AWS in 2010
+** with a lot of effort: Azure now strong player
+** Azure first only PaaS, later IaaS, too
+** Microsoft's selling points:
+*** Windows heavily used world-wide
+*** easy integration into Microsoft-cloud
+*** enterprise know-how
+*** huge number of existing customers that can be given discounts to use Microsoft cloud instead of Amazon
+* Google
+** 2008 Google App Engine
+** 2013 renamed to "Google Cloud Platform"
+** edge in developer-trust compared to Microsoft (because of publications)
+* http://www.businessinsider.de/why-amazon-is-so-hard-to-topple-in-the-cloud-and-where-everybody-else-falls-2015-10?r=US&IR=T[other companies see here]
+
+=== Market
+* market share (2015):
+** Amazon 27.2%
+** Microsoft 16.2%
+** IBM 11.8%
+** Google 3.6%
+** Oracle 2.7%
+
+== current Situation
+* individual developers and small businesses gained access to same computing power and infrastructure than large businesses => HUGE game-changer: big companies' costly data-centers = separation between "big company" and "the rest" => that's now gone!
+
+== Applicability
+* new technology generally exciting
+* however, not feasible for all scenarios
+* https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb[You are not Google]
+* note difference between
+    - System of records = "enterprise software", mostly CRUD
+    - System of engagement = heavily scaling systems, a lot of users, Twitter etc.
+    
+= Sources
+* http://www.businessinsider.de/why-amazon-is-so-hard-to-topple-in-the-cloud-and-where-everybody-else-falls-2015-10?r=US&IR=T[Business Insider, "The cloud wars explained: Why nobody can catch up with Amazon]
+* https://www.udemy.com/learning-pivotal-cloud-foundry-for-web-developers/learn/v4/overview[Udemy, "Learning Pivotal Cloud Foundry for Web Developers]

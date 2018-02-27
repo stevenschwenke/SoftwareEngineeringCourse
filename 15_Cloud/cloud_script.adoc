@@ -1,4 +1,10 @@
 = One of the current Hypes: Cloud + Microservices
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+image::cloudAndMicroservices.png[]
 
 == Overview
 * Amazon: huge data-center to run their main business
@@ -10,25 +16,30 @@
 
 == Concepts
 === Accessibility
+image::accessPCF.png[]
 * (web-)interfaces make it extremely easy to
 ** buy infinite computing power
 ** deploy from all-over the world
-* TODO show live demo or screenshots from registration to first deploy of developed application
 
 === Hyper-Scale
+image::scalabilityPCF.png[]
 * *THE* main concept
 * vendors built huge, efficient data-centers to support own IT services
 * way more efficient than server-room in small companies
 * hard- and software setup to scale + software to allow for instantaneous (and automatic) scaling
-* TODO show live demo or screenshot to setup scaling at web interface
 
 === Efficiency
+image::efficiencyPCF.png[]
 * the more clients a data-center has, the more efficient it runs
 * containerisation + virtualization: applications can be deployed to the best-fitting server
 * if application needs more memory / CPU / database, just deploy it somewhere else / add another service
 * => lower prices for everyone => more customers => better service => lower prices => Amazon calls this the "virtuous cycle"
 
 == Pyramid of Layers
+image::pyramidOfLayers.png[]
+
+image::pyramidOfLayersProducts.png[]
+
 === SaaS = Software as a Service
 * = software specifically designed to run in cloud)
 * not directly part of cloud, but nevertheless mentioned because most people don't know that these services also run "in the cloud"
@@ -64,6 +75,7 @@
 * other PCF components: Health Monitor, Marketplace Service, ...
 
 === Workplace Structure in PCF
+* *_show that in browser_*
 * = nested structure
 * underlying infrastructure = AWS, Azure, Google Cloud, private Cloud = basically virtual machines
 * on top of that: PCF Installation
@@ -157,6 +169,14 @@
 ** edge in developer-trust compared to Microsoft (because of publications)
 * http://www.businessinsider.de/why-amazon-is-so-hard-to-topple-in-the-cloud-and-where-everybody-else-falls-2015-10?r=US&IR=T[other companies see here]
 
+=== Market
+* market share (2015):
+** Amazon 27.2%
+** Microsoft 16.2%
+** IBM 11.8%
+** Google 3.6%
+** Oracle 2.7%
+
 == current Situation
 * individual developers and small businesses gained access to same computing power and infrastructure than large businesses => HUGE game-changer: big companies' costly data-centers = separation between "big company" and "the rest" => that's now gone!
 
@@ -166,15 +186,7 @@
 * https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb[You are not Google]
 * note difference between
     - System of records = "enterprise software", mostly CRUD
-    - System of engagement = heavily scaling systems, a lot of users, Twitter etc. 
-
-=== Market
-* market share (2015):
-** Amazon 27.2%
-** Microsoft 16.2%
-** IBM 11.8%
-** Google 3.6%
-** Oracle 2.7%
+    - System of engagement = heavily scaling systems, a lot of users, Twitter etc.
     
 = Sources
 * http://www.businessinsider.de/why-amazon-is-so-hard-to-topple-in-the-cloud-and-where-everybody-else-falls-2015-10?r=US&IR=T[Business Insider, "The cloud wars explained: Why nobody can catch up with Amazon]

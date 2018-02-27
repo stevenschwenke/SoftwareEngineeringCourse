@@ -35,7 +35,7 @@ Lectures will be Tuesdays, 08:15 - 09:45 and 10:00 - 11:30.
 |13|2018-05-08| Agile Methods | 3.0 h |X |X|-|X|-|
 |14|2018-05-15| Management 3.0 | 3.0 h |X|X|-|X|-|
 |-|2018-05-22| No lecture because of Pfingstpause |-|-|-|-|-||
-|15|2018-05-29| Cloud | 1.0 h |X|-|-|-||
+|15|2018-05-29| Cloud | 1.0 h |X|X|-|X||
 |16|2018-05-29| Digitization | 0.5 h |X|X|-|X||
 |17|2018-05-29| Remote Working |1.5 h|X|-|-|X|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
 |18|2018-05-29| Ethics of software development | 0.5 h | X | none | - | X | - |

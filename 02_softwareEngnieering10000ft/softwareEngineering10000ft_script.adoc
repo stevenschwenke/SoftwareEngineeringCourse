@@ -35,7 +35,7 @@ image::elementsOfSoftwareEngineering.png[]
 *** Assembler
 *** C
 * community, conferences, Hackathons, user groups, ...
-** Do yourself a favor and have a look at [hacktalk](hacktalk.de/) and [JUG Ostfalen](jug-ostfalen.de/)!
+** Do yourself a favor and have a look at http://ithubbs.de/[IT Hub Braunschweig]!
 * models and best practices
 ** MVC
 ** Domain Driven Design

@@ -22,7 +22,7 @@ Lectures will be Tuesdays, 08:15 - 09:45 and 10:00 - 11:30.
 |2|2018-03-06| Software Engineering from 10.000 ft| 0.75 h | X|X|-|X|-|
 |3|2018-03-06| Git | 0.75  h | X | X | - | X | - |
 |4|2018-03-06| Maven | 0.75  h | X | X | - | X | - |
-|-|2018-03-13| No lecture because of [Javaland](javaland.eu/)|-|-|-|-|-|-|
+|-|2018-03-13| No lecture because of [Javaland](http://javaland.eu/)|-|-|-|-|-|-|
 |5|2018-03-20| JUnit 5 | 0.75  h | X | X | - | X | - |
 |6|2018-03-20| Refactoring | 2.25 h | X | X | - | X | - |
 |7|2018-03-27 and 2018-04-03| Legacy Systems and how to deal with them | 6 h | X |-|-|X|see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|

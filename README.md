@@ -16,6 +16,8 @@ States: planed -> content-gathering -> develop exercises and test questions -> r
 
 Lectures will be Tuesdays, 08:15 - 09:45 and 10:00 - 11:30.
 
+Tutorial (optional, f.e. for questions or help) will be Wednesday 12:00 - 13:30 at R107.
+
 | Chapter | Date | Topic | length | Content-complete|exercises|test questions|slides|notes|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |1|2018-03-06| Introduction & overview | 0.75 h | X|-|-|X|-|

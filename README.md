@@ -27,21 +27,22 @@ Tutorial (optional, f.e. for questions or help) will be Wednesday 12:00 - 13:30 
 |-|2018-03-13| No lecture because of [Javaland](http://javaland.eu/)|-|-|-|-|-|-|
 |5|2018-03-20| JUnit 5 | 0.75  h | X | X | - | X | - |
 |6|2018-03-20| Refactoring | 2.25 h | X | X | - | X | - |
-|7|2018-03-27 and 2018-04-03| Legacy Systems and how to deal with them | 6 h | X |-|-|X|see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
-|8|2018-04-10| Case Study: UI platform JavaFX | 1.5 h | X | X | X | X | - |
-|9|2018-04-10| Case Study: Spring Framework | 1.5 h| X | X | - | X |see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
-|10|2018-04-17| Persistence (with Spring Data JPA) | 1.5 h|- |-|-|-|see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
-|11|2018-04-17| optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned) | 1.5 h|  |||||
-|12|2018-04-24| Domain Driven Design | 3 h |-|-|-|-| Speaker: [Oliver Milke](http://oliver-milke.de) |
+|7|2018-03-27| Legacy Systems and how to deal with them | 3 h | X |-|-|X|see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
+|-|2018-04-03| No lecture because of holiday | - | - | - | - | - | - |
+|7|2018-04-10| Legacy Systems and how to deal with them | 3 h | X |-|-|X|see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
+|8|2018-04-17| Case Study: UI platform JavaFX | 1.5 h | X | X | X | X | - |
+|9|2018-04-17| Case Study: Spring Framework | 1.5 h| X | X | - | X |see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
+|10|2018-04-24| Persistence (with Spring Data JPA) | 1.5 h|- |-|-|-|see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
+|11|2018-04-24| optional: JPA Performance (see [Martins repository, forked by me here](https://github.com/stevenschwenke/jpa-performance)) (planned) | 1.5 h|  |||||
+|12|2018-05-08| Domain Driven Design | 3 h |-|-|-|-| Speaker: [Oliver Milke](http://oliver-milke.de) |
 |-|2018-05-01| No lecture because of Maifeiertag | |  |||||
-|13|2018-05-08| Agile Methods | 3.0 h |X |X|-|X|-|
-|14|2018-05-15| Management 3.0 | 3.0 h |X|X|-|X|-|
+|13|2018-05-15| Agile Methods | 3.0 h |X |X|-|X|-|
+|14|2018-05-29| Management 3.0 | 3.0 h |X|X|-|X|-|
 |-|2018-05-22| No lecture because of Pfingstpause |-|-|-|-|-||
-|15|2018-05-29| Cloud | 1.0 h |X|X|-|X||
-|16|2018-05-29| Digitization | 0.5 h |X|X|-|X||
-|17|2018-05-29| Remote Working |1.5 h|X|-|-|X|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
-|18|2018-05-29| Ethics of software development | 0.5 h | X | none | - | X | - |
-|19|2018-06-05| Not assigned yet, possibly questions and discussion | 3 h | - | - | - | - | - |
+|15|2018-06-05| Cloud | 1.0 h |X|X|-|X||
+|16|2018-06-05| Digitization | 0.5 h |X|X|-|X||
+|17|2018-06-05| Remote Working |1.5 h|X|-|-|X|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
+|18|2018-06-05| Ethics of software development | 0.5 h | X | none | - | X | - |
 |-|2018-06-18, 08:00-09.30| Exam | - |  |||||
 
 ### Less likely to be in the lectures

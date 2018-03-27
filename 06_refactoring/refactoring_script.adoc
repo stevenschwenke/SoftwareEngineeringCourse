@@ -236,12 +236,12 @@ to
 ```java
 void printTemperature(String unit, double degrees) {
     printBanner();
-    printDetails(degrees);
+    printDetails(unit, degrees);
 }
 
-void printDetails (double amount) {
+void printDetails (String unit, double amount) {
     System.out.println ("unit:" + unit);
-    System.out.println ("amount" + degrees);
+    System.out.println ("amount" + amount);
 }
 ```
 
@@ -380,7 +380,9 @@ int discount (int inputVal, int quantity, int yearToDate) {
             arg = arg * 3;
             System.out.println ("arg in triple: " + arg);
         }
-    } 
+    }
+
+
 * result:
 ** arg in triple: 15
 ** x after triple: 5
@@ -404,6 +406,8 @@ int discount (int inputVal, int quantity, int yearToDate) {
             System.out.println ("arg in nextDay: " + arg);
         }
     }
+
+
 * result:
 ** arg in nextDay: Thu Apr 02 00:00:00 EST 1998
 ** d1 after nextDay: Thu Apr 02 00:00:00 EST 1998
@@ -449,7 +453,7 @@ to
 
 ```java
 public Person getManager() {
-    return _department.getManager();
+    return department.getManager();
 }
 
 ...
@@ -571,9 +575,9 @@ else charge = summerCharge(quantity);
 
 ```java
 double disabilityAmount() {
-    if (_seniority < 2) return 0;
-    if (_monthsDisabled > 12) return 0;
-    if (_isPartTime) return 0;
+    if (seniority < 2) return 0;
+    if (monthsDisabled > 12) return 0;
+    if (isPartTime) return 0;
     // compute the disability amount
 ```
 to

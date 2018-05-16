@@ -37,8 +37,8 @@ Tutorial (optional, f.e. for questions or help) will be Wednesday 12:00 - 13:30 
 |-|2018-05-01| No lecture because of Maifeiertag | |  |||||
 |13|2018-05-08| Agile Methods | 3 h |X |X|-|X|-|
 |12|2018-05-15| Domain Driven Design | 3 h |-|-|-|-| Speaker: [Oliver Milke](http://oliver-milke.de) |
-|14|2018-05-29| Management 3.0 | 3.0 h |X|X|-|X|-|
 |-|2018-05-22| No lecture because of Pfingstpause |-|-|-|-|-||
+|14|2018-05-29| Management 3.0 | 3.0 h |X|X|-|X|-|
 |15|2018-06-05| Cloud | 1.0 h |X|X|-|X||
 |16|2018-06-05| Digitization | 0.5 h |X|X|-|X||
 |17|2018-06-05| Remote Working |1.5 h|X|-|-|X|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|

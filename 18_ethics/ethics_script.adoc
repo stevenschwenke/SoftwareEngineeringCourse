@@ -80,3 +80,7 @@ image::aspects.png[]
 
 == Sources
 * "Uber, Volkswagen and the ethics of software", Computer Weekly, 7-13 November 2017
+
+== Further Reading
+* https://www.infoworld.com/article/2607452/application-development/12-ethical-dilemmas-gnawing-at-developers-today.html[12 ethical Dilemmas gnawing at Developers today]
+* https://www.cio.com/article/3156565/developer/should-software-developers-have-a-code-of-ethics.html[Should Software Developers have a Code of Ethics?]

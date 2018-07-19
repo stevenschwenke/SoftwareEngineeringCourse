@@ -9,8 +9,8 @@ image::Joseph_Weizenbaum.jpg[]
 == Motivation
 === Joseph Weizenbaum
 * during studies, heard https://www.youtube.com/watch?v=Ssks6y7Xskw[this speech ] from Joseph Weizenbaum in Magdeburg
-* worked on Arpanet, successor of internet
-* wrote ELIZA, successor of modern chatbots
+* worked on Arpanet, precursor of internet
+* wrote ELIZA, precursor of modern chatbots
 * variant of ELIZA: "doctor", simulating psychotherapist
 * people told "doctor" intimate details - Weizenbaum shocked by that - just a computer program!
 * told story in talk: student asked him if development of camera recognition in soft toys. Answer: "What do you think can this technology be used for alternatively?"

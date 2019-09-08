@@ -1,0 +1,25 @@
+= Refactoring
+
+== Definition
+. What is "refactoring"?
+
+== Principles in Refactoring
+. State and describe 3 of the 5 principles in Refactoring.
+
+== Code smells as a source for refactoring
+. State and describe 8 of the 16 code smells.
+. Make a list of as many different code smells in the ugly trivia game as you can find.
+. Propose a refactoring for each code smell and describe its implementation.
+
+== Small Refactorings
+. State 2 reasons for the refactoring "extract method".
+. When applying the refactoring "inline method", what important circumstance has to be checked before refactoring?
+. Write a short (!) code snippet or pseudo code snippet to illustrate
+    1. when to use "introduce explaining variable" and
+    2. when not to.
+    (Hint: You have to write two short code snippets)
+. What is the refactoring "Remove assignments to parameters"? Why is it a good idea to do that?
+. Under which circumstances should "extract class" be applied?
+. What does "Replace data value with object" do? Why is it a good idea to do so?
+. There are refactorings "Change unidirectional association to bidirectional" and "Change bidirectional association with unidirectional". What is a unidirectional, what a bidirectional association?
+. What is a magic number? State one! (With an example - not just a number ;) )

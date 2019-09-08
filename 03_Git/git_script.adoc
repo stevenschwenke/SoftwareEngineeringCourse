@@ -1,0 +1,80 @@
+= Git
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+== Introduction
+image::gitlogo.png[]
+
+* Goal of this chapter: just a brief overview about the most important aspects
+
+image::whyVersionControl.png[]
+* Why version control?
+** understanding of history
+** backup
+** enabler for better development processes such as code reviews and feature development
+* Git most recent and widely-used system, often successor of SVN
+
+
+== Commits
+image::commitBranchMerge1.png[]
+image::commitBranchMerge2.png[]
+* commit = set of changes
+* can contain changes in multiple files
+* consists of
+** set of changes
+** commit message = header + body
+** hash
+** hash of parent
+* because every commit knows its parent: tree structure = commit graph
+
+== Branches
+image::commitBranchMerge3.png[]
+* one commit only one parent, but possible that multiple commits having the same parent = branching
+* enable parallel development
+* important: common understanding how to branch
+* multiple branching systems, for example http://nvie.com/posts/a-successful-git-branching-model/[GitFlow]
+
+== Merging
+image::commitBranchMerge4.png[]
+* = reuniting two branches
+* for example when closing feature-, bugfix- or release-branches
+* merge conflict = change in the same place, no automatic merging possible
+* great support in tools like IntelliJ IDEA
+
+== Live-Demo
+. new feature-branch
+. multiple small commits
+. squash
+. some more changes
+. edit last commit message
+. finish feature branch
+. create release branch
+. change version number
+. finish release branch
+
+== GitFlow
+image::gitflow.png[]
+
+== Advanced Features of Git
+* editable commit graph, even after push (force push)
+* amend
+* Squashing
+* Cherry-Picking
+* Fast-Forward-Merges
+* Rebasing
+* Stash / Shelf
+* .gitignore
+
+== Tooling
+image::tooling.png[]
+
+* CLI, such as http://gitforwindows.org[GitBash for Windows]
+* https://www.jetbrains.com/idea/[IntelliJ IDEA]
+* https://www.gitkraken.com/[GitKraken]
+* https://github.com/[Github]
+* https://about.gitlab.com[GitLab]
+
+== Resources
+* best resource: https://git-scm.com/book/en/v2[Pro Git] (free!)

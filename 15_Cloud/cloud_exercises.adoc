@@ -1,0 +1,10 @@
+= Cloud
+
+. Name three important cloud providers.
+. What are the three new concepts of the cloud? Describe them.
+. What is the pyramid of layers? Give a short explanation to each layer and name a product for each layer.
+. How does Pivotal Cloud Foundry (PCF) stand to Pivotal Web Services (PWS), Amazon Web Services (AWS) and PCF Dev?
+. What is an org, what is a space in PCF?
+. What do the following commands do: "cf push", "cf apps", "cf marketplace", "cf push"?
+. What does "You are not Google" mean in the context of the cloud?
+

@@ -8,7 +8,7 @@ This chapter is heavily influenced by [Domain Driven Design Quickly, InfoQ](http
 - real-world-problem that software solves = "Domain"
 - to solve problems in a specific domain, software engineer has to understand this domain well! (No "Just give me the formulas and a GUI mockup and I'll code it for you")
 - to attain this knowledge: talk with THE specialists: your customer
-- to understand the specialists: Learn their language, learn their thinking. Really gasp their problems!
+- to understand the specialists: Learn their language, learn their thinking. Really grasp their problems!
 - Goal: Software = reflection of domain
 - test: Can someone without any domain knowledge learn something simply by reading your code? (Answer should be "yes")
 - DDD defines a set of concepts like Entity, Value Object, Repository or Aggregate. Every (!) class in the code has to have a "is a" relationship to one of those concepts.

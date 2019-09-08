@@ -1,0 +1,94 @@
+= Software engineering from 10.000ft
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+image::10000ftView.png[]
+
+== Biological Approach to Software engineering
+image::biologicalApproach.png[]
+
+- unpredictable process
+- complex, not just complicated
+- process of developing software = scientific biology survey
+- uncertainty theory of software development: either know __when__ a software releases or __what__ it will do (never both)
+- one cause of unpredictability: human factor ("Es menschelt") - no model can eliminate that, except for Cyberdyne Systems
+
+image::architectureComparison.png[]
+- often-cited comparison: building architecture => not really good comparison
+- instead of producing / building something: You never know what will be the result and when it will be there
+- => "building" is so fast nowadays, a lot of programmers don't even notice it ("build"-step)
+
+== Elements of software engineering
+image::elementsOfSoftwareEngineering.png[]
+
+* programming languages
+** web-ish:
+*** Java Script - family (everything ending with "JS")
+** OOP:
+*** Java extremely interesting because of distribution, active community and evolution of the language itself
+*** C#, C++
+** mobile
+*** Swift
+** hardware
+*** Assembler
+*** C
+* community, conferences, Hackathons, user groups, ...
+** Do yourself a favor and have a look at http://ithubbs.de/[IT Hub Braunschweig]!
+* models and best practices
+** MVC
+** Domain Driven Design
+** TDD
+** Clean Code
+** https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)[SOLID] = single responsibility principle + open/closed principle + Liskov Substitution Principle + Interface Segregation Principle + Dependency Inversion
+* tools
+** technical
+*** IDEs
+*** version control
+*** building tools
+*** analysis
+** platforms
+** just "google-driven-development" bad idea
+** however: of course use stackoverflow, GitHub and Google!
+** _show stackoverflow!_
+** important to understand what you googled before applying it
+* processes
+** waterfall
+** agile (Scrum, Kanban)
+** project management
+* soft skills - Do yourself a favor and develop them!
+** important to know how to learn (you should know this by now)
+** tolerance for difficult situations like debugging for 2 days
+** technology = foundation of success in software engineering, but not enough
+** https://www.washingtonpost.com/amphtml/news/answer-sheet/wp/2017/12/20/the-surprising-thing-google-learned-about-its-employees-and-what-it-means-for-todays-students/?utm_term=.fa24e279994a[The surprising thing Google learned about its employees]
+*** 7 top characteristics of success:
+**** being a good coach
+**** communicating and listening well
+**** possessing insights into others (including others different values and points of view)
+**** having empathy toward and being supportive of one’s colleagues
+**** being a good critical thinker and problem solver
+**** and being able to make connections across complex ideas
+*** best teams range of soft skills:
+**** equality
+**** generosity
+**** curiosity toward the ideas of your teammates
+**** empathy
+**** emotional intelligence
+**** emotional safety
+
+== Software engineering can be handled
+image::noSilverBullet.png[]
+- no silver bullet for problems
+- over the decades a ton of methods, processes and models
+- working, but dependent on circumstances
+- because of relatively young branch emerging new concepts
+
+== Opportunities
+image::whatWillYouMakeOfThis.png[]
+- because of all this: highly dynamic, omnipresent key-branch with huge opportunities
+- favorite examples: 
+    - Apple: "Let's sell the people the music they want to hear instead of hunting the leechers"
+    - Tesla: "Let's think of a car as a moving computer!"
+    - remote working movement
+    - "thinking IT"

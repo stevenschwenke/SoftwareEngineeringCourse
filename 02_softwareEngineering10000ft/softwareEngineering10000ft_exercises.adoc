@@ -1,0 +1,5 @@
+= Software engineering from 10.000ft Exercises
+
+. Is the process of software engineering more comparable with building a house or is it more like a growing tree? Explain.
+. Explain the difference between complex and complicated. What is software engineering?
+. Name five of the six elements of software engineering.

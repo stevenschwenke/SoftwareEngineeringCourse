@@ -1,0 +1,6 @@
+= Digitization
+
+. What is the core message of the hype of Digitization?
+. Name and describe five expectations potential users may have today.
+. Name and describe four solutions to these expectations.
+. What is an MVP? Give an example.

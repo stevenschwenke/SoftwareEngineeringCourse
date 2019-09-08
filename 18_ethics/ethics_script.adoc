@@ -1,0 +1,86 @@
+= Ethics in Software Engineering
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+image::Joseph_Weizenbaum.jpg[]
+
+== Motivation
+=== Joseph Weizenbaum
+* during studies, heard https://www.youtube.com/watch?v=Ssks6y7Xskw[this speech ] from Joseph Weizenbaum in Magdeburg
+* worked on Arpanet, precursor of internet
+* wrote ELIZA, precursor of modern chatbots
+* variant of ELIZA: "doctor", simulating psychotherapist
+* people told "doctor" intimate details - Weizenbaum shocked by that - just a computer program!
+* told story in talk: student asked him if development of camera recognition in soft toys. Answer: "What do you think can this technology be used for alternatively?"
+* made me think different about my role as a developer
+
+=== "Ethical questions" of self-driving cars
+* from Chaos Computer Club and others
+* "What do we want: a machine killing one child or a machine killing three adult men?"
+* also: person programming this algorithm is deciding fate of potentially thousands of people!
+* at that time, didn't understand the importance of this
+* now: Tesla. Question is not current, it's obsolete!
+
+image::Elon_Musk,_Tesla_Factory,_Fremont_(CA,_USA)_(8765031426).jpg[]
+
+=== VW Diesel
+image::VW_Tiguan_engine.jpg[]
+* Bosch control units providing a reasonable functionality (shutting down cleaning of exhaust fumes) used by VW to bypass environmental controls
+* very complex topic, no details here
+* important: programmers / software engineers / hardware engineers provided functionality that has been misused by other people, causing lethal damage to innocent people.
+* "fact": most likely, people actually died!
+
+== Aspects of Ethics in Software Engineering
+image::aspects.png[]
+
+=== Licensing
+* https://choosealicense.com/licenses/[ChooseALicense.com] - huge number of licenses!
+* because of that: often unnoticed in new (open source) projects + default "all mine!"
+* other side, using software: violation of licences (automatic header creation "everything owned by MyCompany Inc.")
+
+=== Data
+* Who of you uses WhatsApp?
+* Who of you would give the BND or NSA his name and telephone number?
+** = unapproved data transfer of personal and individualizing data of friends + family
+* data transfer to other services (WhatsApp is owned by Facebook)
+** = undesired transfer of data to third parties
+* Alexa
+** a couple of decades ago, German authorities broke into apartments to install microphones behind the wallpapers
+** nowadays, people are paying for this
+** maybe unaware that speech processing happens on the servers?
+
+=== Algorithms and functionality
+* see control units Bosch VW Diesel
+* If a dictator asks you to write a software that identifies anonymously created accounts in social platforms to find "terrorists" - would you implement this?
+* at a former employer: team next door developing software for managing medical animal testing. Didn't know that - shocked me.
+* main appeal: Think about what you develop!
+
+=== Plain Security
+* BSI (German NSA) two roles: Trojan in every device + IT security. Not compatible!
+* Are you developing an admin access or a backdoor?
+
+=== Many more ...
+* for example machine learning
+* there will be more in the future - stay vigilant!
+
+== Who is responsible?
+* simple answer: *YOU ARE!*
+* Software Developers have a very important job and decide very important things. Be aware of that and act accordingly!
+
+== What is at stake?
+* Peoples freedom, dignity and lives.
+* Don't let anybody tell you "It's not that bad, relax."
+* Read history books.
+
+== Recommendations
+* Cory Doctorow
+* Joseph Weizenbaum (videos)
+
+== Sources
+* "Uber, Volkswagen and the ethics of software", Computer Weekly, 7-13 November 2017
+
+== Further Reading
+* https://www.infoworld.com/article/2607452/application-development/12-ethical-dilemmas-gnawing-at-developers-today.html[12 ethical Dilemmas gnawing at Developers today]
+* https://www.cio.com/article/3156565/developer/should-software-developers-have-a-code-of-ethics.html[Should Software Developers have a Code of Ethics?]

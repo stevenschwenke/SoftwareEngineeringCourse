@@ -1,0 +1,102 @@
+= Agile
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+== Waterfall
+
+image::waterfall-agile_teaser.png[]
+
+* see __left side and center__ of _Waterfall vs Agile CheatSheet (by Development that pays)_
+
+
+* early days of creating software: no best practices, many different approaches
+* formal approaches
+* software development = engineering with models, methods, frameworks, ...
+* much bureaucracy and paperwork that slowed development down
+* in cheat sheet: standard waterfall. However, V-model exists: specify tests for each phase during this phase
+* missing in cheat sheet: maintenance phase
+** = "basically finished, but a lot of missing features"
+** = conceptually agile
+** in reality, there is no maintenance phase because development goes on
+* waterfall assumes
+** customer knows exact requirements beforehand
+** customers wishes don't change between start of project and release
+** every last detail can be thought of beforehand, without starting to "think in implementation mode"
+* HOWEVER: waterfall is not dead!
+    - certificated software: certification = requirements
+    - software that definitively is not changed (deep-space probes)
+
+== "Agile"
+* "agile" = new word for old virtues
+* result of development that took decades:
+** early 1990s: Rapid Application Development (RAD) = some formal methods + prototyping, evolutionary delivery, customer collaboration
+** Scrum (1995)
+** Feature Driven Development (1999)
+** Pragmatic Programming (1999)
+** 2001: Agile manifesto
+
+image::agile_manifesto_by_jurgen_appelo.jpg[]
+(Jurgen Appelo, https://www.flickr.com/photos/jurgenappelo/5201267505)
+
+* empirical process control: transparency + inspect + adapt. Basically: "get knowledge from your experiences and adapt your actions"
+
+image::waterfall-agile_teaser.png[]
+
+* see __center and right side__ of _Waterfall vs Agile CheatSheet (by Development that pays)_
+* most-encountered real-world problem: waterfall-management cannot accept iterative process that simply cannot enforce a deadline.
+
+== Scrum
+* "Scrum" from Rugby
+* perfect team size = 6 +- 3
+* https://www.scrumalliance.org/why-scrum/core-scrum-values-roles[scrum values], based on agile manifesto:
+** focus (on sprint goal)
+** courage
+** openness
+** commitment (don't promise something you know you cannot deliver)
+** respect
+* Scrum in one image:
+
+image::Scrum_in_a_nutshell_thumbnail.png[]
+(source: http://www.agile42.com/en/agile-info-center/scrum-cheat-sheet/agile.md[agile42])
+
+* implementation of "inspect" in Scrum:
+** Daily = inspect work of last 24 hours
+** Review = inspect work of last sprint
+** Retrospective = inspect processes, tools and behavior
+* timeboxes (2 week sprint):
+** Planning: 4 hours
+** Daily: 15 minutes (0.25h x 10 = 2.5h per sprint)
+** Review: 2 hours
+** Retro: 2 hours
+** = 10.5h / sprint = <14% of time of sprint (without grooming meeting!)
+* standard questions for retrospective:
+** What went well?
+** What do we want to improve?
+** What did we learn?
+** What is it that we don't understand yet? (Joseph Pelrine)
+* velocity
+** = amount of story points of finished user stories per sprint
+** in theory: good metric for planning
+** however, often source of arguments:
+*** as always, no guarantee to finish promised stories
+*** comparison between teams not possible (story of competitor who had two times the story points we had, hence loss of project)
+*** often used metric for fixed price contracts, but very problematic
+* Scrumfall, Waterscrum, Waterscrumfall
+
+== Scrum vs Kanban
+image::scrum-kanban_teaser.png[]
+* get full cheat sheet at http://www.developmentthatpays.com/cheatsheets[Development that pays]
+* have a look at those youtube videos:
+** https://youtu.be/9Jgu1BlTlSc[Scrum vs. Kanban: "You talk. We work."]
+** https://youtu.be/n2ZrUQNwrUk[Scrum vs. Kanban II: Kanban Chaos]
+** https://youtu.be/sOlFPi5xJqQ[Scrum vs. Kanban III: Kanban for the win!]
+
+== Acknowledgements
+A huge thank you to http://www.developmentthatpays.com/about[Gary Straughan], who allowed me to put his awesome cheat sheets in this repository.
+
+= Sources
+- http://www.developmentthatpays.com/cheatsheets[CheatSheets by Development that pays]
+- https://www.youtube.com/watch?v=0P7nCmln7PM&feature=youtu.be[Making sense of MVP]
+- http://www.expressiveproductdesign.com/minimal-viable-product-mvp/[Minimal viable product?]

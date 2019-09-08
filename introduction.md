@@ -15,10 +15,11 @@
 - English or German?
 - slides will be in English because that's the language of software development
 
-##Meta
+## Meta
 Agreements for this course: 
 - no compulsory attendance. If you stay, be quite and listen.
 - questions everytime, not just in the end
+- questions also via Github: create issue with [tag "question"](https://github.com/stevenschwenke/SoftwareEngineeringCourse/labels/question)
 - bring your own device - whatever fits your needs
 - sorry, I will sometimes speak to you on a first-name basis (standard in modern IT companies)
 

@@ -1,0 +1,10 @@
+= Management 3.0
+
+. What does Management have to do with software engineering?
+. Explain why "agile" is (not) a new approach.
+. There is a document that contains the most important thoughts about agile software development. What is the name of this document? State three of the four statements.
+. There is another document that describes the "Software Craftsmanship Movement". State two of the four statements.
+. Name the "5 cogs of innovation".
+. There are two kinds of motivation. What are they and what is the difference between them?
+. What is a mission statement? Why is it important to have one?
+. Who can have a mission statement? From the lectures we know that companies have them. Who else?

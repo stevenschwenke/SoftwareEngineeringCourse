@@ -1,0 +1,10 @@
+= Git Exercises
+
+. Why is version control important?
+. What is a commit and what information does it hold?
+. What is the commit graph?
+. What is a branch?
+. Name and describe one specific branching system.
+. Name three common types of branches.
+. What is a merge?
+. Describe a specific situation step by step that results in a merge conflict.

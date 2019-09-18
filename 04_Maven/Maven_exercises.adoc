@@ -1,7 +1,8 @@
 = Maven Exercises
 
 == Hands-on
-. Create a Maven project and write a simple Hello World application with Java 8.
+
+. Create a Maven project and write a simple Hello World application with Java >8.
 . Change your pom-file so that your application is packaged as a jar-file.
 . Execute the goal to create the jar-file.
 . Research where your jar-file was created on your disk.

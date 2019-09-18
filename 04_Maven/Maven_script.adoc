@@ -56,6 +56,7 @@ image::apache-maven-project.png[]
 * main concept: convention over configuration
 ** structure of project
 ** process: build -> publish -> deploy
+* https://maven.apache.org/guides/introduction/introduction-to-archetypes.html[Maven Archetypes] for creating project structure
 * plugin-based ... everything is a plugin, for example the compiler
 * plugins have "goals" to execute
 * sources distributed via public repositories:

@@ -56,6 +56,7 @@ image::commitBranchMerge4.png[]
 
 == GitFlow
 image::gitflow.png[]
+* https://nvie.com/posts/a-successful-git-branching-model[Vincent Driessen "A successful branching model"]
 
 == Advanced Features of Git
 * editable commit graph, even after push (force push)

@@ -16,12 +16,14 @@ image::stevenSchwenke1.png[]
 - 1 year VW
 - since then software developer in Braunschweig
 - msg DAVID
+- first version of these lectures in winter term 2018
 
 image::stevenSchwenke2.png[]
 - stevenschwenke.de
 - github.com/stevenschwenke
 - @stevenschwenke
 - hacktalk.de
+- ithubbs.de
 
 == Who are you?
 image::whoAreYou1.png[]
@@ -63,12 +65,26 @@ image::requirements.png[]
 == Material
 image::material.png[]
 - (nearly) everything is on https://github.com/stevenschwenke/SoftwareEngineeringCourse[Github]
+- images on slides for your entertainment :)
 
 == Rules
 image::rules.png[]
-- Be on time. That's 80% of success later on.
-- Immediately ask questions.
-- Immediately make remarks about possible errors.
-- PRs are welcome!
+* Be on time.
+That's 80% of success later on.
+* Immediately ask questions.
+* Immediately make remarks about possible errors.
+* PRs are welcome!
 
+== How to get through this course
 
+* (experiences from last year)
+* no physical presence required -> however, leads to bad results in test - don't know why
+* test:
+** no coding!
+However, really understanding the covered code necessary
+** challenge: a lot of material to cover, however no deep-dives
+** Write very, very readable!
+Last year one person failing because of non-readable handwriting
+** If this is your last try for the test:
+It IS DOABLE. However, please please please do learn for it.
+** exercises-files are for you to work with - most of the questions for the test are already there!

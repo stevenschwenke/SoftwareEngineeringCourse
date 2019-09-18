@@ -1,58 +1,62 @@
 # SoftwareEngineeringCourse
 
-## Meta: About the workshop
-This is a Software Engineering course for students of computer science, level beginners to intermediate (3rd semester). 
+## About
+This is a Software Engineering course for students of computer science, level beginners to intermediate (3rd semester). The content was used for the software engineering course summer term 2018 and winter term 2019 at advanced technical college Ostfalia in Wolfenbüttel, Germany.
 
+### Normal lectures
 
-### Current status
-I plan to use the material provided in this repository for the software engineering course summer term 2018 at advanced technical college Ostfalia in Wolfenbüttel, Germany. I expect this repository to gain more and more content right until the start of the course in march 2018.
+Lectures will be Fridays, 12:15 - 13:45 and 14:00 - 15:30.
 
-## Content
-Will be upgraded continuously, see chapters.
+Appointments for tutorial (optional, f.e. for questions or help) currently not planned.
 
-States: planed -> content-gathering -> develop exercises and test questions -> rework to talk -> ready 
+| Chapter | Date | Topic | length |notes|
+|---|:---:|:---:|:---:|:---:|
+|1|2019-11-01| Introduction & overview | 0.75 h |-|
+|2|2019-11-01| Software Engineering from 10.000 ft| 0.75 h | -|
+|3|2019-11-01| Git | 0.75  h | - |
+|4|2019-11-01| Maven | 0.75  h | - |
+|5|2019-11-08| JUnit 5 | 0.75  h | - |
+|6|2019-11-08| Refactoring | 2.25 h | - |
+|7|2019-11-15| Legacy Systems and how to deal with them | 3 h | see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
+|7|2019-11-22| Legacy Systems and how to deal with them | 3 h | see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
+|8|2019-11-29| Case Study: UI platform JavaFX | 1.5 h | - |
+|9|2019-11-29| Case Study: Spring Framework | 1.5 h| see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
+|9|2019-12-06| Case Study: Spring Framework | 1.5 h| see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
+|13|2019-12-06| Agile Methods | 1.5 h |-|
+|13|2019-12-13| Agile Methods | 3 h |-|
+|15|2019-12-20| Cloud | 1.0 h |-|
+|16|2019-12-20| Digitization | 0.5 h |-|
+|17|2019-12-20| Remote Working |1.5 h|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
+|-| ? | Exam | - |  ||
 
-### Most likely to be in the lectures
+### Additional lectures
 
-Lectures will be Tuesdays, 08:15 - 09:45 and 10:00 - 11:30.
+Additional to the normal lectures, there will be two block sessions on
 
-Tutorial (optional, f.e. for questions or help) will be Wednesday 12:00 - 13:30 at R107.
+* Saturday, 2019-12-14
+* Saturday, 2019-12-21
 
-| Chapter | Date | Topic | length | Content-complete|exercises|test questions|slides|notes|
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|1|2018-03-06| Introduction & overview | 0.75 h | X|-|-|X|-|
-|2|2018-03-06| Software Engineering from 10.000 ft| 0.75 h | X|X|-|X|-|
-|3|2018-03-06| Git | 0.75  h | X | X | - | X | - |
-|4|2018-03-06| Maven | 0.75  h | X | X | - | X | - |
-|-|2018-03-13| No lecture because of [Javaland](http://javaland.eu/)|-|-|-|-|-|-|
-|5|2018-03-20| JUnit 5 | 0.75  h | X | X | - | X | - |
-|6|2018-03-20| Refactoring | 2.25 h | X | X | - | X | - |
-|7|2018-03-27| Legacy Systems and how to deal with them | 3 h | X |-|-|X|see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
-|-|2018-04-03| No lecture because of holiday | - | - | - | - | - | - |
-|7|2018-04-10| Legacy Systems and how to deal with them | 3 h | X |-|-|X|see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
-|8|2018-04-17| Case Study: UI platform JavaFX | 1.5 h | X | X | X | X | - |
-|9|2018-04-17| Case Study: Spring Framework | 1.5 h| X | X | - | X |see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
-|9|2018-04-24| Case Study: Spring Framework | 1.5 h| X | X | - | X |see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
-|13|2018-04-24| Agile Methods | 1.5 h |X |X|-|X|-|
-|-|2018-05-01| No lecture because of Maifeiertag | |  |||||
-|13|2018-05-08| Agile Methods | 3 h |X |X|-|X|-|
-|12|2018-05-15| Domain Driven Design | 3 h |-|-|-|-| Speaker: [Oliver Milke](http://oliver-milke.de), slides [here](http://oliver-milke.de/files/slides/DomainDrivenDesign.pdf) |
-|-|2018-05-22| No lecture because of Pfingstpause |-|-|-|-|-||
-|14|2018-05-29| Management 3.0 | 3.0 h |X|X|-|X|-|
-|15|2018-06-05| Cloud | 1.0 h |X|X|-|X||
-|16|2018-06-05| Digitization | 0.5 h |X|X|-|X||
-|17|2018-06-05| Remote Working |1.5 h|X|-|-|X|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
-|18|2018-06-05| Ethics of software development | 0.5 h | X | none | - | X | - |
-|-|2018-06-18, 08:00-09.30| Exam | - |  |||||
+The content of these sessions will __not__ be relevant for the exam. However, I strongly recommend visiting the sessions to benefit from the additional content.
+
+| Chapter | Date | Topic | Length |Notes|
+|---|:---:|:---:|:---:|:---:|
+|-|2019-12-20| 3-tier-architecture | 1.0 h |-|
+|-|2019-12-20| hexagonal architecture | 1.0 h |-|
+|14|2019-12-20| Management 3.0 | 3.0 h |-|
+|-|2019-12-20| IT-Community | 1.0 h |-|
+|-|2019-12-20| Clean Code | 1.0 h |-|
+|18|2019-12-20| Ethics of software development | 0.5 h |  - |
+
 
 ### Less likely to be in the lectures
-| Topic | length | Content-complete|exercises|test questions|slides|
-|---|:---:|:---:|:---:|:---:|:---:|
-| Dependency Management |  |  ||||
-| Infrastructure as code |  |  ||||
-| Communication |  |  ||||
-| Facilitating a coderetreat with students? |  |  ||||
-| Design Patterns |  |  ||||
+| Topic | Length | Notes /
+|---|:---:|:---:|
+| Domain Driven Design | 3 h | Speaker: [Oliver Milke](http://oliver-milke.de), slides [here](http://oliver-milke.de/files/slides/DomainDrivenDesign.pdf) |
+| Dependency Management | |
+| Infrastructure as code |  |
+| Communication |  | 
+| Facilitating a coderetreat with students? |  |
+| Design Patterns |  | 
 
 ## Feedback
 Feel free to give feedback to steven@stevenschwenke.de

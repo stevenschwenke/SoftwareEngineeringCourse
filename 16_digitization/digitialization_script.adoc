@@ -17,7 +17,7 @@ image::itIsBusiness.png[]
 
 * = "IT is business and business is IT"
 
-== new expectations enforce new solutions
+== New expectations enforce new solutions
 === Expectations
 
 image::expectations.png[]

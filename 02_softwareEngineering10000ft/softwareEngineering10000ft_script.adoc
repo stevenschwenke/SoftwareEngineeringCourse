@@ -35,7 +35,7 @@ image::elementsOfSoftwareEngineering.png[]
 *** Assembler
 *** C
 * community, conferences, Hackathons, user groups, ...
-** Do yourself a favor and have a look at http://ithubbs.de/[IT Hub Braunschweig]!
+** Do yourself a favor and have a look at https://www.ithubbs.de/[IT Hub Braunschweig]!
 * models and best practices
 ** MVC
 ** Domain Driven Design

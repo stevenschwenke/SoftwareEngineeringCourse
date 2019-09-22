@@ -27,7 +27,7 @@ Appointments for tutorial (optional, f.e. for questions or help) currently not p
 |15|2019-12-20| Cloud | 1.0 h |-|
 |16|2019-12-20| Digitization | 0.5 h |-|
 |17|2019-12-20| Remote Working |1.5 h|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
-|-| ? | Exam | - |  ||
+|-| 2020-01-08, 16:00 - 17:30 | Exam | - |  ||
 
 ### Additional lectures
 

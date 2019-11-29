@@ -23,8 +23,6 @@ Appointments for tutorial (optional, f.e. for questions or help) currently not p
 |9|2019-11-29| Case Study: Spring Framework | 1.5 h| see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
 |13|2019-11-29| Agile Methods | 1.5 h |-|
 |13|2019-12-06| Agile Methods | 1.5 h |-|
-|13|2019-11-06| Agile Methods | 1.5 h |-|
-|13|2019-12-13| Agile Methods | 1.5 h |-|
 |15|2019-12-13| Cloud | 1.0 h |-|
 |16|2019-12-20| Digitization | 0.5 h |-|
 |17|2019-12-20| Remote Working |1.5 h|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|

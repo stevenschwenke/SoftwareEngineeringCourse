@@ -33,9 +33,9 @@ Appointments for tutorial (optional, f.e. for questions or help) currently not p
 Additional to the normal lectures, there will be two block sessions on
 
 * Saturday, 2019-12-14
-** goal: enhance your skills in on of the most important and basic aspects of software engineering: programming 
-** Clean Code in theory
-** Clean Code in practice by Coderetreat (Game of Life)
+    * goal: enhance your skills in on of the most important and basic aspects of software engineering: programming 
+    * Clean Code in theory
+    * Clean Code in practice by Coderetreat (Game of Life)
 * Saturday, 2019-12-21
 
 The content of these sessions will __not__ be relevant for the exam. However, I strongly recommend visiting the sessions to benefit from the additional content.

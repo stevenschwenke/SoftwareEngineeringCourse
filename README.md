@@ -18,13 +18,14 @@ Appointments for tutorial (optional, f.e. for questions or help) currently not p
 |5|2019-11-08| JUnit 5 | 0.75  h | - |
 |6|2019-11-08| Refactoring | 2.25 h | - |
 |7|2019-11-15| Legacy Systems and how to deal with them | 3 h | see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
-|7|2019-11-22| Legacy Systems and how to deal with them | 3 h | see [Awesome Java Code Workshop](https://github.com/stevenschwenke/WritingAwesomeJavaCodeWorkshop)|
-|8|2019-11-29| Case Study: UI platform JavaFX | 1.5 h | - |
+|8|2019-11-22| Case Study: UI platform JavaFX | 1.5 h | - |
+|9|2019-11-22| Case Study: Spring Framework | 1.5 h| see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
 |9|2019-11-29| Case Study: Spring Framework | 1.5 h| see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
-|9|2019-12-06| Case Study: Spring Framework | 1.5 h| see [Spring Workshop](https://github.com/stevenschwenke/SpringWorkshop)|
+|13|2019-11-29| Agile Methods | 1.5 h |-|
 |13|2019-12-06| Agile Methods | 1.5 h |-|
-|13|2019-12-13| Agile Methods | 3 h |-|
-|15|2019-12-20| Cloud | 1.0 h |-|
+|13|2019-11-06| Agile Methods | 1.5 h |-|
+|13|2019-12-13| Agile Methods | 1.5 h |-|
+|15|2019-12-13| Cloud | 1.0 h |-|
 |16|2019-12-20| Digitization | 0.5 h |-|
 |17|2019-12-20| Remote Working |1.5 h|see [Remote Working Workshop](https://github.com/msg-DAVID-GmbH/RemoteWorking)|
 |-| 2020-01-08, 16:00 - 17:30 | Exam | - |  ||
@@ -34,6 +35,9 @@ Appointments for tutorial (optional, f.e. for questions or help) currently not p
 Additional to the normal lectures, there will be two block sessions on
 
 * Saturday, 2019-12-14
+** goal: enhance your skills in on of the most important and basic aspects of software engineering: programming 
+** Clean Code in theory
+** Clean Code in practice by Coderetreat (Game of Life)
 * Saturday, 2019-12-21
 
 The content of these sessions will __not__ be relevant for the exam. However, I strongly recommend visiting the sessions to benefit from the additional content.

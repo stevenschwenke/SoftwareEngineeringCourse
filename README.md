@@ -32,11 +32,12 @@ Appointments for tutorial (optional, f.e. for questions or help) currently not p
 
 Additional to the normal lectures, there will be two block sessions on
 
-* Saturday, 2019-12-14
+* Saturday, 2019-12-14, 9 a.m. - 12 a.m. or later, in room 223
     * goal: enhance your skills in on of the most important and basic aspects of software engineering: programming 
     * Clean Code in theory
     * Clean Code in practice by Coderetreat (Game of Life)
-* Saturday, 2019-12-21
+* Saturday, 2019-12-21, 9 a.m. - 12 a.m. or later,  in room 252
+    * deeper-dive into Spring, especially Spring Data JPA and MVC 
 
 The content of these sessions will __not__ be relevant for the exam. However, I strongly recommend visiting the sessions to benefit from the additional content.
 
